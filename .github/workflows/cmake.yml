@@ -1,10 +1,10 @@
 name: CMake
 
-on:
-  push:
-    branches: [ "release/15.x" ]
-  pull_request:
-    branches: [ "release/15.x" ]
+on: workflow_dispatch
+#   push:
+#     branches: [ "release/15.x" ]
+#   pull_request:
+#     branches: [ "release/15.x" ]
 
 env:
   # Customize the CMake build type here (Release, Debug, RelWithDebInfo, etc.)
