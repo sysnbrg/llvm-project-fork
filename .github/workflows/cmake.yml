@@ -21,6 +21,11 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     
+    - name: Install Ninja Tool
+      run: |
+          sudo apt-get update
+          sudo apt-get -y install ninja-build
+    
     - name: Create Build Dir
       run: mkdir build
       
@@ -28,7 +33,7 @@ jobs:
       run: cd build
       
     - name: Create Build Cache
-      run: cmake ../llvm-project-fork
+      run: cmake -G "Ninja" ../llvm-project-fork
 
     - name: Build
       # Build your program with the given configuration
