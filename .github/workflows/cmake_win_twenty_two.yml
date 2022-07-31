@@ -11,16 +11,21 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Create and CD to Build Dir
-        run: |
-          mkdir build
-          cd build
+      - name: Create Build Dir
+        run: mkdir build
+        
+      - name: CD to Build Dir
+        run: cd build
           
       - name: Log Contents Of Dir
         run: ls
 
-      - name: Create Build Cache
+      - name: Create Build Cache - Attempt 1
         run: cmake -G "Visual Studio 17 2022" ../llvm
+        continue-on-error: true
+        
+      - name: Create Build Cache - Attempt 2
+        run: cmake -G "Visual Studio 17 2022" llvm
 
       - name: Build
         # Build your program with the given configuration
