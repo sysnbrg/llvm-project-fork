@@ -30,7 +30,7 @@ jobs:
         run: git branch build
 
       - name: Commit to GitHub
-        run: git --commit -m "Upload Build"
+        run: git commit -m "Upload Build ${{env.BUILD_TYPE}}"
 
       - name: Push to Github
         run: git push -u origin build
