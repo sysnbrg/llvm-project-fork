@@ -18,7 +18,9 @@ jobs:
           ls
           cmake -G "Visual Studio 17 2022" ../llvm
           cmake --build . --config ${{env.BUILD_TYPE}}
-          git config --global user.email "dummy@dummyEmails.com"
-          git config --global user.name "Dummy Dummy"
+          cd ..
+          git add .
+          git config user.email "dummy@dummyEmails.com"
+          git config user.name "Dummy Dummy"
           git commit -m "Upload Build ${{env.BUILD_TYPE}}"
           git push -u origin build
