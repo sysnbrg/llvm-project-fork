@@ -1,0 +1,108 @@
+^D:\A\LLVM-PROJECT-FORK\LLVM-PROJECT-FORK\BUILD\CMAKEFILES\742F24F7E792AD8470F4BE7619B21B43\SYSTEMZGENASMMATCHER.INC.RULE
+setlocal
+..\..\..\Release\bin\llvm-tblgen.exe -gen-asm-matcher -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/SystemZ -ID:/a/llvm-project-fork/llvm-project-fork/build/include -ID:/a/llvm-project-fork/llvm-project-fork/llvm/include -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target --long-string-literals=0 D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/SystemZ/SystemZ.td -o D:/a/llvm-project-fork/llvm-project-fork/build/lib/Target/SystemZ/SystemZGenAsmMatcher.inc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\A\LLVM-PROJECT-FORK\LLVM-PROJECT-FORK\BUILD\CMAKEFILES\742F24F7E792AD8470F4BE7619B21B43\SYSTEMZGENASMWRITER.INC.RULE
+setlocal
+..\..\..\Release\bin\llvm-tblgen.exe -gen-asm-writer -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/SystemZ -ID:/a/llvm-project-fork/llvm-project-fork/build/include -ID:/a/llvm-project-fork/llvm-project-fork/llvm/include -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target --long-string-literals=0 D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/SystemZ/SystemZ.td -o D:/a/llvm-project-fork/llvm-project-fork/build/lib/Target/SystemZ/SystemZGenAsmWriter.inc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\A\LLVM-PROJECT-FORK\LLVM-PROJECT-FORK\BUILD\CMAKEFILES\742F24F7E792AD8470F4BE7619B21B43\SYSTEMZGENCALLINGCONV.INC.RULE
+setlocal
+..\..\..\Release\bin\llvm-tblgen.exe -gen-callingconv -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/SystemZ -ID:/a/llvm-project-fork/llvm-project-fork/build/include -ID:/a/llvm-project-fork/llvm-project-fork/llvm/include -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target --long-string-literals=0 D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/SystemZ/SystemZ.td -o D:/a/llvm-project-fork/llvm-project-fork/build/lib/Target/SystemZ/SystemZGenCallingConv.inc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\A\LLVM-PROJECT-FORK\LLVM-PROJECT-FORK\BUILD\CMAKEFILES\742F24F7E792AD8470F4BE7619B21B43\SYSTEMZGENDAGISEL.INC.RULE
+setlocal
+..\..\..\Release\bin\llvm-tblgen.exe -gen-dag-isel -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/SystemZ -ID:/a/llvm-project-fork/llvm-project-fork/build/include -ID:/a/llvm-project-fork/llvm-project-fork/llvm/include -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target -omit-comments --long-string-literals=0 D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/SystemZ/SystemZ.td -o D:/a/llvm-project-fork/llvm-project-fork/build/lib/Target/SystemZ/SystemZGenDAGISel.inc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\A\LLVM-PROJECT-FORK\LLVM-PROJECT-FORK\BUILD\CMAKEFILES\742F24F7E792AD8470F4BE7619B21B43\SYSTEMZGENDISASSEMBLERTABLES.INC.RULE
+setlocal
+..\..\..\Release\bin\llvm-tblgen.exe -gen-disassembler -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/SystemZ -ID:/a/llvm-project-fork/llvm-project-fork/build/include -ID:/a/llvm-project-fork/llvm-project-fork/llvm/include -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target --long-string-literals=0 D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/SystemZ/SystemZ.td -o D:/a/llvm-project-fork/llvm-project-fork/build/lib/Target/SystemZ/SystemZGenDisassemblerTables.inc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\A\LLVM-PROJECT-FORK\LLVM-PROJECT-FORK\BUILD\CMAKEFILES\742F24F7E792AD8470F4BE7619B21B43\SYSTEMZGENINSTRINFO.INC.RULE
+setlocal
+..\..\..\Release\bin\llvm-tblgen.exe -gen-instr-info -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/SystemZ -ID:/a/llvm-project-fork/llvm-project-fork/build/include -ID:/a/llvm-project-fork/llvm-project-fork/llvm/include -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target --long-string-literals=0 D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/SystemZ/SystemZ.td -o D:/a/llvm-project-fork/llvm-project-fork/build/lib/Target/SystemZ/SystemZGenInstrInfo.inc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\A\LLVM-PROJECT-FORK\LLVM-PROJECT-FORK\BUILD\CMAKEFILES\742F24F7E792AD8470F4BE7619B21B43\SYSTEMZGENMCCODEEMITTER.INC.RULE
+setlocal
+..\..\..\Release\bin\llvm-tblgen.exe -gen-emitter -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/SystemZ -ID:/a/llvm-project-fork/llvm-project-fork/build/include -ID:/a/llvm-project-fork/llvm-project-fork/llvm/include -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target --long-string-literals=0 D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/SystemZ/SystemZ.td -o D:/a/llvm-project-fork/llvm-project-fork/build/lib/Target/SystemZ/SystemZGenMCCodeEmitter.inc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\A\LLVM-PROJECT-FORK\LLVM-PROJECT-FORK\BUILD\CMAKEFILES\742F24F7E792AD8470F4BE7619B21B43\SYSTEMZGENREGISTERINFO.INC.RULE
+setlocal
+..\..\..\Release\bin\llvm-tblgen.exe -gen-register-info -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/SystemZ -ID:/a/llvm-project-fork/llvm-project-fork/build/include -ID:/a/llvm-project-fork/llvm-project-fork/llvm/include -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target --long-string-literals=0 D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/SystemZ/SystemZ.td -o D:/a/llvm-project-fork/llvm-project-fork/build/lib/Target/SystemZ/SystemZGenRegisterInfo.inc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\A\LLVM-PROJECT-FORK\LLVM-PROJECT-FORK\BUILD\CMAKEFILES\742F24F7E792AD8470F4BE7619B21B43\SYSTEMZGENSUBTARGETINFO.INC.RULE
+setlocal
+..\..\..\Release\bin\llvm-tblgen.exe -gen-subtarget -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/SystemZ -ID:/a/llvm-project-fork/llvm-project-fork/build/include -ID:/a/llvm-project-fork/llvm-project-fork/llvm/include -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target --long-string-literals=0 D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/SystemZ/SystemZ.td -o D:/a/llvm-project-fork/llvm-project-fork/build/lib/Target/SystemZ/SystemZGenSubtargetInfo.inc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\A\LLVM-PROJECT-FORK\LLVM-PROJECT-FORK\BUILD\CMAKEFILES\914EA780D3F2DDC9DEE47D4113B16691\SYSTEMZCOMMONTABLEGEN.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\A\LLVM-PROJECT-FORK\LLVM-PROJECT-FORK\LLVM\LIB\TARGET\SYSTEMZ\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/a/llvm-project-fork/llvm-project-fork/llvm -BD:/a/llvm-project-fork/llvm-project-fork/build --check-stamp-file D:/a/llvm-project-fork/llvm-project-fork/build/lib/Target/SystemZ/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

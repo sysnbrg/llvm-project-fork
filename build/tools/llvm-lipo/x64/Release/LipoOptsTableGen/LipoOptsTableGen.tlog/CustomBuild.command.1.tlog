@@ -1,0 +1,28 @@
+^D:\A\LLVM-PROJECT-FORK\LLVM-PROJECT-FORK\BUILD\CMAKEFILES\61F47099623698E490AD68D1F6A003D8\LIPOOPTS.INC.RULE
+setlocal
+..\..\Release\bin\llvm-tblgen.exe -gen-opt-parser-defs -I D:/a/llvm-project-fork/llvm-project-fork/llvm/tools/llvm-lipo -ID:/a/llvm-project-fork/llvm-project-fork/build/include -ID:/a/llvm-project-fork/llvm-project-fork/llvm/include --long-string-literals=0 D:/a/llvm-project-fork/llvm-project-fork/llvm/tools/llvm-lipo/LipoOpts.td -o D:/a/llvm-project-fork/llvm-project-fork/build/tools/llvm-lipo/LipoOpts.inc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\A\LLVM-PROJECT-FORK\LLVM-PROJECT-FORK\BUILD\CMAKEFILES\2E28C20521F152EFF81CB7D913312ED7\LIPOOPTSTABLEGEN.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\A\LLVM-PROJECT-FORK\LLVM-PROJECT-FORK\LLVM\TOOLS\LLVM-LIPO\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/a/llvm-project-fork/llvm-project-fork/llvm -BD:/a/llvm-project-fork/llvm-project-fork/build --check-stamp-file D:/a/llvm-project-fork/llvm-project-fork/build/tools/llvm-lipo/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

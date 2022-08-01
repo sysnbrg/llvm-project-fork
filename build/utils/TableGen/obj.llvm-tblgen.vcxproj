@@ -1,0 +1,413 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{2AF648B9-E4E6-3620-9F12-D768BDA48C6D}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.20348.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>obj.llvm-tblgen</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">obj.llvm-tblgen.dir\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">obj.llvm-tblgen.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">obj.llvm-tblgen</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">obj.llvm-tblgen.dir\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">obj.llvm-tblgen.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">obj.llvm-tblgen</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">obj.llvm-tblgen.dir\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">obj.llvm-tblgen.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">obj.llvm-tblgen</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">obj.llvm-tblgen.dir\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">obj.llvm-tblgen.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">obj.llvm-tblgen</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\a\llvm-project-fork\llvm-project-fork\build\utils\TableGen;D:\a\llvm-project-fork\llvm-project-fork\llvm\utils\TableGen;D:\a\llvm-project-fork\llvm-project-fork\build\include;D:\a\llvm-project-fork\llvm-project-fork\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zc:__cplusplus /bigobj -w14062 /Gw /EHs-c-</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <ConformanceMode>true</ConformanceMode>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4141;4146;4244;4267;4291;4351;4456;4457;4458;4459;4503;4624;4722;4100;4127;4512;4505;4610;4510;4702;4245;4706;4310;4701;4703;4389;4611;4805;4204;4577;4091;4592;4319;4709;4324</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData>true</RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4238</TreatSpecificWarningsAsErrors>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;UNICODE;_UNICODE;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;UNICODE;_UNICODE;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\a\llvm-project-fork\llvm-project-fork\build\utils\TableGen;D:\a\llvm-project-fork\llvm-project-fork\llvm\utils\TableGen;D:\a\llvm-project-fork\llvm-project-fork\build\include;D:\a\llvm-project-fork\llvm-project-fork\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;UNICODE;_UNICODE;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <IncludePaths>D:\a\llvm-project-fork\llvm-project-fork\build\utils\TableGen;D:\a\llvm-project-fork\llvm-project-fork\llvm\utils\TableGen;D:\a\llvm-project-fork\llvm-project-fork\build\include;D:\a\llvm-project-fork\llvm-project-fork\llvm\include;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\a\llvm-project-fork\llvm-project-fork\build\utils\TableGen;D:\a\llvm-project-fork\llvm-project-fork\llvm\utils\TableGen;D:\a\llvm-project-fork\llvm-project-fork\build\include;D:\a\llvm-project-fork\llvm-project-fork\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\a\llvm-project-fork\llvm-project-fork\build\utils\TableGen;D:\a\llvm-project-fork\llvm-project-fork\llvm\utils\TableGen;D:\a\llvm-project-fork\llvm-project-fork\build\include;D:\a\llvm-project-fork\llvm-project-fork\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zc:__cplusplus /bigobj -w14062 /Gw /EHs-c-</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ConformanceMode>true</ConformanceMode>
+      <DisableSpecificWarnings>4141;4146;4244;4267;4291;4351;4456;4457;4458;4459;4503;4624;4722;4100;4127;4512;4505;4610;4510;4702;4245;4706;4310;4701;4703;4389;4611;4805;4204;4577;4091;4592;4319;4709;4324</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData>true</RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4238</TreatSpecificWarningsAsErrors>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;UNICODE;_UNICODE;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;UNICODE;_UNICODE;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\a\llvm-project-fork\llvm-project-fork\build\utils\TableGen;D:\a\llvm-project-fork\llvm-project-fork\llvm\utils\TableGen;D:\a\llvm-project-fork\llvm-project-fork\build\include;D:\a\llvm-project-fork\llvm-project-fork\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;UNICODE;_UNICODE;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <IncludePaths>D:\a\llvm-project-fork\llvm-project-fork\build\utils\TableGen;D:\a\llvm-project-fork\llvm-project-fork\llvm\utils\TableGen;D:\a\llvm-project-fork\llvm-project-fork\build\include;D:\a\llvm-project-fork\llvm-project-fork\llvm\include;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\a\llvm-project-fork\llvm-project-fork\build\utils\TableGen;D:\a\llvm-project-fork\llvm-project-fork\llvm\utils\TableGen;D:\a\llvm-project-fork\llvm-project-fork\build\include;D:\a\llvm-project-fork\llvm-project-fork\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\a\llvm-project-fork\llvm-project-fork\build\utils\TableGen;D:\a\llvm-project-fork\llvm-project-fork\llvm\utils\TableGen;D:\a\llvm-project-fork\llvm-project-fork\build\include;D:\a\llvm-project-fork\llvm-project-fork\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zc:__cplusplus /bigobj -w14062 /Gw /EHs-c-</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ConformanceMode>true</ConformanceMode>
+      <DisableSpecificWarnings>4141;4146;4244;4267;4291;4351;4456;4457;4458;4459;4503;4624;4722;4100;4127;4512;4505;4610;4510;4702;4245;4706;4310;4701;4703;4389;4611;4805;4204;4577;4091;4592;4319;4709;4324</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData>true</RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4238</TreatSpecificWarningsAsErrors>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;UNICODE;_UNICODE;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;UNICODE;_UNICODE;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\a\llvm-project-fork\llvm-project-fork\build\utils\TableGen;D:\a\llvm-project-fork\llvm-project-fork\llvm\utils\TableGen;D:\a\llvm-project-fork\llvm-project-fork\build\include;D:\a\llvm-project-fork\llvm-project-fork\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;UNICODE;_UNICODE;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <IncludePaths>D:\a\llvm-project-fork\llvm-project-fork\build\utils\TableGen;D:\a\llvm-project-fork\llvm-project-fork\llvm\utils\TableGen;D:\a\llvm-project-fork\llvm-project-fork\build\include;D:\a\llvm-project-fork\llvm-project-fork\llvm\include;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\a\llvm-project-fork\llvm-project-fork\build\utils\TableGen;D:\a\llvm-project-fork\llvm-project-fork\llvm\utils\TableGen;D:\a\llvm-project-fork\llvm-project-fork\build\include;D:\a\llvm-project-fork\llvm-project-fork\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\a\llvm-project-fork\llvm-project-fork\build\utils\TableGen;D:\a\llvm-project-fork\llvm-project-fork\llvm\utils\TableGen;D:\a\llvm-project-fork\llvm-project-fork\build\include;D:\a\llvm-project-fork\llvm-project-fork\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zc:__cplusplus /bigobj -w14062 /Gw /EHs-c-</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ConformanceMode>true</ConformanceMode>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4141;4146;4244;4267;4291;4351;4456;4457;4458;4459;4503;4624;4722;4100;4127;4512;4505;4610;4510;4702;4245;4706;4310;4701;4703;4389;4611;4805;4204;4577;4091;4592;4319;4709;4324</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData>true</RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4238</TreatSpecificWarningsAsErrors>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;UNICODE;_UNICODE;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;UNICODE;_UNICODE;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\a\llvm-project-fork\llvm-project-fork\build\utils\TableGen;D:\a\llvm-project-fork\llvm-project-fork\llvm\utils\TableGen;D:\a\llvm-project-fork\llvm-project-fork\build\include;D:\a\llvm-project-fork\llvm-project-fork\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;UNICODE;_UNICODE;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <IncludePaths>D:\a\llvm-project-fork\llvm-project-fork\build\utils\TableGen;D:\a\llvm-project-fork\llvm-project-fork\llvm\utils\TableGen;D:\a\llvm-project-fork\llvm-project-fork\build\include;D:\a\llvm-project-fork\llvm-project-fork\llvm\include;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\a\llvm-project-fork\llvm-project-fork\build\utils\TableGen;D:\a\llvm-project-fork\llvm-project-fork\llvm\utils\TableGen;D:\a\llvm-project-fork\llvm-project-fork\build\include;D:\a\llvm-project-fork\llvm-project-fork\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\utils\TableGen\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/a/llvm-project-fork/llvm-project-fork/llvm/utils/TableGen/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/a/llvm-project-fork/llvm-project-fork/llvm -BD:/a/llvm-project-fork/llvm-project-fork/build --check-stamp-file D:/a/llvm-project-fork/llvm-project-fork/build/utils/TableGen/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\a\llvm-project-fork\llvm-project-fork\build\utils\TableGen\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/a/llvm-project-fork/llvm-project-fork/llvm/utils/TableGen/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/a/llvm-project-fork/llvm-project-fork/llvm -BD:/a/llvm-project-fork/llvm-project-fork/build --check-stamp-file D:/a/llvm-project-fork/llvm-project-fork/build/utils/TableGen/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\a\llvm-project-fork\llvm-project-fork\build\utils\TableGen\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/a/llvm-project-fork/llvm-project-fork/llvm/utils/TableGen/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/a/llvm-project-fork/llvm-project-fork/llvm -BD:/a/llvm-project-fork/llvm-project-fork/build --check-stamp-file D:/a/llvm-project-fork/llvm-project-fork/build/utils/TableGen/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\a\llvm-project-fork\llvm-project-fork\build\utils\TableGen\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/a/llvm-project-fork/llvm-project-fork/llvm/utils/TableGen/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/a/llvm-project-fork/llvm-project-fork/llvm -BD:/a/llvm-project-fork/llvm-project-fork/build --check-stamp-file D:/a/llvm-project-fork/llvm-project-fork/build/utils/TableGen/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\a\llvm-project-fork\llvm-project-fork\build\utils\TableGen\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\utils\TableGen\AsmMatcherEmitter.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\utils\TableGen\AsmWriterEmitter.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\utils\TableGen\AsmWriterInst.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\utils\TableGen\Attributes.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\utils\TableGen\CallingConvEmitter.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\utils\TableGen\CodeEmitterGen.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\utils\TableGen\CodeGenDAGPatterns.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\utils\TableGen\CodeGenHwModes.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\utils\TableGen\CodeGenInstruction.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\utils\TableGen\CodeGenMapTable.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\utils\TableGen\CodeGenRegisters.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\utils\TableGen\CodeGenSchedule.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\utils\TableGen\CodeGenTarget.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\utils\TableGen\DAGISelEmitter.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\utils\TableGen\DAGISelMatcherEmitter.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\utils\TableGen\DAGISelMatcherGen.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\utils\TableGen\DAGISelMatcherOpt.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\utils\TableGen\DAGISelMatcher.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\utils\TableGen\DecoderEmitter.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\utils\TableGen\DFAEmitter.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\utils\TableGen\DFAPacketizerEmitter.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\utils\TableGen\DirectiveEmitter.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\utils\TableGen\DisassemblerEmitter.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\utils\TableGen\DXILEmitter.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\utils\TableGen\ExegesisEmitter.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\utils\TableGen\FastISelEmitter.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\utils\TableGen\GICombinerEmitter.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\utils\TableGen\GlobalISelEmitter.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\utils\TableGen\InfoByHwMode.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\utils\TableGen\InstrInfoEmitter.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\utils\TableGen\InstrDocsEmitter.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\utils\TableGen\IntrinsicEmitter.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\utils\TableGen\OptEmitter.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\utils\TableGen\OptParserEmitter.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\utils\TableGen\OptRSTEmitter.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\utils\TableGen\PredicateExpander.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\utils\TableGen\PseudoLoweringEmitter.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\utils\TableGen\CompressInstEmitter.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\utils\TableGen\RegisterBankEmitter.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\utils\TableGen\RegisterInfoEmitter.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\utils\TableGen\SDNodeProperties.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\utils\TableGen\SearchableTableEmitter.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\utils\TableGen\SubtargetEmitter.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\utils\TableGen\SubtargetFeatureInfo.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\utils\TableGen\TableGen.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\utils\TableGen\Types.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\utils\TableGen\VarLenCodeEmitterGen.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\utils\TableGen\X86DisassemblerTables.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\utils\TableGen\X86EVEX2VEXTablesEmitter.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\utils\TableGen\X86FoldTablesEmitter.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\utils\TableGen\X86MnemonicTables.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\utils\TableGen\X86ModRMFilters.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\utils\TableGen\X86RecognizableInstr.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\utils\TableGen\WebAssemblyDisassemblerEmitter.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\utils\TableGen\CTagsEmitter.cpp" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\utils\TableGen\AsmWriterInst.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\utils\TableGen\CodeGenDAGPatterns.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\utils\TableGen\CodeGenHwModes.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\utils\TableGen\CodeGenInstruction.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\utils\TableGen\CodeGenIntrinsics.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\utils\TableGen\CodeGenRegisters.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\utils\TableGen\CodeGenSchedule.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\utils\TableGen\CodeGenTarget.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\utils\TableGen\DAGISelMatcher.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\utils\TableGen\DFAEmitter.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\utils\TableGen\InfoByHwMode.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\utils\TableGen\OptEmitter.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\utils\TableGen\PredicateExpander.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\utils\TableGen\SDNodeProperties.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\utils\TableGen\SequenceToOffsetTable.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\utils\TableGen\SubtargetFeatureInfo.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\utils\TableGen\TableGenBackends.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\utils\TableGen\Types.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\utils\TableGen\VarLenCodeEmitterGen.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\utils\TableGen\WebAssemblyDisassemblerEmitter.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\utils\TableGen\X86DisassemblerShared.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\utils\TableGen\X86DisassemblerTables.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\utils\TableGen\X86ModRMFilters.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\utils\TableGen\X86RecognizableInstr.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\ZERO_CHECK.vcxproj">
+      <Project>{E892C37D-02CF-31E9-ADFA-230AE8523DFD}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+</Project>

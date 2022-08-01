@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\aca3deea88ce0628929ba917bb29dd84\InstallNameToolOpts.inc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\68097dcfdddf8653291c4410ccae73cf\InstallNameToolOptsTableGen.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\tools\llvm-objcopy\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\a\llvm-project-fork\llvm-project-fork\build\tools\llvm-objcopy\CMakeFiles\InstallNameToolOptsTableGen" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{498556B6-3B35-3E96-A447-5705E9ADDBFF}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

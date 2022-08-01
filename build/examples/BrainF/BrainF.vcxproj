@@ -1,0 +1,555 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{DF1B2535-CE84-3C51-8A41-3A68E050160A}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.20348.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>BrainF</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\a\llvm-project-fork\llvm-project-fork\build\Debug\bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">BrainF.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">BrainF</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\a\llvm-project-fork\llvm-project-fork\build\Release\bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">BrainF.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">BrainF</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\a\llvm-project-fork\llvm-project-fork\build\MinSizeRel\bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">BrainF.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">BrainF</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\a\llvm-project-fork\llvm-project-fork\build\RelWithDebInfo\bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">BrainF.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">BrainF</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\a\llvm-project-fork\llvm-project-fork\build\examples\BrainF;D:\a\llvm-project-fork\llvm-project-fork\llvm\examples\BrainF;D:\a\llvm-project-fork\llvm-project-fork\build\include;D:\a\llvm-project-fork\llvm-project-fork\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zc:__cplusplus /bigobj -w14062 /Gw /EHs-c-</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <ConformanceMode>true</ConformanceMode>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4141;4146;4244;4267;4291;4351;4456;4457;4458;4459;4503;4624;4722;4100;4127;4512;4505;4610;4510;4702;4245;4706;4310;4701;4703;4389;4611;4805;4204;4577;4091;4592;4319;4709;4324</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData>true</RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4238</TreatSpecificWarningsAsErrors>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;UNICODE;_UNICODE;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;UNICODE;_UNICODE;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\a\llvm-project-fork\llvm-project-fork\build\examples\BrainF;D:\a\llvm-project-fork\llvm-project-fork\llvm\examples\BrainF;D:\a\llvm-project-fork\llvm-project-fork\build\include;D:\a\llvm-project-fork\llvm-project-fork\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;UNICODE;_UNICODE;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <IncludePaths>D:\a\llvm-project-fork\llvm-project-fork\build\examples\BrainF;D:\a\llvm-project-fork\llvm-project-fork\llvm\examples\BrainF;D:\a\llvm-project-fork\llvm-project-fork\build\include;D:\a\llvm-project-fork\llvm-project-fork\llvm\include;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\a\llvm-project-fork\llvm-project-fork\build\examples\BrainF;D:\a\llvm-project-fork\llvm-project-fork\llvm\examples\BrainF;D:\a\llvm-project-fork\llvm-project-fork\build\include;D:\a\llvm-project-fork\llvm-project-fork\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\Debug\lib\LLVMBitWriter.lib;..\..\Debug\lib\LLVMCore.lib;..\..\Debug\lib\LLVMExecutionEngine.lib;..\..\Debug\lib\LLVMMC.lib;..\..\Debug\lib\LLVMMCJIT.lib;..\..\Debug\lib\LLVMSupport.lib;..\..\Debug\lib\LLVMX86CodeGen.lib;..\..\Debug\lib\LLVMX86Desc.lib;..\..\Debug\lib\LLVMX86Info.lib;..\..\Debug\lib\LLVMExecutionEngine.lib;..\..\Debug\lib\LLVMOrcTargetProcess.lib;..\..\Debug\lib\LLVMOrcShared.lib;..\..\Debug\lib\LLVMRuntimeDyld.lib;..\..\Debug\lib\LLVMMCDisassembler.lib;..\..\Debug\lib\LLVMAsmPrinter.lib;..\..\Debug\lib\LLVMInstrumentation.lib;..\..\Debug\lib\LLVMGlobalISel.lib;..\..\Debug\lib\LLVMSelectionDAG.lib;..\..\Debug\lib\LLVMCodeGen.lib;..\..\Debug\lib\LLVMBitWriter.lib;..\..\Debug\lib\LLVMTarget.lib;..\..\Debug\lib\LLVMScalarOpts.lib;..\..\Debug\lib\LLVMAggressiveInstCombine.lib;..\..\Debug\lib\LLVMInstCombine.lib;..\..\Debug\lib\LLVMTransformUtils.lib;..\..\Debug\lib\LLVMAnalysis.lib;..\..\Debug\lib\LLVMProfileData.lib;..\..\Debug\lib\LLVMSymbolize.lib;..\..\Debug\lib\LLVMDebugInfoDWARF.lib;..\..\Debug\lib\LLVMDebugInfoPDB.lib;..\..\Debug\lib\LLVMObject.lib;..\..\Debug\lib\LLVMBitReader.lib;..\..\Debug\lib\LLVMMCParser.lib;..\..\Debug\lib\LLVMMC.lib;..\..\Debug\lib\LLVMTextAPI.lib;..\..\Debug\lib\LLVMDebugInfoCodeView.lib;..\..\Debug\lib\LLVMDebugInfoMSF.lib;..\..\Debug\lib\LLVMCFGuard.lib;..\..\Debug\lib\LLVMCore.lib;..\..\Debug\lib\LLVMBinaryFormat.lib;..\..\Debug\lib\LLVMRemarks.lib;..\..\Debug\lib\LLVMBitstreamReader.lib;..\..\Debug\lib\LLVMSupport.lib;psapi.lib;shell32.lib;ole32.lib;uuid.lib;advapi32.lib;delayimp.lib;-delayload:shell32.dll;-delayload:ole32.dll;..\..\Debug\lib\LLVMDemangle.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/a/llvm-project-fork/llvm-project-fork/build/Debug/lib/BrainF.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/a/llvm-project-fork/llvm-project-fork/build/Debug/bin/BrainF.pdb</ProgramDataBaseFile>
+      <StackReserveSize>10000000</StackReserveSize>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\a\llvm-project-fork\llvm-project-fork\build\examples\BrainF;D:\a\llvm-project-fork\llvm-project-fork\llvm\examples\BrainF;D:\a\llvm-project-fork\llvm-project-fork\build\include;D:\a\llvm-project-fork\llvm-project-fork\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zc:__cplusplus /bigobj -w14062 /Gw /EHs-c-</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ConformanceMode>true</ConformanceMode>
+      <DisableSpecificWarnings>4141;4146;4244;4267;4291;4351;4456;4457;4458;4459;4503;4624;4722;4100;4127;4512;4505;4610;4510;4702;4245;4706;4310;4701;4703;4389;4611;4805;4204;4577;4091;4592;4319;4709;4324</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData>true</RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4238</TreatSpecificWarningsAsErrors>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;UNICODE;_UNICODE;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;UNICODE;_UNICODE;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\a\llvm-project-fork\llvm-project-fork\build\examples\BrainF;D:\a\llvm-project-fork\llvm-project-fork\llvm\examples\BrainF;D:\a\llvm-project-fork\llvm-project-fork\build\include;D:\a\llvm-project-fork\llvm-project-fork\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;UNICODE;_UNICODE;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <IncludePaths>D:\a\llvm-project-fork\llvm-project-fork\build\examples\BrainF;D:\a\llvm-project-fork\llvm-project-fork\llvm\examples\BrainF;D:\a\llvm-project-fork\llvm-project-fork\build\include;D:\a\llvm-project-fork\llvm-project-fork\llvm\include;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\a\llvm-project-fork\llvm-project-fork\build\examples\BrainF;D:\a\llvm-project-fork\llvm-project-fork\llvm\examples\BrainF;D:\a\llvm-project-fork\llvm-project-fork\build\include;D:\a\llvm-project-fork\llvm-project-fork\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\Release\lib\LLVMBitWriter.lib;..\..\Release\lib\LLVMCore.lib;..\..\Release\lib\LLVMExecutionEngine.lib;..\..\Release\lib\LLVMMC.lib;..\..\Release\lib\LLVMMCJIT.lib;..\..\Release\lib\LLVMSupport.lib;..\..\Release\lib\LLVMX86CodeGen.lib;..\..\Release\lib\LLVMX86Desc.lib;..\..\Release\lib\LLVMX86Info.lib;..\..\Release\lib\LLVMExecutionEngine.lib;..\..\Release\lib\LLVMOrcTargetProcess.lib;..\..\Release\lib\LLVMOrcShared.lib;..\..\Release\lib\LLVMRuntimeDyld.lib;..\..\Release\lib\LLVMMCDisassembler.lib;..\..\Release\lib\LLVMAsmPrinter.lib;..\..\Release\lib\LLVMInstrumentation.lib;..\..\Release\lib\LLVMGlobalISel.lib;..\..\Release\lib\LLVMSelectionDAG.lib;..\..\Release\lib\LLVMCodeGen.lib;..\..\Release\lib\LLVMBitWriter.lib;..\..\Release\lib\LLVMTarget.lib;..\..\Release\lib\LLVMScalarOpts.lib;..\..\Release\lib\LLVMAggressiveInstCombine.lib;..\..\Release\lib\LLVMInstCombine.lib;..\..\Release\lib\LLVMTransformUtils.lib;..\..\Release\lib\LLVMAnalysis.lib;..\..\Release\lib\LLVMProfileData.lib;..\..\Release\lib\LLVMSymbolize.lib;..\..\Release\lib\LLVMDebugInfoDWARF.lib;..\..\Release\lib\LLVMDebugInfoPDB.lib;..\..\Release\lib\LLVMObject.lib;..\..\Release\lib\LLVMBitReader.lib;..\..\Release\lib\LLVMMCParser.lib;..\..\Release\lib\LLVMMC.lib;..\..\Release\lib\LLVMTextAPI.lib;..\..\Release\lib\LLVMDebugInfoCodeView.lib;..\..\Release\lib\LLVMDebugInfoMSF.lib;..\..\Release\lib\LLVMCFGuard.lib;..\..\Release\lib\LLVMCore.lib;..\..\Release\lib\LLVMBinaryFormat.lib;..\..\Release\lib\LLVMRemarks.lib;..\..\Release\lib\LLVMBitstreamReader.lib;..\..\Release\lib\LLVMSupport.lib;psapi.lib;shell32.lib;ole32.lib;uuid.lib;advapi32.lib;delayimp.lib;-delayload:shell32.dll;-delayload:ole32.dll;..\..\Release\lib\LLVMDemangle.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/a/llvm-project-fork/llvm-project-fork/build/Release/lib/BrainF.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/a/llvm-project-fork/llvm-project-fork/build/Release/bin/BrainF.pdb</ProgramDataBaseFile>
+      <StackReserveSize>10000000</StackReserveSize>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\a\llvm-project-fork\llvm-project-fork\build\examples\BrainF;D:\a\llvm-project-fork\llvm-project-fork\llvm\examples\BrainF;D:\a\llvm-project-fork\llvm-project-fork\build\include;D:\a\llvm-project-fork\llvm-project-fork\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zc:__cplusplus /bigobj -w14062 /Gw /EHs-c-</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ConformanceMode>true</ConformanceMode>
+      <DisableSpecificWarnings>4141;4146;4244;4267;4291;4351;4456;4457;4458;4459;4503;4624;4722;4100;4127;4512;4505;4610;4510;4702;4245;4706;4310;4701;4703;4389;4611;4805;4204;4577;4091;4592;4319;4709;4324</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData>true</RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4238</TreatSpecificWarningsAsErrors>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;UNICODE;_UNICODE;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;UNICODE;_UNICODE;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\a\llvm-project-fork\llvm-project-fork\build\examples\BrainF;D:\a\llvm-project-fork\llvm-project-fork\llvm\examples\BrainF;D:\a\llvm-project-fork\llvm-project-fork\build\include;D:\a\llvm-project-fork\llvm-project-fork\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;UNICODE;_UNICODE;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <IncludePaths>D:\a\llvm-project-fork\llvm-project-fork\build\examples\BrainF;D:\a\llvm-project-fork\llvm-project-fork\llvm\examples\BrainF;D:\a\llvm-project-fork\llvm-project-fork\build\include;D:\a\llvm-project-fork\llvm-project-fork\llvm\include;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\a\llvm-project-fork\llvm-project-fork\build\examples\BrainF;D:\a\llvm-project-fork\llvm-project-fork\llvm\examples\BrainF;D:\a\llvm-project-fork\llvm-project-fork\build\include;D:\a\llvm-project-fork\llvm-project-fork\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\MinSizeRel\lib\LLVMBitWriter.lib;..\..\MinSizeRel\lib\LLVMCore.lib;..\..\MinSizeRel\lib\LLVMExecutionEngine.lib;..\..\MinSizeRel\lib\LLVMMC.lib;..\..\MinSizeRel\lib\LLVMMCJIT.lib;..\..\MinSizeRel\lib\LLVMSupport.lib;..\..\MinSizeRel\lib\LLVMX86CodeGen.lib;..\..\MinSizeRel\lib\LLVMX86Desc.lib;..\..\MinSizeRel\lib\LLVMX86Info.lib;..\..\MinSizeRel\lib\LLVMExecutionEngine.lib;..\..\MinSizeRel\lib\LLVMOrcTargetProcess.lib;..\..\MinSizeRel\lib\LLVMOrcShared.lib;..\..\MinSizeRel\lib\LLVMRuntimeDyld.lib;..\..\MinSizeRel\lib\LLVMMCDisassembler.lib;..\..\MinSizeRel\lib\LLVMAsmPrinter.lib;..\..\MinSizeRel\lib\LLVMInstrumentation.lib;..\..\MinSizeRel\lib\LLVMGlobalISel.lib;..\..\MinSizeRel\lib\LLVMSelectionDAG.lib;..\..\MinSizeRel\lib\LLVMCodeGen.lib;..\..\MinSizeRel\lib\LLVMBitWriter.lib;..\..\MinSizeRel\lib\LLVMTarget.lib;..\..\MinSizeRel\lib\LLVMScalarOpts.lib;..\..\MinSizeRel\lib\LLVMAggressiveInstCombine.lib;..\..\MinSizeRel\lib\LLVMInstCombine.lib;..\..\MinSizeRel\lib\LLVMTransformUtils.lib;..\..\MinSizeRel\lib\LLVMAnalysis.lib;..\..\MinSizeRel\lib\LLVMProfileData.lib;..\..\MinSizeRel\lib\LLVMSymbolize.lib;..\..\MinSizeRel\lib\LLVMDebugInfoDWARF.lib;..\..\MinSizeRel\lib\LLVMDebugInfoPDB.lib;..\..\MinSizeRel\lib\LLVMObject.lib;..\..\MinSizeRel\lib\LLVMBitReader.lib;..\..\MinSizeRel\lib\LLVMMCParser.lib;..\..\MinSizeRel\lib\LLVMMC.lib;..\..\MinSizeRel\lib\LLVMTextAPI.lib;..\..\MinSizeRel\lib\LLVMDebugInfoCodeView.lib;..\..\MinSizeRel\lib\LLVMDebugInfoMSF.lib;..\..\MinSizeRel\lib\LLVMCFGuard.lib;..\..\MinSizeRel\lib\LLVMCore.lib;..\..\MinSizeRel\lib\LLVMBinaryFormat.lib;..\..\MinSizeRel\lib\LLVMRemarks.lib;..\..\MinSizeRel\lib\LLVMBitstreamReader.lib;..\..\MinSizeRel\lib\LLVMSupport.lib;psapi.lib;shell32.lib;ole32.lib;uuid.lib;advapi32.lib;delayimp.lib;-delayload:shell32.dll;-delayload:ole32.dll;..\..\MinSizeRel\lib\LLVMDemangle.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/a/llvm-project-fork/llvm-project-fork/build/MinSizeRel/lib/BrainF.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/a/llvm-project-fork/llvm-project-fork/build/MinSizeRel/bin/BrainF.pdb</ProgramDataBaseFile>
+      <StackReserveSize>10000000</StackReserveSize>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\a\llvm-project-fork\llvm-project-fork\build\examples\BrainF;D:\a\llvm-project-fork\llvm-project-fork\llvm\examples\BrainF;D:\a\llvm-project-fork\llvm-project-fork\build\include;D:\a\llvm-project-fork\llvm-project-fork\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zc:__cplusplus /bigobj -w14062 /Gw /EHs-c-</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ConformanceMode>true</ConformanceMode>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4141;4146;4244;4267;4291;4351;4456;4457;4458;4459;4503;4624;4722;4100;4127;4512;4505;4610;4510;4702;4245;4706;4310;4701;4703;4389;4611;4805;4204;4577;4091;4592;4319;4709;4324</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData>true</RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4238</TreatSpecificWarningsAsErrors>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;UNICODE;_UNICODE;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;UNICODE;_UNICODE;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\a\llvm-project-fork\llvm-project-fork\build\examples\BrainF;D:\a\llvm-project-fork\llvm-project-fork\llvm\examples\BrainF;D:\a\llvm-project-fork\llvm-project-fork\build\include;D:\a\llvm-project-fork\llvm-project-fork\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;UNICODE;_UNICODE;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <IncludePaths>D:\a\llvm-project-fork\llvm-project-fork\build\examples\BrainF;D:\a\llvm-project-fork\llvm-project-fork\llvm\examples\BrainF;D:\a\llvm-project-fork\llvm-project-fork\build\include;D:\a\llvm-project-fork\llvm-project-fork\llvm\include;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\a\llvm-project-fork\llvm-project-fork\build\examples\BrainF;D:\a\llvm-project-fork\llvm-project-fork\llvm\examples\BrainF;D:\a\llvm-project-fork\llvm-project-fork\build\include;D:\a\llvm-project-fork\llvm-project-fork\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\RelWithDebInfo\lib\LLVMBitWriter.lib;..\..\RelWithDebInfo\lib\LLVMCore.lib;..\..\RelWithDebInfo\lib\LLVMExecutionEngine.lib;..\..\RelWithDebInfo\lib\LLVMMC.lib;..\..\RelWithDebInfo\lib\LLVMMCJIT.lib;..\..\RelWithDebInfo\lib\LLVMSupport.lib;..\..\RelWithDebInfo\lib\LLVMX86CodeGen.lib;..\..\RelWithDebInfo\lib\LLVMX86Desc.lib;..\..\RelWithDebInfo\lib\LLVMX86Info.lib;..\..\RelWithDebInfo\lib\LLVMExecutionEngine.lib;..\..\RelWithDebInfo\lib\LLVMOrcTargetProcess.lib;..\..\RelWithDebInfo\lib\LLVMOrcShared.lib;..\..\RelWithDebInfo\lib\LLVMRuntimeDyld.lib;..\..\RelWithDebInfo\lib\LLVMMCDisassembler.lib;..\..\RelWithDebInfo\lib\LLVMAsmPrinter.lib;..\..\RelWithDebInfo\lib\LLVMInstrumentation.lib;..\..\RelWithDebInfo\lib\LLVMGlobalISel.lib;..\..\RelWithDebInfo\lib\LLVMSelectionDAG.lib;..\..\RelWithDebInfo\lib\LLVMCodeGen.lib;..\..\RelWithDebInfo\lib\LLVMBitWriter.lib;..\..\RelWithDebInfo\lib\LLVMTarget.lib;..\..\RelWithDebInfo\lib\LLVMScalarOpts.lib;..\..\RelWithDebInfo\lib\LLVMAggressiveInstCombine.lib;..\..\RelWithDebInfo\lib\LLVMInstCombine.lib;..\..\RelWithDebInfo\lib\LLVMTransformUtils.lib;..\..\RelWithDebInfo\lib\LLVMAnalysis.lib;..\..\RelWithDebInfo\lib\LLVMProfileData.lib;..\..\RelWithDebInfo\lib\LLVMSymbolize.lib;..\..\RelWithDebInfo\lib\LLVMDebugInfoDWARF.lib;..\..\RelWithDebInfo\lib\LLVMDebugInfoPDB.lib;..\..\RelWithDebInfo\lib\LLVMObject.lib;..\..\RelWithDebInfo\lib\LLVMBitReader.lib;..\..\RelWithDebInfo\lib\LLVMMCParser.lib;..\..\RelWithDebInfo\lib\LLVMMC.lib;..\..\RelWithDebInfo\lib\LLVMTextAPI.lib;..\..\RelWithDebInfo\lib\LLVMDebugInfoCodeView.lib;..\..\RelWithDebInfo\lib\LLVMDebugInfoMSF.lib;..\..\RelWithDebInfo\lib\LLVMCFGuard.lib;..\..\RelWithDebInfo\lib\LLVMCore.lib;..\..\RelWithDebInfo\lib\LLVMBinaryFormat.lib;..\..\RelWithDebInfo\lib\LLVMRemarks.lib;..\..\RelWithDebInfo\lib\LLVMBitstreamReader.lib;..\..\RelWithDebInfo\lib\LLVMSupport.lib;psapi.lib;shell32.lib;ole32.lib;uuid.lib;advapi32.lib;delayimp.lib;-delayload:shell32.dll;-delayload:ole32.dll;..\..\RelWithDebInfo\lib\LLVMDemangle.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/a/llvm-project-fork/llvm-project-fork/build/RelWithDebInfo/lib/BrainF.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/a/llvm-project-fork/llvm-project-fork/build/RelWithDebInfo/bin/BrainF.pdb</ProgramDataBaseFile>
+      <StackReserveSize>10000000</StackReserveSize>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\examples\BrainF\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/a/llvm-project-fork/llvm-project-fork/llvm/examples/BrainF/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/a/llvm-project-fork/llvm-project-fork/llvm -BD:/a/llvm-project-fork/llvm-project-fork/build --check-stamp-file D:/a/llvm-project-fork/llvm-project-fork/build/examples/BrainF/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\a\llvm-project-fork\llvm-project-fork\build\examples\BrainF\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/a/llvm-project-fork/llvm-project-fork/llvm/examples/BrainF/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/a/llvm-project-fork/llvm-project-fork/llvm -BD:/a/llvm-project-fork/llvm-project-fork/build --check-stamp-file D:/a/llvm-project-fork/llvm-project-fork/build/examples/BrainF/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\a\llvm-project-fork\llvm-project-fork\build\examples\BrainF\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/a/llvm-project-fork/llvm-project-fork/llvm/examples/BrainF/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/a/llvm-project-fork/llvm-project-fork/llvm -BD:/a/llvm-project-fork/llvm-project-fork/build --check-stamp-file D:/a/llvm-project-fork/llvm-project-fork/build/examples/BrainF/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\a\llvm-project-fork\llvm-project-fork\build\examples\BrainF\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/a/llvm-project-fork/llvm-project-fork/llvm/examples/BrainF/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/a/llvm-project-fork/llvm-project-fork/llvm -BD:/a/llvm-project-fork/llvm-project-fork/build --check-stamp-file D:/a/llvm-project-fork/llvm-project-fork/build/examples/BrainF/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\a\llvm-project-fork\llvm-project-fork\build\examples\BrainF\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\examples\BrainF\BrainF.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\examples\BrainF\BrainFDriver.cpp" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\examples\BrainF\BrainF.h" />
+    <ResourceCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\resources\windows_version_resource.rc">
+      <SuppressStartupBanner Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</SuppressStartupBanner>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(PreprocessorDefinitions);RC_VERSION_FIELD_1=15;RC_VERSION_FIELD_2=0;RC_VERSION_FIELD_3=0;RC_VERSION_FIELD_4=0;RC_FILE_VERSION=\"15.0.0\";RC_INTERNAL_NAME=\"BrainF\";RC_PRODUCT_NAME=\"LLVM\";RC_PRODUCT_VERSION=\"15.0.0\"</PreprocessorDefinitions>
+      <SuppressStartupBanner Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</SuppressStartupBanner>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(PreprocessorDefinitions);RC_VERSION_FIELD_1=15;RC_VERSION_FIELD_2=0;RC_VERSION_FIELD_3=0;RC_VERSION_FIELD_4=0;RC_FILE_VERSION=\"15.0.0\";RC_INTERNAL_NAME=\"BrainF\";RC_PRODUCT_NAME=\"LLVM\";RC_PRODUCT_VERSION=\"15.0.0\"</PreprocessorDefinitions>
+      <SuppressStartupBanner Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</SuppressStartupBanner>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(PreprocessorDefinitions);RC_VERSION_FIELD_1=15;RC_VERSION_FIELD_2=0;RC_VERSION_FIELD_3=0;RC_VERSION_FIELD_4=0;RC_FILE_VERSION=\"15.0.0\";RC_INTERNAL_NAME=\"BrainF\";RC_PRODUCT_NAME=\"LLVM\";RC_PRODUCT_VERSION=\"15.0.0\"</PreprocessorDefinitions>
+      <SuppressStartupBanner Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</SuppressStartupBanner>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(PreprocessorDefinitions);RC_VERSION_FIELD_1=15;RC_VERSION_FIELD_2=0;RC_VERSION_FIELD_3=0;RC_VERSION_FIELD_4=0;RC_FILE_VERSION=\"15.0.0\";RC_INTERNAL_NAME=\"BrainF\";RC_PRODUCT_NAME=\"LLVM\";RC_PRODUCT_VERSION=\"15.0.0\"</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\ZERO_CHECK.vcxproj">
+      <Project>{E892C37D-02CF-31E9-ADFA-230AE8523DFD}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Transforms\AggressiveInstCombine\LLVMAggressiveInstCombine.vcxproj">
+      <Project>{DFBB19BB-9D2D-39CA-A40C-DAF395377542}</Project>
+      <Name>LLVMAggressiveInstCombine</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Analysis\LLVMAnalysis.vcxproj">
+      <Project>{494029AE-5CE8-3736-A49F-0DE0740B8A48}</Project>
+      <Name>LLVMAnalysis</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\CodeGen\AsmPrinter\LLVMAsmPrinter.vcxproj">
+      <Project>{F4D90223-71FB-3E61-A923-AD166E9EBB14}</Project>
+      <Name>LLVMAsmPrinter</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\BinaryFormat\LLVMBinaryFormat.vcxproj">
+      <Project>{B85FF5B2-F0D4-37F0-975E-83180EDD017F}</Project>
+      <Name>LLVMBinaryFormat</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Bitcode\Reader\LLVMBitReader.vcxproj">
+      <Project>{B4F75D0B-621C-369D-B174-BFA4ED1C8996}</Project>
+      <Name>LLVMBitReader</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Bitcode\Writer\LLVMBitWriter.vcxproj">
+      <Project>{38952E82-CCF0-3D7F-9104-7E0FA26E4182}</Project>
+      <Name>LLVMBitWriter</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Bitstream\Reader\LLVMBitstreamReader.vcxproj">
+      <Project>{B247824D-F3D0-37A3-875D-60E7F7D9A432}</Project>
+      <Name>LLVMBitstreamReader</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Transforms\CFGuard\LLVMCFGuard.vcxproj">
+      <Project>{6F2B5A91-2105-3AEF-8894-854346B9FF9D}</Project>
+      <Name>LLVMCFGuard</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\CodeGen\LLVMCodeGen.vcxproj">
+      <Project>{CC203B2D-CB66-315F-AE59-9485ED113CF1}</Project>
+      <Name>LLVMCodeGen</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\IR\LLVMCore.vcxproj">
+      <Project>{E96227D6-E691-3FCA-A8B3-DC21D56D95E4}</Project>
+      <Name>LLVMCore</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\DebugInfo\CodeView\LLVMDebugInfoCodeView.vcxproj">
+      <Project>{B867A154-A005-3D85-94DC-D12ADF03EE67}</Project>
+      <Name>LLVMDebugInfoCodeView</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\DebugInfo\DWARF\LLVMDebugInfoDWARF.vcxproj">
+      <Project>{ACE09027-BFC2-39A9-B06D-B2F85210A6E2}</Project>
+      <Name>LLVMDebugInfoDWARF</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\DebugInfo\MSF\LLVMDebugInfoMSF.vcxproj">
+      <Project>{673C9F99-9ACA-3636-8435-8944F1915B4B}</Project>
+      <Name>LLVMDebugInfoMSF</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\DebugInfo\PDB\LLVMDebugInfoPDB.vcxproj">
+      <Project>{B6C2C02E-C153-3D3F-8D56-90D39A380F79}</Project>
+      <Name>LLVMDebugInfoPDB</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Demangle\LLVMDemangle.vcxproj">
+      <Project>{DEC59672-01BA-3E08-AABD-2E41417F2FD3}</Project>
+      <Name>LLVMDemangle</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\ExecutionEngine\LLVMExecutionEngine.vcxproj">
+      <Project>{421CA767-8064-3822-883E-449441865DF8}</Project>
+      <Name>LLVMExecutionEngine</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\CodeGen\GlobalISel\LLVMGlobalISel.vcxproj">
+      <Project>{C5B8C0F9-1129-31D9-AF1D-AD12F5729428}</Project>
+      <Name>LLVMGlobalISel</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Transforms\InstCombine\LLVMInstCombine.vcxproj">
+      <Project>{BF0B7357-D3C6-397E-B0A0-9C1288735348}</Project>
+      <Name>LLVMInstCombine</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Transforms\Instrumentation\LLVMInstrumentation.vcxproj">
+      <Project>{060F0621-80CD-3E7A-BE35-C374353A581A}</Project>
+      <Name>LLVMInstrumentation</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\MC\LLVMMC.vcxproj">
+      <Project>{D7769DE5-3EDB-3672-8C44-312B8A048605}</Project>
+      <Name>LLVMMC</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\MC\MCDisassembler\LLVMMCDisassembler.vcxproj">
+      <Project>{CDC6A0F3-AA9F-34B9-8CD0-73557A106917}</Project>
+      <Name>LLVMMCDisassembler</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\ExecutionEngine\MCJIT\LLVMMCJIT.vcxproj">
+      <Project>{0C2C8938-6F49-3D79-8254-893CC6CAC1DC}</Project>
+      <Name>LLVMMCJIT</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\MC\MCParser\LLVMMCParser.vcxproj">
+      <Project>{56F142F9-743C-3204-A86B-5F5A5A5D1A43}</Project>
+      <Name>LLVMMCParser</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Object\LLVMObject.vcxproj">
+      <Project>{FB44E263-3AD7-38C3-8AA1-5F0806E2A5C0}</Project>
+      <Name>LLVMObject</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\ExecutionEngine\Orc\Shared\LLVMOrcShared.vcxproj">
+      <Project>{D18F6585-929E-3517-A47A-A1D2E08077D0}</Project>
+      <Name>LLVMOrcShared</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\ExecutionEngine\Orc\TargetProcess\LLVMOrcTargetProcess.vcxproj">
+      <Project>{DFF8AB70-A1E1-3994-8994-183929D90031}</Project>
+      <Name>LLVMOrcTargetProcess</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\ProfileData\LLVMProfileData.vcxproj">
+      <Project>{842CCC2D-D880-3D87-942D-69E8BAA420B4}</Project>
+      <Name>LLVMProfileData</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Remarks\LLVMRemarks.vcxproj">
+      <Project>{C817A625-19F6-31F1-836B-C7D8CCF382C9}</Project>
+      <Name>LLVMRemarks</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\ExecutionEngine\RuntimeDyld\LLVMRuntimeDyld.vcxproj">
+      <Project>{15D9D38D-DA50-3732-855E-354B9BF9421B}</Project>
+      <Name>LLVMRuntimeDyld</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Transforms\Scalar\LLVMScalarOpts.vcxproj">
+      <Project>{70E229C4-BF89-3302-A8D2-195B466B7117}</Project>
+      <Name>LLVMScalarOpts</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\CodeGen\SelectionDAG\LLVMSelectionDAG.vcxproj">
+      <Project>{73A166B4-2F96-3AD8-A32F-8EA667F3B09C}</Project>
+      <Name>LLVMSelectionDAG</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Support\LLVMSupport.vcxproj">
+      <Project>{20FE2DC6-22A4-32EB-9AA7-8680AEAD4AB1}</Project>
+      <Name>LLVMSupport</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\DebugInfo\Symbolize\LLVMSymbolize.vcxproj">
+      <Project>{B494575C-D71A-3712-9480-BD7458F38BB3}</Project>
+      <Name>LLVMSymbolize</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\LLVMTarget.vcxproj">
+      <Project>{9C839CCC-F15F-32A8-95B3-A1939DCEFDC1}</Project>
+      <Name>LLVMTarget</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\TextAPI\LLVMTextAPI.vcxproj">
+      <Project>{CDA7FC00-45ED-3B34-90B6-091FFC486122}</Project>
+      <Name>LLVMTextAPI</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Transforms\Utils\LLVMTransformUtils.vcxproj">
+      <Project>{2B6737FB-C5D7-338E-A53D-52D24465A814}</Project>
+      <Name>LLVMTransformUtils</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\X86\LLVMX86CodeGen.vcxproj">
+      <Project>{B76C2EF3-9011-389F-9661-73386BA1FC3E}</Project>
+      <Name>LLVMX86CodeGen</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\X86\MCTargetDesc\LLVMX86Desc.vcxproj">
+      <Project>{96AC0809-6BEC-3ED9-8515-CF6249A521EE}</Project>
+      <Name>LLVMX86Desc</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\X86\TargetInfo\LLVMX86Info.vcxproj">
+      <Project>{06F4E389-4FD8-366D-92BE-6F7C98DF218B}</Project>
+      <Name>LLVMX86Info</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+</Project>

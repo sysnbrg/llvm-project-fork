@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\30b06b7cdbe715961d50fa9908004ffb\MSP430GenAsmMatcher.inc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\30b06b7cdbe715961d50fa9908004ffb\MSP430GenAsmWriter.inc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\30b06b7cdbe715961d50fa9908004ffb\MSP430GenCallingConv.inc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\30b06b7cdbe715961d50fa9908004ffb\MSP430GenDAGISel.inc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\30b06b7cdbe715961d50fa9908004ffb\MSP430GenDisassemblerTables.inc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\30b06b7cdbe715961d50fa9908004ffb\MSP430GenInstrInfo.inc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\30b06b7cdbe715961d50fa9908004ffb\MSP430GenMCCodeEmitter.inc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\30b06b7cdbe715961d50fa9908004ffb\MSP430GenRegisterInfo.inc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\30b06b7cdbe715961d50fa9908004ffb\MSP430GenSubtargetInfo.inc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\e3509db04398ae5dedad24e45eac1f05\MSP430CommonTableGen.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\MSP430\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\MSP430\CMakeFiles\MSP430CommonTableGen" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{498556B6-3B35-3E96-A447-5705E9ADDBFF}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

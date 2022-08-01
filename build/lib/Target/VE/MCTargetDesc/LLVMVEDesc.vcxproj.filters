@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\VE\MCTargetDesc\VEAsmBackend.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\VE\MCTargetDesc\VEELFObjectWriter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\VE\MCTargetDesc\VEInstPrinter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\VE\MCTargetDesc\VEMCAsmInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\VE\MCTargetDesc\VEMCCodeEmitter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\VE\MCTargetDesc\VEMCExpr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\VE\MCTargetDesc\VEMCTargetDesc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\VE\MCTargetDesc\VETargetStreamer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\VE\MCTargetDesc\VEFixupKinds.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\VE\MCTargetDesc\VEInstPrinter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\VE\MCTargetDesc\VEMCAsmInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\VE\MCTargetDesc\VEMCExpr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\VE\MCTargetDesc\VEMCTargetDesc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\VE\MCTargetDesc\VETargetStreamer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\VE\MCTargetDesc\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{F052BC44-0769-31DE-9010-45D66E87392B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{BD5927A9-B2B2-3B26-9449-BD7422886414}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

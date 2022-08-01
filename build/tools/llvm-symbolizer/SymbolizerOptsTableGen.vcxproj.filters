@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\794a1ea077080f22307cafbc59628683\Opts.inc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\bee431a66ff5cc9cae0e7a457c26f071\SymbolizerOptsTableGen.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\tools\llvm-symbolizer\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\a\llvm-project-fork\llvm-project-fork\build\tools\llvm-symbolizer\CMakeFiles\SymbolizerOptsTableGen" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{498556B6-3B35-3E96-A447-5705E9ADDBFF}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

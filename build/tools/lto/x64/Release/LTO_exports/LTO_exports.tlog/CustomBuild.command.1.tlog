@@ -1,0 +1,28 @@
+^D:\A\LLVM-PROJECT-FORK\LLVM-PROJECT-FORK\BUILD\CMAKEFILES\FFF8E97DBE7716700A6F3A3830105A64\LTO.DEF.RULE
+setlocal
+C:\hostedtoolcache\windows\Python\3.10.5\x64\python3.exe -c "import sys";"print(''.join(['EXPORTS\n']+sys.stdin.readlines(),))" < D:/a/llvm-project-fork/llvm-project-fork/llvm/tools/lto/lto.exports > LTO.def
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\A\LLVM-PROJECT-FORK\LLVM-PROJECT-FORK\BUILD\CMAKEFILES\BA52B5B41269906A05C0C02D31EF7DD0\LTO_EXPORTS.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\A\LLVM-PROJECT-FORK\LLVM-PROJECT-FORK\LLVM\TOOLS\LTO\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/a/llvm-project-fork/llvm-project-fork/llvm -BD:/a/llvm-project-fork/llvm-project-fork/build --check-stamp-file D:/a/llvm-project-fork/llvm-project-fork/build/tools/lto/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

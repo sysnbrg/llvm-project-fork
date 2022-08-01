@@ -1,0 +1,28 @@
+^D:\A\LLVM-PROJECT-FORK\LLVM-PROJECT-FORK\BUILD\CMAKEFILES\C96A1F18015C64D876FB879DE446AEEC\VCSREVISION.H.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DNAMES=LLVM -DLLVM_SOURCE_DIR=D:/a/llvm-project-fork/llvm-project-fork/llvm -DHEADER_FILE=D:/a/llvm-project-fork/llvm-project-fork/build/include/llvm/Support/VCSRevision.h -P D:/a/llvm-project-fork/llvm-project-fork/llvm/cmake/modules/GenerateVersionFromVCS.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\A\LLVM-PROJECT-FORK\LLVM-PROJECT-FORK\BUILD\CMAKEFILES\A2F547AA4FD8F4F04698F17C380E880F\LLVM_VCSREVISION_H.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\A\LLVM-PROJECT-FORK\LLVM-PROJECT-FORK\LLVM\INCLUDE\LLVM\SUPPORT\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/a/llvm-project-fork/llvm-project-fork/llvm -BD:/a/llvm-project-fork/llvm-project-fork/build --check-stamp-file D:/a/llvm-project-fork/llvm-project-fork/build/include/llvm/Support/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

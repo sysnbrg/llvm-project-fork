@@ -1,0 +1,8 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.23/Modules/BasicConfigVersion-SameMajorVersion.cmake.in
+C:/Program Files/CMake/share/cmake-3.23/Modules/CMakePackageConfigHelpers.cmake
+C:/Program Files/CMake/share/cmake-3.23/Modules/GNUInstallDirs.cmake
+C:/Program Files/CMake/share/cmake-3.23/Modules/WriteBasicConfigVersionFile.cmake
+D:/a/llvm-project-fork/llvm-project-fork/third-party/benchmark/cmake/Config.cmake.in
+D:/a/llvm-project-fork/llvm-project-fork/third-party/benchmark/cmake/benchmark.pc.in
+D:/a/llvm-project-fork/llvm-project-fork/third-party/benchmark/src/CMakeLists.txt

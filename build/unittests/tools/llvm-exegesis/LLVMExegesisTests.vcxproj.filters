@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\unittests\tools\llvm-exegesis\BenchmarkRunnerTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\unittests\tools\llvm-exegesis\ClusteringTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\unittests\tools\llvm-exegesis\PerfHelperTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\unittests\tools\llvm-exegesis\RegisterValueTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\unittests\tools\llvm-exegesis\X86\AssemblerTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\unittests\tools\llvm-exegesis\X86\BenchmarkResultTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\unittests\tools\llvm-exegesis\X86\RegisterAliasingTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\unittests\tools\llvm-exegesis\X86\SchedClassResolutionTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\unittests\tools\llvm-exegesis\X86\SnippetFileTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\unittests\tools\llvm-exegesis\X86\SnippetGeneratorTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\unittests\tools\llvm-exegesis\X86\SnippetRepetitorTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\unittests\tools\llvm-exegesis\X86\TargetTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\unittests\tools\llvm-exegesis\ARM\AssemblerTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\unittests\tools\llvm-exegesis\AArch64\TargetTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\unittests\tools\llvm-exegesis\PowerPC\AnalysisTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\unittests\tools\llvm-exegesis\PowerPC\SnippetGeneratorTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\unittests\tools\llvm-exegesis\PowerPC\TargetTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\unittests\tools\llvm-exegesis\Mips\BenchmarkResultTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\unittests\tools\llvm-exegesis\Mips\RegisterAliasingTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\unittests\tools\llvm-exegesis\Mips\SnippetGeneratorTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\unittests\tools\llvm-exegesis\Mips\TargetTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\unittests\tools\llvm-exegesis\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\resources\windows_version_resource.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{6473A4C5-91B3-3141-A8E2-8D49613B1709}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{BD5927A9-B2B2-3B26-9449-BD7422886414}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

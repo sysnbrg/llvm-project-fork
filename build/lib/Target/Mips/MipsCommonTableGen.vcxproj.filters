@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\9081fecf0595a0ec3b4f2271f5b3f35d\MipsGenAsmMatcher.inc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\9081fecf0595a0ec3b4f2271f5b3f35d\MipsGenAsmWriter.inc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\9081fecf0595a0ec3b4f2271f5b3f35d\MipsGenCallingConv.inc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\9081fecf0595a0ec3b4f2271f5b3f35d\MipsGenDAGISel.inc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\9081fecf0595a0ec3b4f2271f5b3f35d\MipsGenDisassemblerTables.inc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\9081fecf0595a0ec3b4f2271f5b3f35d\MipsGenExegesis.inc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\9081fecf0595a0ec3b4f2271f5b3f35d\MipsGenFastISel.inc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\9081fecf0595a0ec3b4f2271f5b3f35d\MipsGenGlobalISel.inc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\9081fecf0595a0ec3b4f2271f5b3f35d\MipsGenInstrInfo.inc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\9081fecf0595a0ec3b4f2271f5b3f35d\MipsGenMCCodeEmitter.inc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\9081fecf0595a0ec3b4f2271f5b3f35d\MipsGenMCPseudoLowering.inc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\9081fecf0595a0ec3b4f2271f5b3f35d\MipsGenPostLegalizeGICombiner.inc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\9081fecf0595a0ec3b4f2271f5b3f35d\MipsGenRegisterBank.inc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\9081fecf0595a0ec3b4f2271f5b3f35d\MipsGenRegisterInfo.inc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\9081fecf0595a0ec3b4f2271f5b3f35d\MipsGenSubtargetInfo.inc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\370eb34952f003f3c2a7934a74e859a2\MipsCommonTableGen.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\Mips\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\Mips\CMakeFiles\MipsCommonTableGen" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{498556B6-3B35-3E96-A447-5705E9ADDBFF}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

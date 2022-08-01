@@ -1,0 +1,28 @@
+^D:\A\LLVM-PROJECT-FORK\LLVM-PROJECT-FORK\BUILD\CMAKEFILES\D8F0DC28075DC2A310FD7574CAE89EC0\OPTS.INC.RULE
+setlocal
+..\..\Release\bin\llvm-tblgen.exe -gen-opt-parser-defs -I D:/a/llvm-project-fork/llvm-project-fork/llvm/tools/llvm-strings -ID:/a/llvm-project-fork/llvm-project-fork/build/include -ID:/a/llvm-project-fork/llvm-project-fork/llvm/include --long-string-literals=0 D:/a/llvm-project-fork/llvm-project-fork/llvm/tools/llvm-strings/Opts.td -o D:/a/llvm-project-fork/llvm-project-fork/build/tools/llvm-strings/Opts.inc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\A\LLVM-PROJECT-FORK\LLVM-PROJECT-FORK\BUILD\CMAKEFILES\569B11DD93194B381ACB7736F17471FC\STRINGSOPTSTABLEGEN.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\A\LLVM-PROJECT-FORK\LLVM-PROJECT-FORK\LLVM\TOOLS\LLVM-STRINGS\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/a/llvm-project-fork/llvm-project-fork/llvm -BD:/a/llvm-project-fork/llvm-project-fork/build --check-stamp-file D:/a/llvm-project-fork/llvm-project-fork/build/tools/llvm-strings/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\unittests\IR\AbstractCallSiteTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\unittests\IR\AsmWriterTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\unittests\IR\AttributesTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\unittests\IR\BasicBlockTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\unittests\IR\CFGBuilder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\unittests\IR\ConstantRangeTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\unittests\IR\ConstantsTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\unittests\IR\DataLayoutTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\unittests\IR\DebugInfoTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\unittests\IR\DebugTypeODRUniquingTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\unittests\IR\DemandedBitsTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\unittests\IR\DominatorTreeTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\unittests\IR\DominatorTreeBatchUpdatesTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\unittests\IR\FunctionTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\unittests\IR\PassBuilderCallbacksTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\unittests\IR\IRBuilderTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\unittests\IR\InstructionsTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\unittests\IR\IntrinsicsTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\unittests\IR\LegacyPassManagerTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\unittests\IR\MDBuilderTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\unittests\IR\ManglerTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\unittests\IR\MetadataTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\unittests\IR\ModuleTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\unittests\IR\PassManagerTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\unittests\IR\PatternMatch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\unittests\IR\TimePassesTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\unittests\IR\TypesTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\unittests\IR\UseTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\unittests\IR\UserTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\unittests\IR\ValueHandleTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\unittests\IR\ValueMapTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\unittests\IR\ValueTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\unittests\IR\VectorBuilderTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\unittests\IR\VectorTypesTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\unittests\IR\VerifierTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\unittests\IR\VPIntrinsicTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\unittests\IR\CFGBuilder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\unittests\IR\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\resources\windows_version_resource.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{F052BC44-0769-31DE-9010-45D66E87392B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{6473A4C5-91B3-3141-A8E2-8D49613B1709}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{BD5927A9-B2B2-3B26-9449-BD7422886414}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

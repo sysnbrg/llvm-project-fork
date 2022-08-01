@@ -1,0 +1,108 @@
+^D:\A\LLVM-PROJECT-FORK\LLVM-PROJECT-FORK\BUILD\CMAKEFILES\C2BE524A4014EF49690370D142DB8064\SPARCGENASMMATCHER.INC.RULE
+setlocal
+..\..\..\Release\bin\llvm-tblgen.exe -gen-asm-matcher -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/Sparc -ID:/a/llvm-project-fork/llvm-project-fork/build/include -ID:/a/llvm-project-fork/llvm-project-fork/llvm/include -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target --long-string-literals=0 D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/Sparc/Sparc.td -o D:/a/llvm-project-fork/llvm-project-fork/build/lib/Target/Sparc/SparcGenAsmMatcher.inc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\A\LLVM-PROJECT-FORK\LLVM-PROJECT-FORK\BUILD\CMAKEFILES\C2BE524A4014EF49690370D142DB8064\SPARCGENASMWRITER.INC.RULE
+setlocal
+..\..\..\Release\bin\llvm-tblgen.exe -gen-asm-writer -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/Sparc -ID:/a/llvm-project-fork/llvm-project-fork/build/include -ID:/a/llvm-project-fork/llvm-project-fork/llvm/include -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target --long-string-literals=0 D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/Sparc/Sparc.td -o D:/a/llvm-project-fork/llvm-project-fork/build/lib/Target/Sparc/SparcGenAsmWriter.inc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\A\LLVM-PROJECT-FORK\LLVM-PROJECT-FORK\BUILD\CMAKEFILES\C2BE524A4014EF49690370D142DB8064\SPARCGENCALLINGCONV.INC.RULE
+setlocal
+..\..\..\Release\bin\llvm-tblgen.exe -gen-callingconv -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/Sparc -ID:/a/llvm-project-fork/llvm-project-fork/build/include -ID:/a/llvm-project-fork/llvm-project-fork/llvm/include -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target --long-string-literals=0 D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/Sparc/Sparc.td -o D:/a/llvm-project-fork/llvm-project-fork/build/lib/Target/Sparc/SparcGenCallingConv.inc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\A\LLVM-PROJECT-FORK\LLVM-PROJECT-FORK\BUILD\CMAKEFILES\C2BE524A4014EF49690370D142DB8064\SPARCGENDAGISEL.INC.RULE
+setlocal
+..\..\..\Release\bin\llvm-tblgen.exe -gen-dag-isel -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/Sparc -ID:/a/llvm-project-fork/llvm-project-fork/build/include -ID:/a/llvm-project-fork/llvm-project-fork/llvm/include -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target -omit-comments --long-string-literals=0 D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/Sparc/Sparc.td -o D:/a/llvm-project-fork/llvm-project-fork/build/lib/Target/Sparc/SparcGenDAGISel.inc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\A\LLVM-PROJECT-FORK\LLVM-PROJECT-FORK\BUILD\CMAKEFILES\C2BE524A4014EF49690370D142DB8064\SPARCGENDISASSEMBLERTABLES.INC.RULE
+setlocal
+..\..\..\Release\bin\llvm-tblgen.exe -gen-disassembler -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/Sparc -ID:/a/llvm-project-fork/llvm-project-fork/build/include -ID:/a/llvm-project-fork/llvm-project-fork/llvm/include -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target --long-string-literals=0 D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/Sparc/Sparc.td -o D:/a/llvm-project-fork/llvm-project-fork/build/lib/Target/Sparc/SparcGenDisassemblerTables.inc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\A\LLVM-PROJECT-FORK\LLVM-PROJECT-FORK\BUILD\CMAKEFILES\C2BE524A4014EF49690370D142DB8064\SPARCGENINSTRINFO.INC.RULE
+setlocal
+..\..\..\Release\bin\llvm-tblgen.exe -gen-instr-info -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/Sparc -ID:/a/llvm-project-fork/llvm-project-fork/build/include -ID:/a/llvm-project-fork/llvm-project-fork/llvm/include -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target --long-string-literals=0 D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/Sparc/Sparc.td -o D:/a/llvm-project-fork/llvm-project-fork/build/lib/Target/Sparc/SparcGenInstrInfo.inc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\A\LLVM-PROJECT-FORK\LLVM-PROJECT-FORK\BUILD\CMAKEFILES\C2BE524A4014EF49690370D142DB8064\SPARCGENMCCODEEMITTER.INC.RULE
+setlocal
+..\..\..\Release\bin\llvm-tblgen.exe -gen-emitter -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/Sparc -ID:/a/llvm-project-fork/llvm-project-fork/build/include -ID:/a/llvm-project-fork/llvm-project-fork/llvm/include -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target --long-string-literals=0 D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/Sparc/Sparc.td -o D:/a/llvm-project-fork/llvm-project-fork/build/lib/Target/Sparc/SparcGenMCCodeEmitter.inc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\A\LLVM-PROJECT-FORK\LLVM-PROJECT-FORK\BUILD\CMAKEFILES\C2BE524A4014EF49690370D142DB8064\SPARCGENREGISTERINFO.INC.RULE
+setlocal
+..\..\..\Release\bin\llvm-tblgen.exe -gen-register-info -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/Sparc -ID:/a/llvm-project-fork/llvm-project-fork/build/include -ID:/a/llvm-project-fork/llvm-project-fork/llvm/include -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target --long-string-literals=0 D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/Sparc/Sparc.td -o D:/a/llvm-project-fork/llvm-project-fork/build/lib/Target/Sparc/SparcGenRegisterInfo.inc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\A\LLVM-PROJECT-FORK\LLVM-PROJECT-FORK\BUILD\CMAKEFILES\C2BE524A4014EF49690370D142DB8064\SPARCGENSUBTARGETINFO.INC.RULE
+setlocal
+..\..\..\Release\bin\llvm-tblgen.exe -gen-subtarget -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/Sparc -ID:/a/llvm-project-fork/llvm-project-fork/build/include -ID:/a/llvm-project-fork/llvm-project-fork/llvm/include -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target --long-string-literals=0 D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/Sparc/Sparc.td -o D:/a/llvm-project-fork/llvm-project-fork/build/lib/Target/Sparc/SparcGenSubtargetInfo.inc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\A\LLVM-PROJECT-FORK\LLVM-PROJECT-FORK\BUILD\CMAKEFILES\F72D5E28D174371D2708CA5736CFDD14\SPARCCOMMONTABLEGEN.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\A\LLVM-PROJECT-FORK\LLVM-PROJECT-FORK\LLVM\LIB\TARGET\SPARC\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/a/llvm-project-fork/llvm-project-fork/llvm -BD:/a/llvm-project-fork/llvm-project-fork/build --check-stamp-file D:/a/llvm-project-fork/llvm-project-fork/build/lib/Target/Sparc/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

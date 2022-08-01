@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AVR\AVRAsmPrinter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AVR\AVRExpandPseudoInsts.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AVR\AVRFrameLowering.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AVR\AVRInstrInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AVR\AVRISelDAGToDAG.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AVR\AVRISelLowering.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AVR\AVRMCInstLower.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AVR\AVRRegisterInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AVR\AVRShiftExpand.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AVR\AVRSubtarget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AVR\AVRTargetMachine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AVR\AVRTargetObjectFile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AVR\AVR.td">
+      <Filter>TableGen descriptions</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AVR\AVRCallingConv.td">
+      <Filter>TableGen descriptions</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AVR\AVRDevices.td">
+      <Filter>TableGen descriptions</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AVR\AVRInstrFormats.td">
+      <Filter>TableGen descriptions</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AVR\AVRInstrInfo.td">
+      <Filter>TableGen descriptions</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AVR\AVRRegisterInfo.td">
+      <Filter>TableGen descriptions</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AVR\AVR.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AVR\AVRFrameLowering.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AVR\AVRISelLowering.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AVR\AVRInstrInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AVR\AVRMCInstLower.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AVR\AVRMachineFunctionInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AVR\AVRRegisterInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AVR\AVRSelectionDAGInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AVR\AVRSubtarget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AVR\AVRTargetMachine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AVR\AVRTargetObjectFile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AVR\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{F052BC44-0769-31DE-9010-45D66E87392B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{BD5927A9-B2B2-3B26-9449-BD7422886414}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TableGen descriptions">
+      <UniqueIdentifier>{1D56988A-F503-3ECD-A8F7-10C34A7AAC3A}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

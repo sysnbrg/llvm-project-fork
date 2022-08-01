@@ -1,0 +1,218 @@
+^D:\A\LLVM-PROJECT-FORK\LLVM-PROJECT-FORK\BUILD\CMAKEFILES\225143B170C8708A40A5CB7CAEBB9BB2\AARCH64GENASMMATCHER.INC.RULE
+setlocal
+..\..\..\Release\bin\llvm-tblgen.exe -gen-asm-matcher -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/AArch64 -ID:/a/llvm-project-fork/llvm-project-fork/build/include -ID:/a/llvm-project-fork/llvm-project-fork/llvm/include -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target --long-string-literals=0 D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/AArch64/AArch64.td -o D:/a/llvm-project-fork/llvm-project-fork/build/lib/Target/AArch64/AArch64GenAsmMatcher.inc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\A\LLVM-PROJECT-FORK\LLVM-PROJECT-FORK\BUILD\CMAKEFILES\225143B170C8708A40A5CB7CAEBB9BB2\AARCH64GENASMWRITER.INC.RULE
+setlocal
+..\..\..\Release\bin\llvm-tblgen.exe -gen-asm-writer -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/AArch64 -ID:/a/llvm-project-fork/llvm-project-fork/build/include -ID:/a/llvm-project-fork/llvm-project-fork/llvm/include -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target --long-string-literals=0 D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/AArch64/AArch64.td -o D:/a/llvm-project-fork/llvm-project-fork/build/lib/Target/AArch64/AArch64GenAsmWriter.inc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\A\LLVM-PROJECT-FORK\LLVM-PROJECT-FORK\BUILD\CMAKEFILES\225143B170C8708A40A5CB7CAEBB9BB2\AARCH64GENASMWRITER1.INC.RULE
+setlocal
+..\..\..\Release\bin\llvm-tblgen.exe -gen-asm-writer -asmwriternum=1 -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/AArch64 -ID:/a/llvm-project-fork/llvm-project-fork/build/include -ID:/a/llvm-project-fork/llvm-project-fork/llvm/include -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target --long-string-literals=0 D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/AArch64/AArch64.td -o D:/a/llvm-project-fork/llvm-project-fork/build/lib/Target/AArch64/AArch64GenAsmWriter1.inc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\A\LLVM-PROJECT-FORK\LLVM-PROJECT-FORK\BUILD\CMAKEFILES\225143B170C8708A40A5CB7CAEBB9BB2\AARCH64GENCALLINGCONV.INC.RULE
+setlocal
+..\..\..\Release\bin\llvm-tblgen.exe -gen-callingconv -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/AArch64 -ID:/a/llvm-project-fork/llvm-project-fork/build/include -ID:/a/llvm-project-fork/llvm-project-fork/llvm/include -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target --long-string-literals=0 D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/AArch64/AArch64.td -o D:/a/llvm-project-fork/llvm-project-fork/build/lib/Target/AArch64/AArch64GenCallingConv.inc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\A\LLVM-PROJECT-FORK\LLVM-PROJECT-FORK\BUILD\CMAKEFILES\225143B170C8708A40A5CB7CAEBB9BB2\AARCH64GENDAGISEL.INC.RULE
+setlocal
+..\..\..\Release\bin\llvm-tblgen.exe -gen-dag-isel -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/AArch64 -ID:/a/llvm-project-fork/llvm-project-fork/build/include -ID:/a/llvm-project-fork/llvm-project-fork/llvm/include -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target -omit-comments --long-string-literals=0 D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/AArch64/AArch64.td -o D:/a/llvm-project-fork/llvm-project-fork/build/lib/Target/AArch64/AArch64GenDAGISel.inc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\A\LLVM-PROJECT-FORK\LLVM-PROJECT-FORK\BUILD\CMAKEFILES\225143B170C8708A40A5CB7CAEBB9BB2\AARCH64GENDISASSEMBLERTABLES.INC.RULE
+setlocal
+..\..\..\Release\bin\llvm-tblgen.exe -gen-disassembler -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/AArch64 -ID:/a/llvm-project-fork/llvm-project-fork/build/include -ID:/a/llvm-project-fork/llvm-project-fork/llvm/include -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target --long-string-literals=0 D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/AArch64/AArch64.td -o D:/a/llvm-project-fork/llvm-project-fork/build/lib/Target/AArch64/AArch64GenDisassemblerTables.inc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\A\LLVM-PROJECT-FORK\LLVM-PROJECT-FORK\BUILD\CMAKEFILES\225143B170C8708A40A5CB7CAEBB9BB2\AARCH64GENEXEGESIS.INC.RULE
+setlocal
+..\..\..\Release\bin\llvm-tblgen.exe -gen-exegesis -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/AArch64 -ID:/a/llvm-project-fork/llvm-project-fork/build/include -ID:/a/llvm-project-fork/llvm-project-fork/llvm/include -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target --long-string-literals=0 D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/AArch64/AArch64.td -o D:/a/llvm-project-fork/llvm-project-fork/build/lib/Target/AArch64/AArch64GenExegesis.inc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\A\LLVM-PROJECT-FORK\LLVM-PROJECT-FORK\BUILD\CMAKEFILES\225143B170C8708A40A5CB7CAEBB9BB2\AARCH64GENFASTISEL.INC.RULE
+setlocal
+..\..\..\Release\bin\llvm-tblgen.exe -gen-fast-isel -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/AArch64 -ID:/a/llvm-project-fork/llvm-project-fork/build/include -ID:/a/llvm-project-fork/llvm-project-fork/llvm/include -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target --long-string-literals=0 D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/AArch64/AArch64.td -o D:/a/llvm-project-fork/llvm-project-fork/build/lib/Target/AArch64/AArch64GenFastISel.inc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\A\LLVM-PROJECT-FORK\LLVM-PROJECT-FORK\BUILD\CMAKEFILES\225143B170C8708A40A5CB7CAEBB9BB2\AARCH64GENGLOBALISEL.INC.RULE
+setlocal
+..\..\..\Release\bin\llvm-tblgen.exe -gen-global-isel -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/AArch64 -ID:/a/llvm-project-fork/llvm-project-fork/build/include -ID:/a/llvm-project-fork/llvm-project-fork/llvm/include -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target --long-string-literals=0 D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/AArch64/AArch64.td -o D:/a/llvm-project-fork/llvm-project-fork/build/lib/Target/AArch64/AArch64GenGlobalISel.inc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\A\LLVM-PROJECT-FORK\LLVM-PROJECT-FORK\BUILD\CMAKEFILES\225143B170C8708A40A5CB7CAEBB9BB2\AARCH64GENINSTRINFO.INC.RULE
+setlocal
+..\..\..\Release\bin\llvm-tblgen.exe -gen-instr-info -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/AArch64 -ID:/a/llvm-project-fork/llvm-project-fork/build/include -ID:/a/llvm-project-fork/llvm-project-fork/llvm/include -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target --long-string-literals=0 D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/AArch64/AArch64.td -o D:/a/llvm-project-fork/llvm-project-fork/build/lib/Target/AArch64/AArch64GenInstrInfo.inc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\A\LLVM-PROJECT-FORK\LLVM-PROJECT-FORK\BUILD\CMAKEFILES\225143B170C8708A40A5CB7CAEBB9BB2\AARCH64GENMCCODEEMITTER.INC.RULE
+setlocal
+..\..\..\Release\bin\llvm-tblgen.exe -gen-emitter -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/AArch64 -ID:/a/llvm-project-fork/llvm-project-fork/build/include -ID:/a/llvm-project-fork/llvm-project-fork/llvm/include -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target --long-string-literals=0 D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/AArch64/AArch64.td -o D:/a/llvm-project-fork/llvm-project-fork/build/lib/Target/AArch64/AArch64GenMCCodeEmitter.inc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\A\LLVM-PROJECT-FORK\LLVM-PROJECT-FORK\BUILD\CMAKEFILES\225143B170C8708A40A5CB7CAEBB9BB2\AARCH64GENMCPSEUDOLOWERING.INC.RULE
+setlocal
+..\..\..\Release\bin\llvm-tblgen.exe -gen-pseudo-lowering -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/AArch64 -ID:/a/llvm-project-fork/llvm-project-fork/build/include -ID:/a/llvm-project-fork/llvm-project-fork/llvm/include -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target --long-string-literals=0 D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/AArch64/AArch64.td -o D:/a/llvm-project-fork/llvm-project-fork/build/lib/Target/AArch64/AArch64GenMCPseudoLowering.inc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\A\LLVM-PROJECT-FORK\LLVM-PROJECT-FORK\BUILD\CMAKEFILES\225143B170C8708A40A5CB7CAEBB9BB2\AARCH64GENO0PRELEGALIZEGICOMBINER.INC.RULE
+setlocal
+..\..\..\Release\bin\llvm-tblgen.exe -gen-global-isel-combiner -combiners="AArch64O0PreLegalizerCombinerHelper" -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/AArch64 -ID:/a/llvm-project-fork/llvm-project-fork/build/include -ID:/a/llvm-project-fork/llvm-project-fork/llvm/include -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target --long-string-literals=0 D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/AArch64/AArch64.td -o D:/a/llvm-project-fork/llvm-project-fork/build/lib/Target/AArch64/AArch64GenO0PreLegalizeGICombiner.inc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\A\LLVM-PROJECT-FORK\LLVM-PROJECT-FORK\BUILD\CMAKEFILES\225143B170C8708A40A5CB7CAEBB9BB2\AARCH64GENPOSTLEGALIZEGICOMBINER.INC.RULE
+setlocal
+..\..\..\Release\bin\llvm-tblgen.exe -gen-global-isel-combiner -combiners="AArch64PostLegalizerCombinerHelper" -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/AArch64 -ID:/a/llvm-project-fork/llvm-project-fork/build/include -ID:/a/llvm-project-fork/llvm-project-fork/llvm/include -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target --long-string-literals=0 D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/AArch64/AArch64.td -o D:/a/llvm-project-fork/llvm-project-fork/build/lib/Target/AArch64/AArch64GenPostLegalizeGICombiner.inc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\A\LLVM-PROJECT-FORK\LLVM-PROJECT-FORK\BUILD\CMAKEFILES\225143B170C8708A40A5CB7CAEBB9BB2\AARCH64GENPOSTLEGALIZEGILOWERING.INC.RULE
+setlocal
+..\..\..\Release\bin\llvm-tblgen.exe -gen-global-isel-combiner -combiners="AArch64PostLegalizerLoweringHelper" -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/AArch64 -ID:/a/llvm-project-fork/llvm-project-fork/build/include -ID:/a/llvm-project-fork/llvm-project-fork/llvm/include -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target --long-string-literals=0 D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/AArch64/AArch64.td -o D:/a/llvm-project-fork/llvm-project-fork/build/lib/Target/AArch64/AArch64GenPostLegalizeGILowering.inc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\A\LLVM-PROJECT-FORK\LLVM-PROJECT-FORK\BUILD\CMAKEFILES\225143B170C8708A40A5CB7CAEBB9BB2\AARCH64GENPRELEGALIZEGICOMBINER.INC.RULE
+setlocal
+..\..\..\Release\bin\llvm-tblgen.exe -gen-global-isel-combiner -combiners="AArch64PreLegalizerCombinerHelper" -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/AArch64 -ID:/a/llvm-project-fork/llvm-project-fork/build/include -ID:/a/llvm-project-fork/llvm-project-fork/llvm/include -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target --long-string-literals=0 D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/AArch64/AArch64.td -o D:/a/llvm-project-fork/llvm-project-fork/build/lib/Target/AArch64/AArch64GenPreLegalizeGICombiner.inc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\A\LLVM-PROJECT-FORK\LLVM-PROJECT-FORK\BUILD\CMAKEFILES\225143B170C8708A40A5CB7CAEBB9BB2\AARCH64GENREGISTERBANK.INC.RULE
+setlocal
+..\..\..\Release\bin\llvm-tblgen.exe -gen-register-bank -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/AArch64 -ID:/a/llvm-project-fork/llvm-project-fork/build/include -ID:/a/llvm-project-fork/llvm-project-fork/llvm/include -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target --long-string-literals=0 D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/AArch64/AArch64.td -o D:/a/llvm-project-fork/llvm-project-fork/build/lib/Target/AArch64/AArch64GenRegisterBank.inc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\A\LLVM-PROJECT-FORK\LLVM-PROJECT-FORK\BUILD\CMAKEFILES\225143B170C8708A40A5CB7CAEBB9BB2\AARCH64GENREGISTERINFO.INC.RULE
+setlocal
+..\..\..\Release\bin\llvm-tblgen.exe -gen-register-info -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/AArch64 -ID:/a/llvm-project-fork/llvm-project-fork/build/include -ID:/a/llvm-project-fork/llvm-project-fork/llvm/include -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target --long-string-literals=0 D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/AArch64/AArch64.td -o D:/a/llvm-project-fork/llvm-project-fork/build/lib/Target/AArch64/AArch64GenRegisterInfo.inc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\A\LLVM-PROJECT-FORK\LLVM-PROJECT-FORK\BUILD\CMAKEFILES\225143B170C8708A40A5CB7CAEBB9BB2\AARCH64GENSUBTARGETINFO.INC.RULE
+setlocal
+..\..\..\Release\bin\llvm-tblgen.exe -gen-subtarget -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/AArch64 -ID:/a/llvm-project-fork/llvm-project-fork/build/include -ID:/a/llvm-project-fork/llvm-project-fork/llvm/include -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target --long-string-literals=0 D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/AArch64/AArch64.td -o D:/a/llvm-project-fork/llvm-project-fork/build/lib/Target/AArch64/AArch64GenSubtargetInfo.inc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\A\LLVM-PROJECT-FORK\LLVM-PROJECT-FORK\BUILD\CMAKEFILES\225143B170C8708A40A5CB7CAEBB9BB2\AARCH64GENSYSTEMOPERANDS.INC.RULE
+setlocal
+..\..\..\Release\bin\llvm-tblgen.exe -gen-searchable-tables -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/AArch64 -ID:/a/llvm-project-fork/llvm-project-fork/build/include -ID:/a/llvm-project-fork/llvm-project-fork/llvm/include -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target --long-string-literals=0 D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/AArch64/AArch64.td -o D:/a/llvm-project-fork/llvm-project-fork/build/lib/Target/AArch64/AArch64GenSystemOperands.inc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\A\LLVM-PROJECT-FORK\LLVM-PROJECT-FORK\BUILD\CMAKEFILES\E420602B7BF04EB97E994B57982FD441\AARCH64COMMONTABLEGEN.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\A\LLVM-PROJECT-FORK\LLVM-PROJECT-FORK\LLVM\LIB\TARGET\AARCH64\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/a/llvm-project-fork/llvm-project-fork/llvm -BD:/a/llvm-project-fork/llvm-project-fork/build --check-stamp-file D:/a/llvm-project-fork/llvm-project-fork/build/lib/Target/AArch64/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

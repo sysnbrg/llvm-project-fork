@@ -1,0 +1,148 @@
+^D:\A\LLVM-PROJECT-FORK\LLVM-PROJECT-FORK\BUILD\CMAKEFILES\F24213803FD74102528ABC570E355384\PPCGENASMMATCHER.INC.RULE
+setlocal
+..\..\..\Release\bin\llvm-tblgen.exe -gen-asm-matcher -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/PowerPC -ID:/a/llvm-project-fork/llvm-project-fork/build/include -ID:/a/llvm-project-fork/llvm-project-fork/llvm/include -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target --long-string-literals=0 D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/PowerPC/PPC.td -o D:/a/llvm-project-fork/llvm-project-fork/build/lib/Target/PowerPC/PPCGenAsmMatcher.inc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\A\LLVM-PROJECT-FORK\LLVM-PROJECT-FORK\BUILD\CMAKEFILES\F24213803FD74102528ABC570E355384\PPCGENASMWRITER.INC.RULE
+setlocal
+..\..\..\Release\bin\llvm-tblgen.exe -gen-asm-writer -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/PowerPC -ID:/a/llvm-project-fork/llvm-project-fork/build/include -ID:/a/llvm-project-fork/llvm-project-fork/llvm/include -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target --long-string-literals=0 D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/PowerPC/PPC.td -o D:/a/llvm-project-fork/llvm-project-fork/build/lib/Target/PowerPC/PPCGenAsmWriter.inc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\A\LLVM-PROJECT-FORK\LLVM-PROJECT-FORK\BUILD\CMAKEFILES\F24213803FD74102528ABC570E355384\PPCGENCALLINGCONV.INC.RULE
+setlocal
+..\..\..\Release\bin\llvm-tblgen.exe -gen-callingconv -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/PowerPC -ID:/a/llvm-project-fork/llvm-project-fork/build/include -ID:/a/llvm-project-fork/llvm-project-fork/llvm/include -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target --long-string-literals=0 D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/PowerPC/PPC.td -o D:/a/llvm-project-fork/llvm-project-fork/build/lib/Target/PowerPC/PPCGenCallingConv.inc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\A\LLVM-PROJECT-FORK\LLVM-PROJECT-FORK\BUILD\CMAKEFILES\F24213803FD74102528ABC570E355384\PPCGENDAGISEL.INC.RULE
+setlocal
+..\..\..\Release\bin\llvm-tblgen.exe -gen-dag-isel -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/PowerPC -ID:/a/llvm-project-fork/llvm-project-fork/build/include -ID:/a/llvm-project-fork/llvm-project-fork/llvm/include -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target -omit-comments --long-string-literals=0 D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/PowerPC/PPC.td -o D:/a/llvm-project-fork/llvm-project-fork/build/lib/Target/PowerPC/PPCGenDAGISel.inc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\A\LLVM-PROJECT-FORK\LLVM-PROJECT-FORK\BUILD\CMAKEFILES\F24213803FD74102528ABC570E355384\PPCGENDISASSEMBLERTABLES.INC.RULE
+setlocal
+..\..\..\Release\bin\llvm-tblgen.exe -gen-disassembler -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/PowerPC -ID:/a/llvm-project-fork/llvm-project-fork/build/include -ID:/a/llvm-project-fork/llvm-project-fork/llvm/include -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target --long-string-literals=0 D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/PowerPC/PPC.td -o D:/a/llvm-project-fork/llvm-project-fork/build/lib/Target/PowerPC/PPCGenDisassemblerTables.inc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\A\LLVM-PROJECT-FORK\LLVM-PROJECT-FORK\BUILD\CMAKEFILES\F24213803FD74102528ABC570E355384\PPCGENEXEGESIS.INC.RULE
+setlocal
+..\..\..\Release\bin\llvm-tblgen.exe -gen-exegesis -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/PowerPC -ID:/a/llvm-project-fork/llvm-project-fork/build/include -ID:/a/llvm-project-fork/llvm-project-fork/llvm/include -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target --long-string-literals=0 D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/PowerPC/PPC.td -o D:/a/llvm-project-fork/llvm-project-fork/build/lib/Target/PowerPC/PPCGenExegesis.inc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\A\LLVM-PROJECT-FORK\LLVM-PROJECT-FORK\BUILD\CMAKEFILES\F24213803FD74102528ABC570E355384\PPCGENFASTISEL.INC.RULE
+setlocal
+..\..\..\Release\bin\llvm-tblgen.exe -gen-fast-isel -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/PowerPC -ID:/a/llvm-project-fork/llvm-project-fork/build/include -ID:/a/llvm-project-fork/llvm-project-fork/llvm/include -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target --long-string-literals=0 D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/PowerPC/PPC.td -o D:/a/llvm-project-fork/llvm-project-fork/build/lib/Target/PowerPC/PPCGenFastISel.inc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\A\LLVM-PROJECT-FORK\LLVM-PROJECT-FORK\BUILD\CMAKEFILES\F24213803FD74102528ABC570E355384\PPCGENGLOBALISEL.INC.RULE
+setlocal
+..\..\..\Release\bin\llvm-tblgen.exe -gen-global-isel -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/PowerPC -ID:/a/llvm-project-fork/llvm-project-fork/build/include -ID:/a/llvm-project-fork/llvm-project-fork/llvm/include -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target --long-string-literals=0 D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/PowerPC/PPC.td -o D:/a/llvm-project-fork/llvm-project-fork/build/lib/Target/PowerPC/PPCGenGlobalISel.inc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\A\LLVM-PROJECT-FORK\LLVM-PROJECT-FORK\BUILD\CMAKEFILES\F24213803FD74102528ABC570E355384\PPCGENINSTRINFO.INC.RULE
+setlocal
+..\..\..\Release\bin\llvm-tblgen.exe -gen-instr-info -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/PowerPC -ID:/a/llvm-project-fork/llvm-project-fork/build/include -ID:/a/llvm-project-fork/llvm-project-fork/llvm/include -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target --long-string-literals=0 D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/PowerPC/PPC.td -o D:/a/llvm-project-fork/llvm-project-fork/build/lib/Target/PowerPC/PPCGenInstrInfo.inc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\A\LLVM-PROJECT-FORK\LLVM-PROJECT-FORK\BUILD\CMAKEFILES\F24213803FD74102528ABC570E355384\PPCGENMCCODEEMITTER.INC.RULE
+setlocal
+..\..\..\Release\bin\llvm-tblgen.exe -gen-emitter -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/PowerPC -ID:/a/llvm-project-fork/llvm-project-fork/build/include -ID:/a/llvm-project-fork/llvm-project-fork/llvm/include -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target --long-string-literals=0 D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/PowerPC/PPC.td -o D:/a/llvm-project-fork/llvm-project-fork/build/lib/Target/PowerPC/PPCGenMCCodeEmitter.inc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\A\LLVM-PROJECT-FORK\LLVM-PROJECT-FORK\BUILD\CMAKEFILES\F24213803FD74102528ABC570E355384\PPCGENREGISTERBANK.INC.RULE
+setlocal
+..\..\..\Release\bin\llvm-tblgen.exe -gen-register-bank -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/PowerPC -ID:/a/llvm-project-fork/llvm-project-fork/build/include -ID:/a/llvm-project-fork/llvm-project-fork/llvm/include -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target --long-string-literals=0 D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/PowerPC/PPC.td -o D:/a/llvm-project-fork/llvm-project-fork/build/lib/Target/PowerPC/PPCGenRegisterBank.inc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\A\LLVM-PROJECT-FORK\LLVM-PROJECT-FORK\BUILD\CMAKEFILES\F24213803FD74102528ABC570E355384\PPCGENREGISTERINFO.INC.RULE
+setlocal
+..\..\..\Release\bin\llvm-tblgen.exe -gen-register-info -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/PowerPC -ID:/a/llvm-project-fork/llvm-project-fork/build/include -ID:/a/llvm-project-fork/llvm-project-fork/llvm/include -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target --long-string-literals=0 D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/PowerPC/PPC.td -o D:/a/llvm-project-fork/llvm-project-fork/build/lib/Target/PowerPC/PPCGenRegisterInfo.inc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\A\LLVM-PROJECT-FORK\LLVM-PROJECT-FORK\BUILD\CMAKEFILES\F24213803FD74102528ABC570E355384\PPCGENSUBTARGETINFO.INC.RULE
+setlocal
+..\..\..\Release\bin\llvm-tblgen.exe -gen-subtarget -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/PowerPC -ID:/a/llvm-project-fork/llvm-project-fork/build/include -ID:/a/llvm-project-fork/llvm-project-fork/llvm/include -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target --long-string-literals=0 D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/PowerPC/PPC.td -o D:/a/llvm-project-fork/llvm-project-fork/build/lib/Target/PowerPC/PPCGenSubtargetInfo.inc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\A\LLVM-PROJECT-FORK\LLVM-PROJECT-FORK\BUILD\CMAKEFILES\7DD81DC2BF108C79370244FADCB5C5EB\POWERPCCOMMONTABLEGEN.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\A\LLVM-PROJECT-FORK\LLVM-PROJECT-FORK\LLVM\LIB\TARGET\POWERPC\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/a/llvm-project-fork/llvm-project-fork/llvm -BD:/a/llvm-project-fork/llvm-project-fork/build --check-stamp-file D:/a/llvm-project-fork/llvm-project-fork/build/lib/Target/PowerPC/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

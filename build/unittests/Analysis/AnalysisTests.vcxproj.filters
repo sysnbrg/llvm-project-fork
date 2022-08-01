@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\unittests\Analysis\AliasAnalysisTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\unittests\Analysis\AliasSetTrackerTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\unittests\Analysis\AssumeBundleQueriesTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\unittests\Analysis\BasicAliasAnalysisTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\unittests\Analysis\BlockFrequencyInfoTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\unittests\Analysis\BranchProbabilityInfoTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\unittests\Analysis\CallGraphTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\unittests\Analysis\CaptureTrackingTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\unittests\Analysis\CFGTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\unittests\Analysis\CGSCCPassManagerTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\unittests\Analysis\ConstraintSystemTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\unittests\Analysis\DDGTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\unittests\Analysis\DivergenceAnalysisTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\unittests\Analysis\DomTreeUpdaterTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\unittests\Analysis\GlobalsModRefTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\unittests\Analysis\FunctionPropertiesAnalysisTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\unittests\Analysis\InlineCostTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\unittests\Analysis\IRSimilarityIdentifierTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\unittests\Analysis\IVDescriptorsTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\unittests\Analysis\LazyCallGraphTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\unittests\Analysis\LoadsTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\unittests\Analysis\LoopInfoTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\unittests\Analysis\LoopNestTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\unittests\Analysis\MemoryBuiltinsTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\unittests\Analysis\MemoryProfileInfoTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\unittests\Analysis\MemorySSATest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\unittests\Analysis\MLModelRunnerTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\unittests\Analysis\PhiValuesTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\unittests\Analysis\ProfileSummaryInfoTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\unittests\Analysis\ScalarEvolutionTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\unittests\Analysis\VectorFunctionABITest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\unittests\Analysis\SparsePropagation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\unittests\Analysis\TargetLibraryInfoTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\unittests\Analysis\TensorSpecTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\unittests\Analysis\TBAATest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\unittests\Analysis\UnrollAnalyzerTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\unittests\Analysis\ValueLatticeTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\unittests\Analysis\ValueTrackingTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\unittests\Analysis\VectorUtilsTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\unittests\Analysis\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\resources\windows_version_resource.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{6473A4C5-91B3-3141-A8E2-8D49613B1709}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{BD5927A9-B2B2-3B26-9449-BD7422886414}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,88 @@
+^D:\A\LLVM-PROJECT-FORK\LLVM-PROJECT-FORK\BUILD\CMAKEFILES\0EB4886EF28F8D5A03A84C17473E17D9\XCOREGENASMWRITER.INC.RULE
+setlocal
+..\..\..\Release\bin\llvm-tblgen.exe -gen-asm-writer -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/XCore -ID:/a/llvm-project-fork/llvm-project-fork/build/include -ID:/a/llvm-project-fork/llvm-project-fork/llvm/include -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target --long-string-literals=0 D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/XCore/XCore.td -o D:/a/llvm-project-fork/llvm-project-fork/build/lib/Target/XCore/XCoreGenAsmWriter.inc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\A\LLVM-PROJECT-FORK\LLVM-PROJECT-FORK\BUILD\CMAKEFILES\0EB4886EF28F8D5A03A84C17473E17D9\XCOREGENCALLINGCONV.INC.RULE
+setlocal
+..\..\..\Release\bin\llvm-tblgen.exe -gen-callingconv -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/XCore -ID:/a/llvm-project-fork/llvm-project-fork/build/include -ID:/a/llvm-project-fork/llvm-project-fork/llvm/include -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target --long-string-literals=0 D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/XCore/XCore.td -o D:/a/llvm-project-fork/llvm-project-fork/build/lib/Target/XCore/XCoreGenCallingConv.inc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\A\LLVM-PROJECT-FORK\LLVM-PROJECT-FORK\BUILD\CMAKEFILES\0EB4886EF28F8D5A03A84C17473E17D9\XCOREGENDAGISEL.INC.RULE
+setlocal
+..\..\..\Release\bin\llvm-tblgen.exe -gen-dag-isel -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/XCore -ID:/a/llvm-project-fork/llvm-project-fork/build/include -ID:/a/llvm-project-fork/llvm-project-fork/llvm/include -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target -omit-comments --long-string-literals=0 D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/XCore/XCore.td -o D:/a/llvm-project-fork/llvm-project-fork/build/lib/Target/XCore/XCoreGenDAGISel.inc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\A\LLVM-PROJECT-FORK\LLVM-PROJECT-FORK\BUILD\CMAKEFILES\0EB4886EF28F8D5A03A84C17473E17D9\XCOREGENDISASSEMBLERTABLES.INC.RULE
+setlocal
+..\..\..\Release\bin\llvm-tblgen.exe -gen-disassembler -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/XCore -ID:/a/llvm-project-fork/llvm-project-fork/build/include -ID:/a/llvm-project-fork/llvm-project-fork/llvm/include -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target --long-string-literals=0 D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/XCore/XCore.td -o D:/a/llvm-project-fork/llvm-project-fork/build/lib/Target/XCore/XCoreGenDisassemblerTables.inc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\A\LLVM-PROJECT-FORK\LLVM-PROJECT-FORK\BUILD\CMAKEFILES\0EB4886EF28F8D5A03A84C17473E17D9\XCOREGENINSTRINFO.INC.RULE
+setlocal
+..\..\..\Release\bin\llvm-tblgen.exe -gen-instr-info -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/XCore -ID:/a/llvm-project-fork/llvm-project-fork/build/include -ID:/a/llvm-project-fork/llvm-project-fork/llvm/include -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target --long-string-literals=0 D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/XCore/XCore.td -o D:/a/llvm-project-fork/llvm-project-fork/build/lib/Target/XCore/XCoreGenInstrInfo.inc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\A\LLVM-PROJECT-FORK\LLVM-PROJECT-FORK\BUILD\CMAKEFILES\0EB4886EF28F8D5A03A84C17473E17D9\XCOREGENREGISTERINFO.INC.RULE
+setlocal
+..\..\..\Release\bin\llvm-tblgen.exe -gen-register-info -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/XCore -ID:/a/llvm-project-fork/llvm-project-fork/build/include -ID:/a/llvm-project-fork/llvm-project-fork/llvm/include -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target --long-string-literals=0 D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/XCore/XCore.td -o D:/a/llvm-project-fork/llvm-project-fork/build/lib/Target/XCore/XCoreGenRegisterInfo.inc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\A\LLVM-PROJECT-FORK\LLVM-PROJECT-FORK\BUILD\CMAKEFILES\0EB4886EF28F8D5A03A84C17473E17D9\XCOREGENSUBTARGETINFO.INC.RULE
+setlocal
+..\..\..\Release\bin\llvm-tblgen.exe -gen-subtarget -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/XCore -ID:/a/llvm-project-fork/llvm-project-fork/build/include -ID:/a/llvm-project-fork/llvm-project-fork/llvm/include -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target --long-string-literals=0 D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/XCore/XCore.td -o D:/a/llvm-project-fork/llvm-project-fork/build/lib/Target/XCore/XCoreGenSubtargetInfo.inc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\A\LLVM-PROJECT-FORK\LLVM-PROJECT-FORK\BUILD\CMAKEFILES\F841A85F66B764019CB31A80051965B6\XCORECOMMONTABLEGEN.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\A\LLVM-PROJECT-FORK\LLVM-PROJECT-FORK\LLVM\LIB\TARGET\XCORE\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/a/llvm-project-fork/llvm-project-fork/llvm -BD:/a/llvm-project-fork/llvm-project-fork/build --check-stamp-file D:/a/llvm-project-fork/llvm-project-fork/build/lib/Target/XCore/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

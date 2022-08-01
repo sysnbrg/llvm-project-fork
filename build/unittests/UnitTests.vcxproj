@@ -1,0 +1,423 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{BFA6C67E-A879-32D4-85CB-1F1FA4B1A8EC}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.20348.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>UnitTests</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\a\llvm-project-fork\llvm-project-fork\build\unittests;D:\a\llvm-project-fork\llvm-project-fork\llvm\unittests;D:\a\llvm-project-fork\llvm-project-fork\build\include;D:\a\llvm-project-fork\llvm-project-fork\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\a\llvm-project-fork\llvm-project-fork\build\unittests;D:\a\llvm-project-fork\llvm-project-fork\llvm\unittests;D:\a\llvm-project-fork\llvm-project-fork\build\include;D:\a\llvm-project-fork\llvm-project-fork\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\a\llvm-project-fork\llvm-project-fork\build\unittests;D:\a\llvm-project-fork\llvm-project-fork\llvm\unittests;D:\a\llvm-project-fork\llvm-project-fork\build\include;D:\a\llvm-project-fork\llvm-project-fork\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\a\llvm-project-fork\llvm-project-fork\build\unittests;D:\a\llvm-project-fork\llvm-project-fork\llvm\unittests;D:\a\llvm-project-fork\llvm-project-fork\build\include;D:\a\llvm-project-fork\llvm-project-fork\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\unittests\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/a/llvm-project-fork/llvm-project-fork/llvm/unittests/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/a/llvm-project-fork/llvm-project-fork/llvm -BD:/a/llvm-project-fork/llvm-project-fork/build --check-stamp-file D:/a/llvm-project-fork/llvm-project-fork/build/unittests/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\a\llvm-project-fork\llvm-project-fork\build\unittests\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/a/llvm-project-fork/llvm-project-fork/llvm/unittests/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/a/llvm-project-fork/llvm-project-fork/llvm -BD:/a/llvm-project-fork/llvm-project-fork/build --check-stamp-file D:/a/llvm-project-fork/llvm-project-fork/build/unittests/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\a\llvm-project-fork\llvm-project-fork\build\unittests\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/a/llvm-project-fork/llvm-project-fork/llvm/unittests/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/a/llvm-project-fork/llvm-project-fork/llvm -BD:/a/llvm-project-fork/llvm-project-fork/build --check-stamp-file D:/a/llvm-project-fork/llvm-project-fork/build/unittests/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\a\llvm-project-fork\llvm-project-fork\build\unittests\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/a/llvm-project-fork/llvm-project-fork/llvm/unittests/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/a/llvm-project-fork/llvm-project-fork/llvm -BD:/a/llvm-project-fork/llvm-project-fork/build --check-stamp-file D:/a/llvm-project-fork/llvm-project-fork/build/unittests/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\a\llvm-project-fork\llvm-project-fork\build\unittests\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\ZERO_CHECK.vcxproj">
+      <Project>{E892C37D-02CF-31E9-ADFA-230AE8523DFD}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\unittests\Target\AArch64\AArch64Tests.vcxproj">
+      <Project>{84E755B9-CC0D-3537-8CD1-8708B9A8B65F}</Project>
+      <Name>AArch64Tests</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\unittests\ADT\ADTTests.vcxproj">
+      <Project>{FC827D30-5776-33EB-B7E5-AD05969AAF6A}</Project>
+      <Name>ADTTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\unittests\MC\AMDGPU\AMDGPUDwarfTests.vcxproj">
+      <Project>{9068651D-CDC0-3F67-9459-BBEC97A314DB}</Project>
+      <Name>AMDGPUDwarfTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\unittests\Target\AMDGPU\AMDGPUTests.vcxproj">
+      <Project>{00F13CA6-EAD3-34D1-8F4E-9F7A9A0BA765}</Project>
+      <Name>AMDGPUTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\unittests\Target\ARM\ARMTests.vcxproj">
+      <Project>{D7ADA1EF-2B60-3C2C-AEA0-90291F383BDF}</Project>
+      <Name>ARMTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\unittests\Analysis\AnalysisTests.vcxproj">
+      <Project>{61C3F034-A110-303F-9F59-7898D0CB4262}</Project>
+      <Name>AnalysisTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\unittests\AsmParser\AsmParserTests.vcxproj">
+      <Project>{76CBC2BF-1294-39AE-A48B-0ED5835E55A0}</Project>
+      <Name>AsmParserTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\unittests\BinaryFormat\BinaryFormatTests.vcxproj">
+      <Project>{3E3602EC-7E8D-376F-92F1-D832DCC54C35}</Project>
+      <Name>BinaryFormatTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\unittests\Bitcode\BitcodeTests.vcxproj">
+      <Project>{75C1E8CB-E83D-3868-BAFA-59A2D0868539}</Project>
+      <Name>BitcodeTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\unittests\Bitstream\BitstreamTests.vcxproj">
+      <Project>{9DE94C3A-5EBE-3E80-BDFA-C185A90B6CD9}</Project>
+      <Name>BitstreamTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\unittests\tools\llvm-cfi-verify\CFIVerifyTests.vcxproj">
+      <Project>{1FC863A4-0567-39FE-83D0-40384185214E}</Project>
+      <Name>CFIVerifyTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\unittests\CodeGen\CodeGenTests.vcxproj">
+      <Project>{EB9DA79E-F62C-37EF-8E8D-413603173B2B}</Project>
+      <Name>CodeGenTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\unittests\Support\CommandLineInit\CommandLineInitTests.vcxproj">
+      <Project>{7119296D-957C-3FB2-A812-AD48F9C460AF}</Project>
+      <Name>CommandLineInitTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\unittests\DebugInfo\CodeView\DebugInfoCodeViewTests.vcxproj">
+      <Project>{C991C81E-3961-3D41-A3AF-A44259E75AEF}</Project>
+      <Name>DebugInfoCodeViewTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\unittests\DebugInfo\DWARF\DebugInfoDWARFTests.vcxproj">
+      <Project>{B1C10DD9-EECE-3E7E-BA3E-FD8E6B201222}</Project>
+      <Name>DebugInfoDWARFTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\unittests\DebugInfo\GSYM\DebugInfoGSYMTests.vcxproj">
+      <Project>{6DECC0AA-A565-31E7-A453-6B0B7C5088AA}</Project>
+      <Name>DebugInfoGSYMTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\unittests\DebugInfo\MSF\DebugInfoMSFTests.vcxproj">
+      <Project>{D7D9EC4B-B7D5-38F8-A47E-42F3430D515E}</Project>
+      <Name>DebugInfoMSFTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\unittests\DebugInfo\PDB\DebugInfoPDBTests.vcxproj">
+      <Project>{2E8E627E-6889-3C4C-B153-7D7A371DDD85}</Project>
+      <Name>DebugInfoPDBTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\unittests\DebugInfo\Symbolizer\DebugInfoSymbolizerTests.vcxproj">
+      <Project>{06F7F890-2A40-3F99-9AFF-57E38FB07E3F}</Project>
+      <Name>DebugInfoSymbolizerTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\unittests\Debuginfod\DebuginfodTests.vcxproj">
+      <Project>{A21B25CE-EE98-3815-A41B-E4EDBE59E35C}</Project>
+      <Name>DebuginfodTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\unittests\Demangle\DemangleTests.vcxproj">
+      <Project>{1CC661A7-0981-369C-B3A9-29D24C187383}</Project>
+      <Name>DemangleTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\unittests\Support\DynamicLibrary\DynamicLibraryTests.vcxproj">
+      <Project>{C6A570B2-6F9F-39D3-A0BF-A5E42EC694F7}</Project>
+      <Name>DynamicLibraryTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\unittests\ExecutionEngine\ExecutionEngineTests.vcxproj">
+      <Project>{256B23D0-034F-3206-B15A-583AA858DF56}</Project>
+      <Name>ExecutionEngineTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\unittests\FileCheck\FileCheckTests.vcxproj">
+      <Project>{345AF0FA-C7EC-3912-B005-F31091343449}</Project>
+      <Name>FileCheckTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\unittests\FuzzMutate\FuzzMutateTests.vcxproj">
+      <Project>{3653DA00-87F9-30FC-BA8E-348CF5176AD9}</Project>
+      <Name>FuzzMutateTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\unittests\CodeGen\GlobalISel\GlobalISelTests.vcxproj">
+      <Project>{2644B4F2-4200-3EF5-A3A3-4CF46C0873CB}</Project>
+      <Name>GlobalISelTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\unittests\Transforms\IPO\IPOTests.vcxproj">
+      <Project>{1548CE42-EBA5-3DC9-8A35-EC95D0CA2284}</Project>
+      <Name>IPOTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\unittests\IR\IRTests.vcxproj">
+      <Project>{AF6DBB46-839A-3BA9-949C-E94F67CDBFDF}</Project>
+      <Name>IRTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\unittests\InterfaceStub\InterfaceStubTests.vcxproj">
+      <Project>{5BFE67B9-2FF4-388F-80E5-138237FA89BE}</Project>
+      <Name>InterfaceStubTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\unittests\ExecutionEngine\JITLink\JITLinkTests.vcxproj">
+      <Project>{CAC44148-2C23-305E-8ECC-2A6FB15B80DB}</Project>
+      <Name>JITLinkTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\unittests\tools\llvm-exegesis\LLVMExegesisTests.vcxproj">
+      <Project>{C46CC6D6-EB79-37C8-AA1F-D02804F952C1}</Project>
+      <Name>LLVMExegesisTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\unittests\Frontend\LLVMFrontendTests.vcxproj">
+      <Project>{BC7877B0-CBC9-345D-90D2-802411D67E32}</Project>
+      <Name>LLVMFrontendTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\unittests\tools\llvm-mca\LLVMMCATests.vcxproj">
+      <Project>{78F63B3B-6D32-3BCA-B69A-485BF05309DD}</Project>
+      <Name>LLVMMCATests</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\unittests\tools\llvm-profgen\LLVMProfgenTests.vcxproj">
+      <Project>{99B553CC-CDEB-3C91-ACC1-D8420D0A5F4A}</Project>
+      <Name>LLVMProfgenTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\unittests\LineEditor\LineEditorTests.vcxproj">
+      <Project>{7BFA1841-9C0D-3CCE-B177-970F5B5C4CD6}</Project>
+      <Name>LineEditorTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\unittests\Linker\LinkerTests.vcxproj">
+      <Project>{0ADD6FCC-04DC-3A8C-A447-FBE86805916F}</Project>
+      <Name>LinkerTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\unittests\ExecutionEngine\MCJIT\MCJITTests.vcxproj">
+      <Project>{6589E9B3-61EA-3C80-A1B1-7C8CB0793922}</Project>
+      <Name>MCJITTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\unittests\MC\MCTests.vcxproj">
+      <Project>{31CFAAB8-ECB1-3692-9A01-11E604A2FA7E}</Project>
+      <Name>MCTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\unittests\MIR\MIRTests.vcxproj">
+      <Project>{3FCB27EF-692E-3F97-8137-D6F97982CA21}</Project>
+      <Name>MIRTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\unittests\MI\MITests.vcxproj">
+      <Project>{57D99A52-A254-36C8-9340-98D2DF280FD5}</Project>
+      <Name>MITests</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\unittests\ObjCopy\ObjCopyTests.vcxproj">
+      <Project>{83968E55-DAD7-358F-9DCD-507161B2EA96}</Project>
+      <Name>ObjCopyTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\unittests\Object\ObjectTests.vcxproj">
+      <Project>{151DD7EA-B426-3ACF-A2C2-78B89A1D9A20}</Project>
+      <Name>ObjectTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\unittests\ObjectYAML\ObjectYAMLTests.vcxproj">
+      <Project>{17149870-06FA-3767-B24F-23CEDB4DF88C}</Project>
+      <Name>ObjectYAMLTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\unittests\Option\OptionTests.vcxproj">
+      <Project>{F4EAAEA5-9C22-36A4-AEE7-CA95D2088F57}</Project>
+      <Name>OptionTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\unittests\ExecutionEngine\Orc\OrcJITTests.vcxproj">
+      <Project>{E911EE4C-AED7-3856-B9AC-4409103FF60E}</Project>
+      <Name>OrcJITTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\unittests\Passes\PassesBindingsTests.vcxproj">
+      <Project>{CB1282A7-351D-31BF-947E-DC206517F59B}</Project>
+      <Name>PassesBindingsTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\unittests\Target\PowerPC\PowerPCTests.vcxproj">
+      <Project>{36A7916C-B0A0-3408-B0AF-2DF774ED6040}</Project>
+      <Name>PowerPCTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\unittests\ProfileData\ProfileDataTests.vcxproj">
+      <Project>{DF26CBE4-501D-3DCA-AEB3-1A96E95F1CCA}</Project>
+      <Name>ProfileDataTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\unittests\Remarks\RemarksTests.vcxproj">
+      <Project>{15C7BD39-6A4D-3801-BEF9-50998A66D4BD}</Project>
+      <Name>RemarksTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\unittests\Transforms\Scalar\ScalarTests.vcxproj">
+      <Project>{67BA3D19-9DA6-3614-AE00-D6F76C734690}</Project>
+      <Name>ScalarTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\unittests\Support\SupportTests.vcxproj">
+      <Project>{FB69F4F4-B854-3C40-B610-8C59CE806B74}</Project>
+      <Name>SupportTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\unittests\MC\SystemZ\SystemZAsmLexerTests.vcxproj">
+      <Project>{49E7A522-B4A4-3C30-9197-36B9A448AC1C}</Project>
+      <Name>SystemZAsmLexerTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\unittests\TableGen\TableGenTests.vcxproj">
+      <Project>{57332833-0760-3859-9D60-35D78E13ABB7}</Project>
+      <Name>TableGenTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\unittests\Testing\Support\TestingSupportTests.vcxproj">
+      <Project>{28D1DB9D-13EA-3A3C-AF4C-EE30CBCAA202}</Project>
+      <Name>TestingSupportTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\unittests\TextAPI\TextAPITests.vcxproj">
+      <Project>{EBDC08CE-C407-3F3F-978F-86F0D1BC24AF}</Project>
+      <Name>TextAPITests</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\unittests\Transforms\Utils\UtilsTests.vcxproj">
+      <Project>{9114E5BB-B699-31D3-A840-F12D84262D5B}</Project>
+      <Name>UtilsTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\unittests\Transforms\Vectorize\VectorizeTests.vcxproj">
+      <Project>{2462C6D2-5BA9-3F6C-BD05-6624DD73C33E}</Project>
+      <Name>VectorizeTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\unittests\Target\WebAssembly\WebAssemblyTests.vcxproj">
+      <Project>{30265EF2-B40A-34A0-8FF9-431B1DA4D4FD}</Project>
+      <Name>WebAssemblyTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\unittests\MC\X86\X86MCTests.vcxproj">
+      <Project>{C8DEA7E6-3B1C-3659-B7BC-7453C21F9F20}</Project>
+      <Name>X86MCTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\unittests\Target\X86\X86Tests.vcxproj">
+      <Project>{87BF2295-102E-33AE-A006-80EC79717580}</Project>
+      <Name>X86Tests</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\unittests\XRay\XRayTests.vcxproj">
+      <Project>{582F5285-4BB7-3AD7-98C9-047D1A9E1C5F}</Project>
+      <Name>XRayTests</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+</Project>

@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\RISCV\MCTargetDesc\RISCVAsmBackend.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\RISCV\MCTargetDesc\RISCVBaseInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\RISCV\MCTargetDesc\RISCVELFObjectWriter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\RISCV\MCTargetDesc\RISCVInstPrinter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\RISCV\MCTargetDesc\RISCVMCAsmInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\RISCV\MCTargetDesc\RISCVMCCodeEmitter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\RISCV\MCTargetDesc\RISCVMCExpr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\RISCV\MCTargetDesc\RISCVMCObjectFileInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\RISCV\MCTargetDesc\RISCVMCTargetDesc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\RISCV\MCTargetDesc\RISCVMatInt.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\RISCV\MCTargetDesc\RISCVTargetStreamer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\RISCV\MCTargetDesc\RISCVELFStreamer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\RISCV\MCTargetDesc\RISCVAsmBackend.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\RISCV\MCTargetDesc\RISCVBaseInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\RISCV\MCTargetDesc\RISCVELFStreamer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\RISCV\MCTargetDesc\RISCVFixupKinds.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\RISCV\MCTargetDesc\RISCVInstPrinter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\RISCV\MCTargetDesc\RISCVMCAsmInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\RISCV\MCTargetDesc\RISCVMCExpr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\RISCV\MCTargetDesc\RISCVMCObjectFileInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\RISCV\MCTargetDesc\RISCVMCTargetDesc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\RISCV\MCTargetDesc\RISCVMatInt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\RISCV\MCTargetDesc\RISCVTargetStreamer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\RISCV\MCTargetDesc\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{F052BC44-0769-31DE-9010-45D66E87392B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{BD5927A9-B2B2-3B26-9449-BD7422886414}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

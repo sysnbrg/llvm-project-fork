@@ -1,0 +1,8 @@
+# CMake generation dependency list for this directory.
+D:/a/llvm-project-fork/llvm-project-fork/cmake/Modules/ExtendPath.cmake
+D:/a/llvm-project-fork/llvm-project-fork/cmake/Modules/FindPrefixFromConfig.cmake
+D:/a/llvm-project-fork/llvm-project-fork/cmake/Modules/GNUInstallPackageDir.cmake
+D:/a/llvm-project-fork/llvm-project-fork/llvm/cmake/modules/CMakeLists.txt
+D:/a/llvm-project-fork/llvm-project-fork/llvm/cmake/modules/LLVMConfig.cmake.in
+D:/a/llvm-project-fork/llvm-project-fork/llvm/cmake/modules/LLVMConfigVersion.cmake.in
+D:/a/llvm-project-fork/llvm-project-fork/llvm/cmake/modules/LLVMDistributionSupport.cmake

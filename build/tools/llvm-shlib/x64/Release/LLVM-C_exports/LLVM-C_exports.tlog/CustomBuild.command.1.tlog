@@ -1,0 +1,38 @@
+^D:\A\LLVM-PROJECT-FORK\LLVM-PROJECT-FORK\BUILD\CMAKEFILES\41672B3E125A378F54CDF769B5650C1D\LIBLLVM-C.EXPORTS.RULE
+setlocal
+C:\hostedtoolcache\windows\Python\3.10.5\x64\python3.exe D:/a/llvm-project-fork/llvm-project-fork/llvm/tools/llvm-shlib/gen-msvc-exports.py --libsfile D:/a/llvm-project-fork/llvm-project-fork/build/Release/libllvm-c.args --nm D:/a/llvm-project-fork/llvm-project-fork/build/Release/bin/llvm-nm.exe -o D:/a/llvm-project-fork/llvm-project-fork/build/Release/libllvm-c.exports
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\A\LLVM-PROJECT-FORK\LLVM-PROJECT-FORK\BUILD\CMAKEFILES\CE92BE0E23F284AEE2FA21B9CD99CA9B\LLVM-C.DEF.RULE
+setlocal
+C:\hostedtoolcache\windows\Python\3.10.5\x64\python3.exe -c "import sys";"print(''.join(['EXPORTS\n']+sys.stdin.readlines(),))" < D:/a/llvm-project-fork/llvm-project-fork/build/Release/libllvm-c.exports > LLVM-C.def
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\A\LLVM-PROJECT-FORK\LLVM-PROJECT-FORK\BUILD\CMAKEFILES\3E94FC962C1951BD9069159DDF77E890\LLVM-C_EXPORTS.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\A\LLVM-PROJECT-FORK\LLVM-PROJECT-FORK\LLVM\TOOLS\LLVM-SHLIB\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/a/llvm-project-fork/llvm-project-fork/llvm -BD:/a/llvm-project-fork/llvm-project-fork/build --check-stamp-file D:/a/llvm-project-fork/llvm-project-fork/build/tools/llvm-shlib/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

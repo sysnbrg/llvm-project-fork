@@ -1,0 +1,1484 @@
+Checking whether the ASM compiler is GNU using "--version" did not match "(GNU assembler)|(GCC)|(Free Software Foundation)":
+Microsoft (R) C/C++ Optimizing Compiler Version 19.32.31332 for x64
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+cl : Command line warning D9002 : ignoring unknown option '--version'
+cl : Command line error D8003 : missing source filename
+Checking whether the ASM compiler is Clang using "--version" did not match "(clang version)":
+Microsoft (R) C/C++ Optimizing Compiler Version 19.32.31332 for x64
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+cl : Command line warning D9002 : ignoring unknown option '--version'
+cl : Command line error D8003 : missing source filename
+Checking whether the ASM compiler is AppleClang using "--version" did not match "(Apple LLVM version)":
+Microsoft (R) C/C++ Optimizing Compiler Version 19.32.31332 for x64
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+cl : Command line warning D9002 : ignoring unknown option '--version'
+cl : Command line error D8003 : missing source filename
+Checking whether the ASM compiler is ARMClang using "--version" did not match "armclang":
+Microsoft (R) C/C++ Optimizing Compiler Version 19.32.31332 for x64
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+cl : Command line warning D9002 : ignoring unknown option '--version'
+cl : Command line error D8003 : missing source filename
+Checking whether the ASM compiler is HP using "-V" did not match "HP C":
+Microsoft (R) C/C++ Optimizing Compiler Version 19.32.31332 for x64
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+cl : Command line error D8004 : '/V' requires an argument
+Checking whether the ASM compiler is Intel using "--version" did not match "(ICC)":
+Microsoft (R) C/C++ Optimizing Compiler Version 19.32.31332 for x64
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+cl : Command line warning D9002 : ignoring unknown option '--version'
+cl : Command line error D8003 : missing source filename
+Checking whether the ASM compiler is IntelLLVM using "--version" did not match "(Intel[^
+]+oneAPI)":
+Microsoft (R) C/C++ Optimizing Compiler Version 19.32.31332 for x64
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+cl : Command line warning D9002 : ignoring unknown option '--version'
+cl : Command line error D8003 : missing source filename
+Checking whether the ASM compiler is SunPro using "-V" did not match "Sun C":
+Microsoft (R) C/C++ Optimizing Compiler Version 19.32.31332 for x64
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+cl : Command line error D8004 : '/V' requires an argument
+Checking whether the ASM compiler is XL using "-qversion" did not match "XL C":
+Microsoft (R) C/C++ Optimizing Compiler Version 19.32.31332 for x64
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+cl : Command line warning D9002 : ignoring unknown option '-qversion'
+cl : Command line error D8003 : missing source filename
+Determining if the include file dlfcn.h exists failed with the following output:
+Change Dir: D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_8a6e0.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.2.1+52cd2da31 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.32.31332 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckIncludeFile.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_8a6e0.dir\Debug\\" /Fd"cmTC_8a6e0.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c(1,10): fatal error C1083: Cannot open include file: 'dlfcn.h': No such file or directory [D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\cmTC_8a6e0.vcxproj]
+
+
+
+Determining if the include file link.h exists failed with the following output:
+Change Dir: D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_71e07.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.2.1+52cd2da31 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.32.31332 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckIncludeFile.c
+D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c(1,10): fatal error C1083: Cannot open include file: 'link.h': No such file or directory [D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\cmTC_71e07.vcxproj]
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_71e07.dir\Debug\\" /Fd"cmTC_71e07.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+
+
+
+Determining if the include file malloc/malloc.h exists failed with the following output:
+Change Dir: D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_cad8a.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.2.1+52cd2da31 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.32.31332 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckIncludeFile.c
+D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c(1,10): fatal error C1083: Cannot open include file: 'malloc/malloc.h': No such file or directory [D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\cmTC_cad8a.vcxproj]
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_cad8a.dir\Debug\\" /Fd"cmTC_cad8a.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+
+
+
+Determining if the include file sys/ioctl.h exists failed with the following output:
+Change Dir: D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_89024.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.2.1+52cd2da31 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.32.31332 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckIncludeFile.c
+D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c(1,10): fatal error C1083: Cannot open include file: 'sys/ioctl.h': No such file or directory [D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\cmTC_89024.vcxproj]
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_89024.dir\Debug\\" /Fd"cmTC_89024.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+
+
+
+Determining if the include file sys/mman.h exists failed with the following output:
+Change Dir: D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_3a4e4.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.2.1+52cd2da31 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.32.31332 for x64
+  CheckIncludeFile.c
+D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c(1,10): fatal error C1083: Cannot open include file: 'sys/mman.h': No such file or directory [D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\cmTC_3a4e4.vcxproj]
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_3a4e4.dir\Debug\\" /Fd"cmTC_3a4e4.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+
+
+
+Determining if the include file sys/param.h exists failed with the following output:
+Change Dir: D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_f222c.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.2.1+52cd2da31 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.32.31332 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckIncludeFile.c
+D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c(1,10): fatal error C1083: Cannot open include file: 'sys/param.h': No such file or directory [D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\cmTC_f222c.vcxproj]
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_f222c.dir\Debug\\" /Fd"cmTC_f222c.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+
+
+
+Determining if the include file sys/resource.h exists failed with the following output:
+Change Dir: D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_facaa.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.2.1+52cd2da31 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.32.31332 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckIncludeFile.c
+D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c(1,10): fatal error C1083: Cannot open include file: 'sys/resource.h': No such file or directory [D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\cmTC_facaa.vcxproj]
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_facaa.dir\Debug\\" /Fd"cmTC_facaa.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+
+
+
+Determining if the include file sys/time.h exists failed with the following output:
+Change Dir: D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_8dd7b.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.2.1+52cd2da31 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.32.31332 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckIncludeFile.c
+D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c(1,10): fatal error C1083: Cannot open include file: 'sys/time.h': No such file or directory [D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\cmTC_8dd7b.vcxproj]
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_8dd7b.dir\Debug\\" /Fd"cmTC_8dd7b.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+
+
+
+Determining if the include file sysexits.h exists failed with the following output:
+Change Dir: D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_2f85d.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.2.1+52cd2da31 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.32.31332 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckIncludeFile.c
+D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c(1,10): fatal error C1083: Cannot open include file: 'sysexits.h': No such file or directory [D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\cmTC_2f85d.vcxproj]
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_2f85d.dir\Debug\\" /Fd"cmTC_2f85d.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+
+
+
+Determining if the include file termios.h exists failed with the following output:
+Change Dir: D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_2baed.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.2.1+52cd2da31 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.32.31332 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckIncludeFile.c
+D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c(1,10): fatal error C1083: Cannot open include file: 'termios.h': No such file or directory [D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\cmTC_2baed.vcxproj]
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_2baed.dir\Debug\\" /Fd"cmTC_2baed.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+
+
+
+Determining if the include file unistd.h exists failed with the following output:
+Change Dir: D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_1ffbb.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.2.1+52cd2da31 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.32.31332 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckIncludeFile.c
+D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c(1,10): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory [D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\cmTC_1ffbb.vcxproj]
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_1ffbb.dir\Debug\\" /Fd"cmTC_1ffbb.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+
+
+
+Determining if the include file valgrind/valgrind.h exists failed with the following output:
+Change Dir: D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_3fbc9.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.2.1+52cd2da31 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.32.31332 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckIncludeFile.c
+D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c(1,10): fatal error C1083: Cannot open include file: 'valgrind/valgrind.h': No such file or directory [D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\cmTC_3fbc9.vcxproj]
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_3fbc9.dir\Debug\\" /Fd"cmTC_3fbc9.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+
+
+
+Determining if the include file mach/mach.h exists failed with the following output:
+Change Dir: D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_e8bf9.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.2.1+52cd2da31 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.32.31332 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckIncludeFile.c
+D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c(1,10): fatal error C1083: Cannot open include file: 'mach/mach.h': No such file or directory [D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\cmTC_e8bf9.vcxproj]
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_e8bf9.dir\Debug\\" /Fd"cmTC_e8bf9.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+
+
+
+Determining if the include file CrashReporterClient.h exists failed with the following output:
+Change Dir: D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_db2ec.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.2.1+52cd2da31 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.32.31332 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckIncludeFile.c
+D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c(1,10): fatal error C1083: Cannot open include file: 'CrashReporterClient.h': No such file or directory [D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\cmTC_db2ec.vcxproj]
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_db2ec.dir\Debug\\" /Fd"cmTC_db2ec.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+
+
+
+Determining if the function pfm_initialize exists in the pfm failed with the following output:
+Change Dir: D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_9f5de.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.2.1+52cd2da31 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.32.31332 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckFunctionExists.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pfm_initialize /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_9f5de.dir\Debug\\" /Fd"cmTC_9f5de.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.23\Modules\CheckFunctionExists.c"
+LINK : fatal error LNK1104: cannot open file 'pfm.lib' [D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\cmTC_9f5de.vcxproj]
+
+
+
+Determining if the function xar_open exists in the xar failed with the following output:
+Change Dir: D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_6f16d.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.2.1+52cd2da31 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.32.31332 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckFunctionExists.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=xar_open /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_6f16d.dir\Debug\\" /Fd"cmTC_6f16d.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.23\Modules\CheckFunctionExists.c"
+LINK : fatal error LNK1104: cannot open file 'xar.lib' [D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\cmTC_6f16d.vcxproj]
+
+
+
+Determining if the arc4random exist failed with the following output:
+Change Dir: D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_8fdb4.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.2.1+52cd2da31 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.32.31332 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckSymbolExists.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_8fdb4.dir\Debug\\" /Fd"cmTC_8fdb4.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c"
+D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c(8,29): error C2065: 'arc4random': undeclared identifier [D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\cmTC_8fdb4.vcxproj]
+
+
+File D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdlib.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef arc4random
+  return ((int*)(&arc4random))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the backtrace exist failed with the following output:
+Change Dir: D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_eb892.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.2.1+52cd2da31 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.32.31332 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckSymbolExists.c
+D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c(2,10): fatal error C1083: Cannot open include file: 'execinfo.h': No such file or directory [D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\cmTC_eb892.vcxproj]
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_eb892.dir\Debug\\" /Fd"cmTC_eb892.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c"
+
+
+File D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <execinfo.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef backtrace
+  return ((int*)(&backtrace))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Performing C SOURCE FILE Test C_SUPPORTS_WERROR_UNGUARDED_AVAILABILITY_NEW failed with the following output:
+Change Dir: D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_fdd29.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.2.1+52cd2da31 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.32.31332 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D C_SUPPORTS_WERROR_UNGUARDED_AVAILABILITY_NEW /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_fdd29.dir\Debug\\" /Fd"cmTC_fdd29.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue  -Werror=unguarded-availability-new "D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\src.c"
+cl : command line error D8021: invalid numeric argument '/Werror=unguarded-availability-new' [D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\cmTC_fdd29.vcxproj]
+
+
+Source file was:
+int main(void) { return 0; }
+Determining if the __register_frame exist failed with the following output:
+Change Dir: D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_c33f4.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.2.1+52cd2da31 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.32.31332 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckSymbolExists.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_c33f4.dir\Debug\\" /Fd"cmTC_c33f4.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c"
+CheckSymbolExists.obj : error LNK2019: unresolved external symbol __register_frame referenced in function main [D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\cmTC_c33f4.vcxproj]
+D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\Debug\cmTC_c33f4.exe : fatal error LNK1120: 1 unresolved externals [D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\cmTC_c33f4.vcxproj]
+
+
+File D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <D:/a/llvm-project-fork/llvm-project-fork/llvm/cmake/unwind.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef __register_frame
+  return ((int*)(&__register_frame))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the __deregister_frame exist failed with the following output:
+Change Dir: D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_66424.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.2.1+52cd2da31 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.32.31332 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckSymbolExists.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_66424.dir\Debug\\" /Fd"cmTC_66424.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c"
+CheckSymbolExists.obj : error LNK2019: unresolved external symbol __deregister_frame referenced in function main [D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\cmTC_66424.vcxproj]
+D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\Debug\cmTC_66424.exe : fatal error LNK1120: 1 unresolved externals [D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\cmTC_66424.vcxproj]
+
+
+File D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <D:/a/llvm-project-fork/llvm-project-fork/llvm/cmake/unwind.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef __deregister_frame
+  return ((int*)(&__deregister_frame))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the __unw_add_dynamic_fde exist failed with the following output:
+Change Dir: D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_7b19e.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.2.1+52cd2da31 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.32.31332 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckSymbolExists.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_7b19e.dir\Debug\\" /Fd"cmTC_7b19e.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c"
+CheckSymbolExists.obj : error LNK2019: unresolved external symbol __unw_add_dynamic_fde referenced in function main [D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\cmTC_7b19e.vcxproj]
+D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\Debug\cmTC_7b19e.exe : fatal error LNK1120: 1 unresolved externals [D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\cmTC_7b19e.vcxproj]
+
+
+File D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <D:/a/llvm-project-fork/llvm-project-fork/llvm/cmake/unwind.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef __unw_add_dynamic_fde
+  return ((int*)(&__unw_add_dynamic_fde))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the _Unwind_Backtrace exist failed with the following output:
+Change Dir: D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_8cf18.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.2.1+52cd2da31 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.32.31332 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckSymbolExists.c
+D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c(2,10): fatal error C1083: Cannot open include file: 'unwind.h': No such file or directory [D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\cmTC_8cf18.vcxproj]
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_8cf18.dir\Debug\\" /Fd"cmTC_8cf18.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c"
+
+
+File D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <unwind.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _Unwind_Backtrace
+  return ((int*)(&_Unwind_Backtrace))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the getpagesize exist failed with the following output:
+Change Dir: D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_80479.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.2.1+52cd2da31 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.32.31332 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckSymbolExists.c
+D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c(2,10): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory [D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\cmTC_80479.vcxproj]
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_80479.dir\Debug\\" /Fd"cmTC_80479.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c"
+
+
+File D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <unistd.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef getpagesize
+  return ((int*)(&getpagesize))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the sysconf exist failed with the following output:
+Change Dir: D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_1f229.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.2.1+52cd2da31 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.32.31332 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckSymbolExists.c
+D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c(2,10): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory [D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\cmTC_1f229.vcxproj]
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_1f229.dir\Debug\\" /Fd"cmTC_1f229.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c"
+
+
+File D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <unistd.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef sysconf
+  return ((int*)(&sysconf))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the getrusage exist failed with the following output:
+Change Dir: D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_ba7ca.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.2.1+52cd2da31 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.32.31332 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckSymbolExists.c
+D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c(2,10): fatal error C1083: Cannot open include file: 'sys/resource.h': No such file or directory [D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\cmTC_ba7ca.vcxproj]
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_ba7ca.dir\Debug\\" /Fd"cmTC_ba7ca.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c"
+
+
+File D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/resource.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef getrusage
+  return ((int*)(&getrusage))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the setrlimit exist failed with the following output:
+Change Dir: D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_af58b.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.2.1+52cd2da31 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.32.31332 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckSymbolExists.c
+D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c(2,10): fatal error C1083: Cannot open include file: 'sys/resource.h': No such file or directory [D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\cmTC_af58b.vcxproj]
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_af58b.dir\Debug\\" /Fd"cmTC_af58b.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c"
+
+
+File D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/resource.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef setrlimit
+  return ((int*)(&setrlimit))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the isatty exist failed with the following output:
+Change Dir: D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_52995.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.2.1+52cd2da31 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.32.31332 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckSymbolExists.c
+D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c(2,10): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory [D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\cmTC_52995.vcxproj]
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_52995.dir\Debug\\" /Fd"cmTC_52995.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c"
+
+
+File D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <unistd.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef isatty
+  return ((int*)(&isatty))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the futimens exist failed with the following output:
+Change Dir: D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_cd47c.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.2.1+52cd2da31 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.32.31332 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckSymbolExists.c
+D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c(8,27): error C2065: 'futimens': undeclared identifier [D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\cmTC_cd47c.vcxproj]
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_cd47c.dir\Debug\\" /Fd"cmTC_cd47c.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c"
+
+
+File D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/stat.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef futimens
+  return ((int*)(&futimens))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the futimes exist failed with the following output:
+Change Dir: D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_7725b.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.2.1+52cd2da31 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.32.31332 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckSymbolExists.c
+D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c(2,10): fatal error C1083: Cannot open include file: 'sys/time.h': No such file or directory [D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\cmTC_7725b.vcxproj]
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_7725b.dir\Debug\\" /Fd"cmTC_7725b.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c"
+
+
+File D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/time.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef futimes
+  return ((int*)(&futimes))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the sigaltstack exist failed with the following output:
+Change Dir: D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_debe1.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.2.1+52cd2da31 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.32.31332 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckSymbolExists.c
+D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c(8,30): error C2065: 'sigaltstack': undeclared identifier [D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\cmTC_debe1.vcxproj]
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_debe1.dir\Debug\\" /Fd"cmTC_debe1.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c"
+
+
+File D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <signal.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef sigaltstack
+  return ((int*)(&sigaltstack))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the lseek64 exist failed with the following output:
+Change Dir: D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_71ba9.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.2.1+52cd2da31 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.32.31332 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckSymbolExists.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _LARGEFILE64_SOURCE /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_71ba9.dir\Debug\\" /Fd"cmTC_71ba9.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c"
+D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c(3,10): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory [D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\cmTC_71ba9.vcxproj]
+
+
+File D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/types.h>
+#include <unistd.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef lseek64
+  return ((int*)(&lseek64))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the mallctl exist failed with the following output:
+Change Dir: D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_29b99.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.2.1+52cd2da31 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.32.31332 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckSymbolExists.c
+D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c(2,10): fatal error C1083: Cannot open include file: 'malloc_np.h': No such file or directory [D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\cmTC_29b99.vcxproj]
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_29b99.dir\Debug\\" /Fd"cmTC_29b99.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c"
+
+
+File D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <malloc_np.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef mallctl
+  return ((int*)(&mallctl))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the mallinfo exist failed with the following output:
+Change Dir: D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_c679d.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.2.1+52cd2da31 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.32.31332 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckSymbolExists.c
+D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c(8,27): error C2065: 'mallinfo': undeclared identifier [D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\cmTC_c679d.vcxproj]
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_c679d.dir\Debug\\" /Fd"cmTC_c679d.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c"
+
+
+File D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <malloc.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef mallinfo
+  return ((int*)(&mallinfo))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the mallinfo2 exist failed with the following output:
+Change Dir: D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_4b562.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.2.1+52cd2da31 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.32.31332 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckSymbolExists.c
+D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c(8,28): error C2065: 'mallinfo2': undeclared identifier [D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\cmTC_4b562.vcxproj]
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_4b562.dir\Debug\\" /Fd"cmTC_4b562.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c"
+
+
+File D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <malloc.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef mallinfo2
+  return ((int*)(&mallinfo2))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the malloc_zone_statistics exist failed with the following output:
+Change Dir: D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_6c4a9.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.2.1+52cd2da31 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.32.31332 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckSymbolExists.c
+D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c(2,10): fatal error C1083: Cannot open include file: 'malloc/malloc.h': No such file or directory [D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\cmTC_6c4a9.vcxproj]
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_6c4a9.dir\Debug\\" /Fd"cmTC_6c4a9.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c"
+
+
+File D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <malloc/malloc.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef malloc_zone_statistics
+  return ((int*)(&malloc_zone_statistics))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the getrlimit exist failed with the following output:
+Change Dir: D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_f1bd4.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.2.1+52cd2da31 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.32.31332 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckSymbolExists.c
+D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c(3,10): fatal error C1083: Cannot open include file: 'sys/time.h': No such file or directory [D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\cmTC_f1bd4.vcxproj]
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_f1bd4.dir\Debug\\" /Fd"cmTC_f1bd4.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c"
+
+
+File D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/types.h>
+#include <sys/time.h>
+#include <sys/resource.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef getrlimit
+  return ((int*)(&getrlimit))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the posix_spawn exist failed with the following output:
+Change Dir: D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_de9b2.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.2.1+52cd2da31 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.32.31332 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckSymbolExists.c
+D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c(2,10): fatal error C1083: Cannot open include file: 'spawn.h': No such file or directory [D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\cmTC_de9b2.vcxproj]
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_de9b2.dir\Debug\\" /Fd"cmTC_de9b2.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c"
+
+
+File D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <spawn.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef posix_spawn
+  return ((int*)(&posix_spawn))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the pread exist failed with the following output:
+Change Dir: D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_02925.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.2.1+52cd2da31 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.32.31332 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckSymbolExists.c
+D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c(2,10): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory [D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\cmTC_02925.vcxproj]
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_02925.dir\Debug\\" /Fd"cmTC_02925.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c"
+
+
+File D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <unistd.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pread
+  return ((int*)(&pread))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the sbrk exist failed with the following output:
+Change Dir: D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_5e13f.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.2.1+52cd2da31 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.32.31332 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckSymbolExists.c
+D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c(2,10): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory [D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\cmTC_5e13f.vcxproj]
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_5e13f.dir\Debug\\" /Fd"cmTC_5e13f.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c"
+
+
+File D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <unistd.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef sbrk
+  return ((int*)(&sbrk))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the strerror_r exist failed with the following output:
+Change Dir: D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_bc794.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.2.1+52cd2da31 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.32.31332 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckSymbolExists.c
+D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c(8,29): error C2065: 'strerror_r': undeclared identifier [D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\cmTC_bc794.vcxproj]
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_bc794.dir\Debug\\" /Fd"cmTC_bc794.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c"
+
+
+File D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <string.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strerror_r
+  return ((int*)(&strerror_r))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the setenv exist failed with the following output:
+Change Dir: D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_06827.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.2.1+52cd2da31 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.32.31332 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckSymbolExists.c
+D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c(8,25): error C2065: 'setenv': undeclared identifier [D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\cmTC_06827.vcxproj]
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_06827.dir\Debug\\" /Fd"cmTC_06827.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c"
+
+
+File D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdlib.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef setenv
+  return ((int*)(&setenv))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the function _alloca exists failed with the following output:
+Change Dir: D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_1716f.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.2.1+52cd2da31 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.32.31332 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckFunctionExists.c
+C:\Program Files\CMake\share\cmake-3.23\Modules\CheckFunctionExists.c(7,3): warning C4391: 'char _alloca(void)': incorrect return type for intrinsic function, expected 'void' [D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\cmTC_1716f.vcxproj]
+C:\Program Files\CMake\share\cmake-3.23\Modules\CheckFunctionExists.c(7,3): warning C4392: 'char _alloca(void)': incorrect number of arguments for intrinsic function, expected '1' arguments [D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\cmTC_1716f.vcxproj]
+C:\Program Files\CMake\share\cmake-3.23\Modules\CheckFunctionExists.c(17,3): error C2168: '_alloca': too few actual parameters for intrinsic function [D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\cmTC_1716f.vcxproj]
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=_alloca /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_1716f.dir\Debug\\" /Fd"cmTC_1716f.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.23\Modules\CheckFunctionExists.c"
+
+
+
+Determining if the function __alloca exists failed with the following output:
+Change Dir: D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_ee1bd.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.2.1+52cd2da31 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.32.31332 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckFunctionExists.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=__alloca /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_ee1bd.dir\Debug\\" /Fd"cmTC_ee1bd.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.23\Modules\CheckFunctionExists.c"
+CheckFunctionExists.obj : error LNK2019: unresolved external symbol __alloca referenced in function main [D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\cmTC_ee1bd.vcxproj]
+D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\Debug\cmTC_ee1bd.exe : fatal error LNK1120: 1 unresolved externals [D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\cmTC_ee1bd.vcxproj]
+
+
+
+Determining if the function __chkstk_ms exists failed with the following output:
+Change Dir: D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_a06a9.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.2.1+52cd2da31 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.32.31332 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckFunctionExists.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=__chkstk_ms /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_a06a9.dir\Debug\\" /Fd"cmTC_a06a9.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.23\Modules\CheckFunctionExists.c"
+CheckFunctionExists.obj : error LNK2019: unresolved external symbol __chkstk_ms referenced in function main [D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\cmTC_a06a9.vcxproj]
+D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\Debug\cmTC_a06a9.exe : fatal error LNK1120: 1 unresolved externals [D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\cmTC_a06a9.vcxproj]
+
+
+
+Determining if the function ___chkstk exists failed with the following output:
+Change Dir: D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_e664e.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.2.1+52cd2da31 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.32.31332 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckFunctionExists.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=___chkstk /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_e664e.dir\Debug\\" /Fd"cmTC_e664e.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.23\Modules\CheckFunctionExists.c"
+CheckFunctionExists.obj : error LNK2019: unresolved external symbol ___chkstk referenced in function main [D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\cmTC_e664e.vcxproj]
+D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\Debug\cmTC_e664e.exe : fatal error LNK1120: 1 unresolved externals [D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\cmTC_e664e.vcxproj]
+
+
+
+Determining if the function ___chkstk_ms exists failed with the following output:
+Change Dir: D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_a50fa.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.2.1+52cd2da31 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.32.31332 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckFunctionExists.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=___chkstk_ms /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_a50fa.dir\Debug\\" /Fd"cmTC_a50fa.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.23\Modules\CheckFunctionExists.c"
+CheckFunctionExists.obj : error LNK2019: unresolved external symbol ___chkstk_ms referenced in function main [D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\cmTC_a50fa.vcxproj]
+D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\Debug\cmTC_a50fa.exe : fatal error LNK1120: 1 unresolved externals [D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\cmTC_a50fa.vcxproj]
+
+
+
+Determining if the function __ashldi3 exists failed with the following output:
+Change Dir: D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_5d404.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.2.1+52cd2da31 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.32.31332 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckFunctionExists.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=__ashldi3 /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_5d404.dir\Debug\\" /Fd"cmTC_5d404.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.23\Modules\CheckFunctionExists.c"
+CheckFunctionExists.obj : error LNK2019: unresolved external symbol __ashldi3 referenced in function main [D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\cmTC_5d404.vcxproj]
+D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\Debug\cmTC_5d404.exe : fatal error LNK1120: 1 unresolved externals [D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\cmTC_5d404.vcxproj]
+
+
+
+Determining if the function __ashrdi3 exists failed with the following output:
+Change Dir: D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_2f31e.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.2.1+52cd2da31 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.32.31332 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckFunctionExists.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=__ashrdi3 /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_2f31e.dir\Debug\\" /Fd"cmTC_2f31e.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.23\Modules\CheckFunctionExists.c"
+CheckFunctionExists.obj : error LNK2019: unresolved external symbol __ashrdi3 referenced in function main [D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\cmTC_2f31e.vcxproj]
+D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\Debug\cmTC_2f31e.exe : fatal error LNK1120: 1 unresolved externals [D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\cmTC_2f31e.vcxproj]
+
+
+
+Determining if the function __divdi3 exists failed with the following output:
+Change Dir: D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_b25d4.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.2.1+52cd2da31 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.32.31332 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckFunctionExists.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=__divdi3 /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_b25d4.dir\Debug\\" /Fd"cmTC_b25d4.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.23\Modules\CheckFunctionExists.c"
+CheckFunctionExists.obj : error LNK2019: unresolved external symbol __divdi3 referenced in function main [D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\cmTC_b25d4.vcxproj]
+D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\Debug\cmTC_b25d4.exe : fatal error LNK1120: 1 unresolved externals [D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\cmTC_b25d4.vcxproj]
+
+
+
+Determining if the function __fixdfdi exists failed with the following output:
+Change Dir: D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_50791.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.2.1+52cd2da31 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.32.31332 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckFunctionExists.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=__fixdfdi /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_50791.dir\Debug\\" /Fd"cmTC_50791.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.23\Modules\CheckFunctionExists.c"
+CheckFunctionExists.obj : error LNK2019: unresolved external symbol __fixdfdi referenced in function main [D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\cmTC_50791.vcxproj]
+D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\Debug\cmTC_50791.exe : fatal error LNK1120: 1 unresolved externals [D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\cmTC_50791.vcxproj]
+
+
+
+Determining if the function __fixsfdi exists failed with the following output:
+Change Dir: D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_8e030.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.2.1+52cd2da31 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.32.31332 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckFunctionExists.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=__fixsfdi /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_8e030.dir\Debug\\" /Fd"cmTC_8e030.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.23\Modules\CheckFunctionExists.c"
+CheckFunctionExists.obj : error LNK2019: unresolved external symbol __fixsfdi referenced in function main [D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\cmTC_8e030.vcxproj]
+D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\Debug\cmTC_8e030.exe : fatal error LNK1120: 1 unresolved externals [D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\cmTC_8e030.vcxproj]
+
+
+
+Determining if the function __floatdidf exists failed with the following output:
+Change Dir: D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_b9c9d.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.2.1+52cd2da31 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.32.31332 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckFunctionExists.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=__floatdidf /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_b9c9d.dir\Debug\\" /Fd"cmTC_b9c9d.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.23\Modules\CheckFunctionExists.c"
+CheckFunctionExists.obj : error LNK2019: unresolved external symbol __floatdidf referenced in function main [D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\cmTC_b9c9d.vcxproj]
+D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\Debug\cmTC_b9c9d.exe : fatal error LNK1120: 1 unresolved externals [D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\cmTC_b9c9d.vcxproj]
+
+
+
+Determining if the function __lshrdi3 exists failed with the following output:
+Change Dir: D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_4ddc3.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.2.1+52cd2da31 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.32.31332 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckFunctionExists.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=__lshrdi3 /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_4ddc3.dir\Debug\\" /Fd"cmTC_4ddc3.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.23\Modules\CheckFunctionExists.c"
+CheckFunctionExists.obj : error LNK2019: unresolved external symbol __lshrdi3 referenced in function main [D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\cmTC_4ddc3.vcxproj]
+D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\Debug\cmTC_4ddc3.exe : fatal error LNK1120: 1 unresolved externals [D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\cmTC_4ddc3.vcxproj]
+
+
+
+Determining if the function __moddi3 exists failed with the following output:
+Change Dir: D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_187cf.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.2.1+52cd2da31 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.32.31332 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckFunctionExists.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=__moddi3 /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_187cf.dir\Debug\\" /Fd"cmTC_187cf.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.23\Modules\CheckFunctionExists.c"
+CheckFunctionExists.obj : error LNK2019: unresolved external symbol __moddi3 referenced in function main [D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\cmTC_187cf.vcxproj]
+D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\Debug\cmTC_187cf.exe : fatal error LNK1120: 1 unresolved externals [D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\cmTC_187cf.vcxproj]
+
+
+
+Determining if the function __udivdi3 exists failed with the following output:
+Change Dir: D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_3593d.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.2.1+52cd2da31 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.32.31332 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckFunctionExists.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=__udivdi3 /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_3593d.dir\Debug\\" /Fd"cmTC_3593d.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.23\Modules\CheckFunctionExists.c"
+CheckFunctionExists.obj : error LNK2019: unresolved external symbol __udivdi3 referenced in function main [D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\cmTC_3593d.vcxproj]
+D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\Debug\cmTC_3593d.exe : fatal error LNK1120: 1 unresolved externals [D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\cmTC_3593d.vcxproj]
+
+
+
+Determining if the function __umoddi3 exists failed with the following output:
+Change Dir: D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_6e5cc.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.2.1+52cd2da31 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.32.31332 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckFunctionExists.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=__umoddi3 /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_6e5cc.dir\Debug\\" /Fd"cmTC_6e5cc.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.23\Modules\CheckFunctionExists.c"
+CheckFunctionExists.obj : error LNK2019: unresolved external symbol __umoddi3 referenced in function main [D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\cmTC_6e5cc.vcxproj]
+D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\Debug\cmTC_6e5cc.exe : fatal error LNK1120: 1 unresolved externals [D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\cmTC_6e5cc.vcxproj]
+
+
+
+Determining if the function __main exists failed with the following output:
+Change Dir: D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_ef7a6.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.2.1+52cd2da31 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.32.31332 for x64
+  CheckFunctionExists.c
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=__main /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_ef7a6.dir\Debug\\" /Fd"cmTC_ef7a6.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.23\Modules\CheckFunctionExists.c"
+CheckFunctionExists.obj : error LNK2019: unresolved external symbol __main referenced in function main [D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\cmTC_ef7a6.vcxproj]
+D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\Debug\cmTC_ef7a6.exe : fatal error LNK1120: 1 unresolved externals [D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\cmTC_ef7a6.vcxproj]
+
+
+
+Determining if the function __cmpdi2 exists failed with the following output:
+Change Dir: D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_fe122.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.2.1+52cd2da31 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.32.31332 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckFunctionExists.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=__cmpdi2 /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_fe122.dir\Debug\\" /Fd"cmTC_fe122.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.23\Modules\CheckFunctionExists.c"
+CheckFunctionExists.obj : error LNK2019: unresolved external symbol __cmpdi2 referenced in function main [D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\cmTC_fe122.vcxproj]
+D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\Debug\cmTC_fe122.exe : fatal error LNK1120: 1 unresolved externals [D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\cmTC_fe122.vcxproj]
+
+
+
+Performing C SOURCE FILE Test HAVE_STRUCT_STAT_ST_MTIMESPEC_TV_NSEC failed with the following output:
+Change Dir: D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_4ff22.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.2.1+52cd2da31 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.32.31332 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  src.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_STRUCT_STAT_ST_MTIMESPEC_TV_NSEC /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_4ff22.dir\Debug\\" /Fd"cmTC_4ff22.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\src.c"
+D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\src.c(7,36): error C2039: 'st_mtimespec': is not a member of 'stat' [D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\cmTC_4ff22.vcxproj]
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.20348.0\ucrt\sys/stat.h(87): message : see declaration of 'stat' [D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\cmTC_4ff22.vcxproj]
+
+
+Source file was:
+
+#include <sys/types.h>
+#include <sys/stat.h>
+
+int main()
+{
+  (void)sizeof(((struct stat *)0)->st_mtimespec.tv_nsec);
+  return 0;
+}
+
+Performing C SOURCE FILE Test HAVE_STRUCT_STAT_ST_MTIM_TV_NSEC failed with the following output:
+Change Dir: D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_9465f.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.2.1+52cd2da31 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.32.31332 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  src.c
+D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\src.c(7,36): error C2039: 'st_mtim': is not a member of 'stat' [D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\cmTC_9465f.vcxproj]
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.20348.0\ucrt\sys/stat.h(87): message : see declaration of 'stat' [D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\cmTC_9465f.vcxproj]
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_STRUCT_STAT_ST_MTIM_TV_NSEC /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_9465f.dir\Debug\\" /Fd"cmTC_9465f.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\src.c"
+
+
+Source file was:
+
+#include <sys/types.h>
+#include <sys/stat.h>
+
+int main()
+{
+  (void)sizeof(((struct stat *)0)->st_mtim.tv_nsec);
+  return 0;
+}
+
+Determining if the __GLIBC__ exist failed with the following output:
+Change Dir: D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_2383f.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.2.1+52cd2da31 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.32.31332 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckSymbolExists.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_2383f.dir\Debug\\" /Fd"cmTC_2383f.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c"
+D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c(8,28): error C2065: '__GLIBC__': undeclared identifier [D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\cmTC_2383f.vcxproj]
+
+
+File D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdio.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef __GLIBC__
+  return ((int*)(&__GLIBC__))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the proc_pid_rusage exist failed with the following output:
+Change Dir: D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_90e94.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.2.1+52cd2da31 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.32.31332 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckSymbolExists.c
+D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c(2,10): fatal error C1083: Cannot open include file: 'libproc.h': No such file or directory [D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\cmTC_90e94.vcxproj]
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_90e94.dir\Debug\\" /Fd"cmTC_90e94.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c"
+
+
+File D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <libproc.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef proc_pid_rusage
+  return ((int*)(&proc_pid_rusage))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Performing C++ SOURCE FILE Test SUPPORTS_VARIADIC_MACROS_FLAG failed with the following output:
+Change Dir: D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_93289.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.2.1+52cd2da31 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.32.31332 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D SUPPORTS_VARIADIC_MACROS_FLAG /D "CMAKE_INTDIR=\"Debug\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /std:c++14 /Fo"cmTC_93289.dir\Debug\\" /Fd"cmTC_93289.dir\Debug\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue  -Wvariadic-macros "D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\src.cxx"
+cl : command line error D8021: invalid numeric argument '/Wvariadic-macros' [D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\cmTC_93289.vcxproj]
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test SUPPORTS_GNU_ZERO_VARIADIC_MACRO_ARGUMENTS_FLAG failed with the following output:
+Change Dir: D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_c575c.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.2.1+52cd2da31 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.32.31332 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D SUPPORTS_GNU_ZERO_VARIADIC_MACRO_ARGUMENTS_FLAG /D "CMAKE_INTDIR=\"Debug\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /std:c++14 /Fo"cmTC_c575c.dir\Debug\\" /Fd"cmTC_c575c.dir\Debug\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue  -Wgnu-zero-variadic-macro-arguments "D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\src.cxx"
+cl : command line error D8021: invalid numeric argument '/Wgnu-zero-variadic-macro-arguments' [D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\cmTC_c575c.vcxproj]
+
+
+Source file was:
+int main() { return 0; }
+Determining if the os_signpost_interval_begin exist failed with the following output:
+Change Dir: D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_79bc5.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.2.1+52cd2da31 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.32.31332 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckSymbolExists.c
+D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c(2,10): fatal error C1083: Cannot open include file: 'os/signpost.h': No such file or directory [D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\cmTC_79bc5.vcxproj]
+  cl /c /Zi /W4 /WX- /diagnostics:column /Od /Ob0 /Oi /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /permissive- /Fo"cmTC_79bc5.dir\Debug\\" /Fd"cmTC_79bc5.dir\Debug\vc143.pdb" /external:W4 /Gd /TC /wd4141 /wd4146 /wd4244 /wd4267 /wd4291 /wd4351 /wd4456 /wd4457 /wd4458 /wd4459 /wd4503 /wd4624 /wd4722 /wd4100 /wd4127 /wd4512 /wd4505 /wd4610 /wd4510 /wd4702 /wd4245 /wd4706 /wd4310 /wd4701 /wd4703 /wd4389 /wd4611 /wd4805 /wd4204 /wd4577 /wd4091 /wd4592 /wd4319 /wd4709 /wd4324 /errorReport:queue /we4238  -w14062 /Gw "D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c"
+
+
+File D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <os/signpost.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef os_signpost_interval_begin
+  return ((int*)(&os_signpost_interval_begin))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Performing C++ SOURCE FILE Test HAS_WERROR_GLOBAL_CTORS failed with the following output:
+Change Dir: D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_7d82a.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.2.1+52cd2da31 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.32.31332 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W4 /WX- /diagnostics:column /Od /Ob0 /Oi /D _MBCS /D WIN32 /D _WINDOWS /D HAS_WERROR_GLOBAL_CTORS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c++14 /permissive- /Fo"cmTC_7d82a.dir\Debug\\" /Fd"cmTC_7d82a.dir\Debug\vc143.pdb" /external:W4 /Gd /TP /wd4141 /wd4146 /wd4244 /wd4267 /wd4291 /wd4351 /wd4456 /wd4457 /wd4458 /wd4459 /wd4503 /wd4624 /wd4722 /wd4100 /wd4127 /wd4512 /wd4505 /wd4610 /wd4510 /wd4702 /wd4245 /wd4706 /wd4310 /wd4701 /wd4703 /wd4389 /wd4611 /wd4805 /wd4204 /wd4577 /wd4091 /wd4592 /wd4319 /wd4709 /wd4324 /errorReport:queue /we4238  /Zc:__cplusplus /bigobj -w14062 /Gw -Werror=global-constructors "D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\src.cxx"
+cl : command line error D8021: invalid numeric argument '/Werror=global-constructors' [D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\cmTC_7d82a.vcxproj]
+
+
+Source file was:
+int main() { return 0; }
+Checking whether the ASM_MASM compiler is GNU using "--version" did not match "(GNU assembler)|(GCC)|(Free Software Foundation)":
+Microsoft (R) Macro Assembler (x64) Version 14.32.31332.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+MASM : warning A4018:invalid command-line option : --version
+MASM : fatal error A1017:missing source filename
+Checking whether the ASM_MASM compiler is Clang using "--version" did not match "(clang version)":
+Microsoft (R) Macro Assembler (x64) Version 14.32.31332.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+MASM : warning A4018:invalid command-line option : --version
+MASM : fatal error A1017:missing source filename
+Checking whether the ASM_MASM compiler is AppleClang using "--version" did not match "(Apple LLVM version)":
+Microsoft (R) Macro Assembler (x64) Version 14.32.31332.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+MASM : warning A4018:invalid command-line option : --version
+MASM : fatal error A1017:missing source filename
+Checking whether the ASM_MASM compiler is ARMClang using "--version" did not match "armclang":
+Microsoft (R) Macro Assembler (x64) Version 14.32.31332.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+MASM : warning A4018:invalid command-line option : --version
+MASM : fatal error A1017:missing source filename
+Checking whether the ASM_MASM compiler is HP using "-V" did not match "HP C":
+Microsoft (R) Macro Assembler (x64) Version 14.32.31332.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+MASM : warning A4018:invalid command-line option : -V
+MASM : fatal error A1017:missing source filename
+Checking whether the ASM_MASM compiler is Intel using "--version" did not match "(ICC)":
+Microsoft (R) Macro Assembler (x64) Version 14.32.31332.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+MASM : warning A4018:invalid command-line option : --version
+MASM : fatal error A1017:missing source filename
+Checking whether the ASM_MASM compiler is IntelLLVM using "--version" did not match "(Intel[^
+]+oneAPI)":
+Microsoft (R) Macro Assembler (x64) Version 14.32.31332.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+MASM : warning A4018:invalid command-line option : --version
+MASM : fatal error A1017:missing source filename
+Checking whether the ASM_MASM compiler is SunPro using "-V" did not match "Sun C":
+Microsoft (R) Macro Assembler (x64) Version 14.32.31332.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+MASM : warning A4018:invalid command-line option : -V
+MASM : fatal error A1017:missing source filename
+Checking whether the ASM_MASM compiler is XL using "-qversion" did not match "XL C":
+Microsoft (R) Macro Assembler (x64) Version 14.32.31332.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+MASM : warning A4018:invalid command-line option : -qversion
+MASM : fatal error A1017:missing source filename
+Determining if the function shm_open exists in the rt failed with the following output:
+Change Dir: D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_d9c0b.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.2.1+52cd2da31 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.32.31332 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckFunctionExists.c
+  cl /c /Zi /W4 /WX- /diagnostics:column /Od /Ob0 /Oi /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=shm_open /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /permissive- /Fo"cmTC_d9c0b.dir\Debug\\" /Fd"cmTC_d9c0b.dir\Debug\vc143.pdb" /external:W4 /Gd /TC /wd4141 /wd4146 /wd4244 /wd4267 /wd4291 /wd4351 /wd4456 /wd4457 /wd4458 /wd4459 /wd4503 /wd4624 /wd4722 /wd4100 /wd4127 /wd4512 /wd4505 /wd4610 /wd4510 /wd4702 /wd4245 /wd4706 /wd4310 /wd4701 /wd4703 /wd4389 /wd4611 /wd4805 /wd4204 /wd4577 /wd4091 /wd4592 /wd4319 /wd4709 /wd4324 /errorReport:queue /we4238  -w14062 /Gw "C:\Program Files\CMake\share\cmake-3.23\Modules\CheckFunctionExists.c"
+LINK : fatal error LNK1104: cannot open file 'rt.lib' [D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\cmTC_d9c0b.vcxproj]
+
+
+
+Determining if the include file pthread.h exists failed with the following output:
+Change Dir: D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_9154d.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.2.1+52cd2da31 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.32.31332 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckIncludeFile.c
+D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c(1,10): fatal error C1083: Cannot open include file: 'pthread.h': No such file or directory [D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\cmTC_9154d.vcxproj]
+  cl /c /Zi /W4 /WX- /diagnostics:column /Od /Ob0 /Oi /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /permissive- /Fo"cmTC_9154d.dir\Debug\\" /Fd"cmTC_9154d.dir\Debug\vc143.pdb" /external:W4 /Gd /TC /wd4141 /wd4146 /wd4244 /wd4267 /wd4291 /wd4351 /wd4456 /wd4457 /wd4458 /wd4459 /wd4503 /wd4624 /wd4722 /wd4100 /wd4127 /wd4512 /wd4505 /wd4610 /wd4510 /wd4702 /wd4245 /wd4706 /wd4310 /wd4701 /wd4703 /wd4389 /wd4611 /wd4805 /wd4204 /wd4577 /wd4091 /wd4592 /wd4319 /wd4709 /wd4324 /errorReport:queue /we4238  -w14062 /Gw "D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+
+
+

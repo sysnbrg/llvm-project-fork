@@ -1,0 +1,38 @@
+^D:\A\LLVM-PROJECT-FORK\LLVM-PROJECT-FORK\BUILD\CMAKEFILES\E56275CC268377100AE4E993AD999E75\ACC.H.INC.RULE
+setlocal
+..\..\..\..\Release\bin\llvm-tblgen.exe --gen-directive-decl -I D:/a/llvm-project-fork/llvm-project-fork/llvm/include/llvm/Frontend/OpenACC -ID:/a/llvm-project-fork/llvm-project-fork/build/include -ID:/a/llvm-project-fork/llvm-project-fork/llvm/include --long-string-literals=0 D:/a/llvm-project-fork/llvm-project-fork/llvm/include/llvm/Frontend/OpenACC/ACC.td -o D:/a/llvm-project-fork/llvm-project-fork/build/include/llvm/Frontend/OpenACC/ACC.h.inc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\A\LLVM-PROJECT-FORK\LLVM-PROJECT-FORK\BUILD\CMAKEFILES\E56275CC268377100AE4E993AD999E75\ACC.INC.RULE
+setlocal
+..\..\..\..\Release\bin\llvm-tblgen.exe --gen-directive-impl -I D:/a/llvm-project-fork/llvm-project-fork/llvm/include/llvm/Frontend/OpenACC -ID:/a/llvm-project-fork/llvm-project-fork/build/include -ID:/a/llvm-project-fork/llvm-project-fork/llvm/include --long-string-literals=0 D:/a/llvm-project-fork/llvm-project-fork/llvm/include/llvm/Frontend/OpenACC/ACC.td -o D:/a/llvm-project-fork/llvm-project-fork/build/include/llvm/Frontend/OpenACC/ACC.inc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\A\LLVM-PROJECT-FORK\LLVM-PROJECT-FORK\BUILD\CMAKEFILES\A0E6DE9E2C6E2A733CDD9BCA2EDD3B8D\ACC_GEN.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\A\LLVM-PROJECT-FORK\LLVM-PROJECT-FORK\LLVM\INCLUDE\LLVM\FRONTEND\OPENACC\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/a/llvm-project-fork/llvm-project-fork/llvm -BD:/a/llvm-project-fork/llvm-project-fork/build --check-stamp-file D:/a/llvm-project-fork/llvm-project-fork/build/include/llvm/Frontend/OpenACC/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

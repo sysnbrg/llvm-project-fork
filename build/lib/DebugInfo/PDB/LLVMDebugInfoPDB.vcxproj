@@ -1,0 +1,586 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B6C2C02E-C153-3D3F-8D56-90D39A380F79}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.20348.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>LLVMDebugInfoPDB</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\a\llvm-project-fork\llvm-project-fork\build\Debug\lib\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">LLVMDebugInfoPDB.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">LLVMDebugInfoPDB</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\a\llvm-project-fork\llvm-project-fork\build\Release\lib\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">LLVMDebugInfoPDB.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">LLVMDebugInfoPDB</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\a\llvm-project-fork\llvm-project-fork\build\MinSizeRel\lib\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">LLVMDebugInfoPDB.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">LLVMDebugInfoPDB</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\a\llvm-project-fork\llvm-project-fork\build\RelWithDebInfo\lib\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">LLVMDebugInfoPDB.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">LLVMDebugInfoPDB</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\a\llvm-project-fork\llvm-project-fork\build\lib\DebugInfo\PDB;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB;D:\a\llvm-project-fork\llvm-project-fork\build\include;D:\a\llvm-project-fork\llvm-project-fork\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zc:__cplusplus /bigobj -w14062 /Gw /EHs-c-</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <ConformanceMode>true</ConformanceMode>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4141;4146;4244;4267;4291;4351;4456;4457;4458;4459;4503;4624;4722;4100;4127;4512;4505;4610;4510;4702;4245;4706;4310;4701;4703;4389;4611;4805;4204;4577;4091;4592;4319;4709;4324</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData>true</RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4238</TreatSpecificWarningsAsErrors>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;UNICODE;_UNICODE;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;UNICODE;_UNICODE;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\a\llvm-project-fork\llvm-project-fork\build\lib\DebugInfo\PDB;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB;D:\a\llvm-project-fork\llvm-project-fork\build\include;D:\a\llvm-project-fork\llvm-project-fork\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;UNICODE;_UNICODE;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <IncludePaths>D:\a\llvm-project-fork\llvm-project-fork\build\lib\DebugInfo\PDB;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB;D:\a\llvm-project-fork\llvm-project-fork\build\include;D:\a\llvm-project-fork\llvm-project-fork\llvm\include;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\a\llvm-project-fork\llvm-project-fork\build\lib\DebugInfo\PDB;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB;D:\a\llvm-project-fork\llvm-project-fork\build\include;D:\a\llvm-project-fork\llvm-project-fork\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\a\llvm-project-fork\llvm-project-fork\build\lib\DebugInfo\PDB;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB;D:\a\llvm-project-fork\llvm-project-fork\build\include;D:\a\llvm-project-fork\llvm-project-fork\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zc:__cplusplus /bigobj -w14062 /Gw /EHs-c-</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ConformanceMode>true</ConformanceMode>
+      <DisableSpecificWarnings>4141;4146;4244;4267;4291;4351;4456;4457;4458;4459;4503;4624;4722;4100;4127;4512;4505;4610;4510;4702;4245;4706;4310;4701;4703;4389;4611;4805;4204;4577;4091;4592;4319;4709;4324</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData>true</RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4238</TreatSpecificWarningsAsErrors>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;UNICODE;_UNICODE;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;UNICODE;_UNICODE;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\a\llvm-project-fork\llvm-project-fork\build\lib\DebugInfo\PDB;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB;D:\a\llvm-project-fork\llvm-project-fork\build\include;D:\a\llvm-project-fork\llvm-project-fork\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;UNICODE;_UNICODE;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <IncludePaths>D:\a\llvm-project-fork\llvm-project-fork\build\lib\DebugInfo\PDB;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB;D:\a\llvm-project-fork\llvm-project-fork\build\include;D:\a\llvm-project-fork\llvm-project-fork\llvm\include;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\a\llvm-project-fork\llvm-project-fork\build\lib\DebugInfo\PDB;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB;D:\a\llvm-project-fork\llvm-project-fork\build\include;D:\a\llvm-project-fork\llvm-project-fork\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\a\llvm-project-fork\llvm-project-fork\build\lib\DebugInfo\PDB;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB;D:\a\llvm-project-fork\llvm-project-fork\build\include;D:\a\llvm-project-fork\llvm-project-fork\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zc:__cplusplus /bigobj -w14062 /Gw /EHs-c-</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ConformanceMode>true</ConformanceMode>
+      <DisableSpecificWarnings>4141;4146;4244;4267;4291;4351;4456;4457;4458;4459;4503;4624;4722;4100;4127;4512;4505;4610;4510;4702;4245;4706;4310;4701;4703;4389;4611;4805;4204;4577;4091;4592;4319;4709;4324</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData>true</RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4238</TreatSpecificWarningsAsErrors>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;UNICODE;_UNICODE;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;UNICODE;_UNICODE;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\a\llvm-project-fork\llvm-project-fork\build\lib\DebugInfo\PDB;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB;D:\a\llvm-project-fork\llvm-project-fork\build\include;D:\a\llvm-project-fork\llvm-project-fork\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;UNICODE;_UNICODE;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <IncludePaths>D:\a\llvm-project-fork\llvm-project-fork\build\lib\DebugInfo\PDB;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB;D:\a\llvm-project-fork\llvm-project-fork\build\include;D:\a\llvm-project-fork\llvm-project-fork\llvm\include;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\a\llvm-project-fork\llvm-project-fork\build\lib\DebugInfo\PDB;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB;D:\a\llvm-project-fork\llvm-project-fork\build\include;D:\a\llvm-project-fork\llvm-project-fork\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\a\llvm-project-fork\llvm-project-fork\build\lib\DebugInfo\PDB;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB;D:\a\llvm-project-fork\llvm-project-fork\build\include;D:\a\llvm-project-fork\llvm-project-fork\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zc:__cplusplus /bigobj -w14062 /Gw /EHs-c-</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ConformanceMode>true</ConformanceMode>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4141;4146;4244;4267;4291;4351;4456;4457;4458;4459;4503;4624;4722;4100;4127;4512;4505;4610;4510;4702;4245;4706;4310;4701;4703;4389;4611;4805;4204;4577;4091;4592;4319;4709;4324</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData>true</RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4238</TreatSpecificWarningsAsErrors>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;UNICODE;_UNICODE;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;UNICODE;_UNICODE;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\a\llvm-project-fork\llvm-project-fork\build\lib\DebugInfo\PDB;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB;D:\a\llvm-project-fork\llvm-project-fork\build\include;D:\a\llvm-project-fork\llvm-project-fork\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;UNICODE;_UNICODE;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <IncludePaths>D:\a\llvm-project-fork\llvm-project-fork\build\lib\DebugInfo\PDB;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB;D:\a\llvm-project-fork\llvm-project-fork\build\include;D:\a\llvm-project-fork\llvm-project-fork\llvm\include;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\a\llvm-project-fork\llvm-project-fork\build\lib\DebugInfo\PDB;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB;D:\a\llvm-project-fork\llvm-project-fork\build\include;D:\a\llvm-project-fork\llvm-project-fork\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/DebugInfo/PDB/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/a/llvm-project-fork/llvm-project-fork/llvm -BD:/a/llvm-project-fork/llvm-project-fork/build --check-stamp-file D:/a/llvm-project-fork/llvm-project-fork/build/lib/DebugInfo/PDB/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\a\llvm-project-fork\llvm-project-fork\build\lib\DebugInfo\PDB\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/DebugInfo/PDB/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/a/llvm-project-fork/llvm-project-fork/llvm -BD:/a/llvm-project-fork/llvm-project-fork/build --check-stamp-file D:/a/llvm-project-fork/llvm-project-fork/build/lib/DebugInfo/PDB/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\a\llvm-project-fork\llvm-project-fork\build\lib\DebugInfo\PDB\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/DebugInfo/PDB/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/a/llvm-project-fork/llvm-project-fork/llvm -BD:/a/llvm-project-fork/llvm-project-fork/build --check-stamp-file D:/a/llvm-project-fork/llvm-project-fork/build/lib/DebugInfo/PDB/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\a\llvm-project-fork\llvm-project-fork\build\lib\DebugInfo\PDB\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/DebugInfo/PDB/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/a/llvm-project-fork/llvm-project-fork/llvm -BD:/a/llvm-project-fork/llvm-project-fork/build --check-stamp-file D:/a/llvm-project-fork/llvm-project-fork/build/lib/DebugInfo/PDB/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\a\llvm-project-fork\llvm-project-fork\build\lib\DebugInfo\PDB\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB\GenericError.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB\IPDBSourceFile.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB\PDB.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB\PDBContext.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB\PDBExtras.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB\PDBInterfaceAnchors.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB\PDBSymbol.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB\PDBSymbolAnnotation.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB\PDBSymbolBlock.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB\PDBSymbolCompiland.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB\PDBSymbolCompilandDetails.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB\PDBSymbolCompilandEnv.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB\PDBSymbolCustom.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB\PDBSymbolData.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB\PDBSymbolExe.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB\PDBSymbolFunc.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB\PDBSymbolFuncDebugEnd.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB\PDBSymbolFuncDebugStart.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB\PDBSymbolLabel.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB\PDBSymbolPublicSymbol.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB\PDBSymbolThunk.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB\PDBSymbolTypeArray.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB\PDBSymbolTypeBaseClass.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB\PDBSymbolTypeBuiltin.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB\PDBSymbolTypeCustom.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB\PDBSymbolTypeDimension.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB\PDBSymbolTypeEnum.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB\PDBSymbolTypeFriend.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB\PDBSymbolTypeFunctionArg.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB\PDBSymbolTypeFunctionSig.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB\PDBSymbolTypeManaged.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB\PDBSymbolTypePointer.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB\PDBSymbolTypeTypedef.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB\PDBSymbolTypeUDT.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB\PDBSymbolTypeVTable.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB\PDBSymbolTypeVTableShape.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB\PDBSymbolUnknown.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB\PDBSymbolUsingNamespace.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB\PDBSymDumper.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB\UDTLayout.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB\Native\DbiModuleDescriptor.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB\Native\DbiModuleDescriptorBuilder.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB\Native\DbiModuleList.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB\Native\DbiStream.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB\Native\DbiStreamBuilder.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB\Native\EnumTables.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB\Native\FormatUtil.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB\Native\GlobalsStream.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB\Native\Hash.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB\Native\HashTable.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB\Native\InfoStream.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB\Native\InfoStreamBuilder.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB\Native\InjectedSourceStream.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB\Native\InputFile.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB\Native\LinePrinter.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB\Native\ModuleDebugStream.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB\Native\NativeCompilandSymbol.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB\Native\NativeEnumGlobals.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB\Native\NativeEnumInjectedSources.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB\Native\NativeEnumLineNumbers.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB\Native\NativeEnumModules.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB\Native\NativeEnumTypes.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB\Native\NativeEnumSymbols.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB\Native\NativeExeSymbol.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB\Native\NativeFunctionSymbol.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB\Native\NativeInlineSiteSymbol.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB\Native\NativeLineNumber.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB\Native\NativePublicSymbol.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB\Native\NativeRawSymbol.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB\Native\NativeSourceFile.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB\Native\NativeSymbolEnumerator.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB\Native\NativeTypeArray.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB\Native\NativeTypeBuiltin.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB\Native\NativeTypeEnum.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB\Native\NativeTypeFunctionSig.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB\Native\NativeTypePointer.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB\Native\NativeTypeTypedef.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB\Native\NativeTypeUDT.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB\Native\NativeTypeVTShape.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB\Native\NamedStreamMap.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB\Native\NativeSession.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB\Native\PDBFile.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB\Native\PDBFileBuilder.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB\Native\PDBStringTable.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB\Native\PDBStringTableBuilder.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB\Native\PublicsStream.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB\Native\GSIStreamBuilder.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB\Native\RawError.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB\Native\SymbolCache.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB\Native\SymbolStream.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB\Native\TpiHashing.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB\Native\TpiStream.cpp" />
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\DebugInfo\PDB\Native\TpiStreamBuilder.cpp" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\DebugInfo\PDB\Native\DbiModuleDescriptor.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\DebugInfo\PDB\Native\DbiModuleDescriptorBuilder.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\DebugInfo\PDB\Native\DbiModuleList.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\DebugInfo\PDB\Native\DbiStream.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\DebugInfo\PDB\Native\DbiStreamBuilder.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\DebugInfo\PDB\Native\EnumTables.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\DebugInfo\PDB\Native\FormatUtil.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\DebugInfo\PDB\Native\Formatters.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\DebugInfo\PDB\Native\GSIStreamBuilder.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\DebugInfo\PDB\Native\GlobalsStream.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\DebugInfo\PDB\Native\Hash.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\DebugInfo\PDB\Native\HashTable.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\DebugInfo\PDB\Native\ISectionContribVisitor.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\DebugInfo\PDB\Native\InfoStream.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\DebugInfo\PDB\Native\InfoStreamBuilder.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\DebugInfo\PDB\Native\InjectedSourceStream.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\DebugInfo\PDB\Native\InputFile.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\DebugInfo\PDB\Native\LinePrinter.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\DebugInfo\PDB\Native\ModuleDebugStream.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\DebugInfo\PDB\Native\NamedStreamMap.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\DebugInfo\PDB\Native\NativeCompilandSymbol.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\DebugInfo\PDB\Native\NativeEnumGlobals.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\DebugInfo\PDB\Native\NativeEnumInjectedSources.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\DebugInfo\PDB\Native\NativeEnumLineNumbers.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\DebugInfo\PDB\Native\NativeEnumModules.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\DebugInfo\PDB\Native\NativeEnumSymbols.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\DebugInfo\PDB\Native\NativeEnumTypes.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\DebugInfo\PDB\Native\NativeExeSymbol.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\DebugInfo\PDB\Native\NativeFunctionSymbol.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\DebugInfo\PDB\Native\NativeInlineSiteSymbol.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\DebugInfo\PDB\Native\NativeLineNumber.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\DebugInfo\PDB\Native\NativePublicSymbol.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\DebugInfo\PDB\Native\NativeRawSymbol.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\DebugInfo\PDB\Native\NativeSession.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\DebugInfo\PDB\Native\NativeSourceFile.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\DebugInfo\PDB\Native\NativeSymbolEnumerator.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\DebugInfo\PDB\Native\NativeTypeArray.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\DebugInfo\PDB\Native\NativeTypeBuiltin.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\DebugInfo\PDB\Native\NativeTypeEnum.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\DebugInfo\PDB\Native\NativeTypeFunctionSig.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\DebugInfo\PDB\Native\NativeTypePointer.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\DebugInfo\PDB\Native\NativeTypeTypedef.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\DebugInfo\PDB\Native\NativeTypeUDT.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\DebugInfo\PDB\Native\NativeTypeVTShape.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\DebugInfo\PDB\Native\PDBFile.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\DebugInfo\PDB\Native\PDBFileBuilder.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\DebugInfo\PDB\Native\PDBStringTable.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\DebugInfo\PDB\Native\PDBStringTableBuilder.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\DebugInfo\PDB\Native\PublicsStream.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\DebugInfo\PDB\Native\RawConstants.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\DebugInfo\PDB\Native\RawError.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\DebugInfo\PDB\Native\RawTypes.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\DebugInfo\PDB\Native\SymbolCache.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\DebugInfo\PDB\Native\SymbolStream.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\DebugInfo\PDB\Native\TpiHashing.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\DebugInfo\PDB\Native\TpiStream.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\DebugInfo\PDB\Native\TpiStreamBuilder.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\DebugInfo\PDB\ConcreteSymbolEnumerator.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\DebugInfo\PDB\GenericError.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\DebugInfo\PDB\IPDBDataStream.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\DebugInfo\PDB\IPDBEnumChildren.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\DebugInfo\PDB\IPDBFrameData.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\DebugInfo\PDB\IPDBInjectedSource.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\DebugInfo\PDB\IPDBLineNumber.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\DebugInfo\PDB\IPDBRawSymbol.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\DebugInfo\PDB\IPDBSectionContrib.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\DebugInfo\PDB\IPDBSession.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\DebugInfo\PDB\IPDBSourceFile.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\DebugInfo\PDB\IPDBTable.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\DebugInfo\PDB\PDB.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\DebugInfo\PDB\PDBContext.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\DebugInfo\PDB\PDBExtras.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\DebugInfo\PDB\PDBSymDumper.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\DebugInfo\PDB\PDBSymbol.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\DebugInfo\PDB\PDBSymbolAnnotation.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\DebugInfo\PDB\PDBSymbolBlock.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\DebugInfo\PDB\PDBSymbolCompiland.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\DebugInfo\PDB\PDBSymbolCompilandDetails.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\DebugInfo\PDB\PDBSymbolCompilandEnv.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\DebugInfo\PDB\PDBSymbolCustom.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\DebugInfo\PDB\PDBSymbolData.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\DebugInfo\PDB\PDBSymbolExe.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\DebugInfo\PDB\PDBSymbolFunc.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\DebugInfo\PDB\PDBSymbolFuncDebugEnd.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\DebugInfo\PDB\PDBSymbolFuncDebugStart.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\DebugInfo\PDB\PDBSymbolLabel.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\DebugInfo\PDB\PDBSymbolPublicSymbol.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\DebugInfo\PDB\PDBSymbolThunk.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\DebugInfo\PDB\PDBSymbolTypeArray.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\DebugInfo\PDB\PDBSymbolTypeBaseClass.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\DebugInfo\PDB\PDBSymbolTypeBuiltin.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\DebugInfo\PDB\PDBSymbolTypeCustom.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\DebugInfo\PDB\PDBSymbolTypeDimension.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\DebugInfo\PDB\PDBSymbolTypeEnum.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\DebugInfo\PDB\PDBSymbolTypeFriend.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\DebugInfo\PDB\PDBSymbolTypeFunctionArg.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\DebugInfo\PDB\PDBSymbolTypeFunctionSig.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\DebugInfo\PDB\PDBSymbolTypeManaged.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\DebugInfo\PDB\PDBSymbolTypePointer.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\DebugInfo\PDB\PDBSymbolTypeTypedef.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\DebugInfo\PDB\PDBSymbolTypeUDT.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\DebugInfo\PDB\PDBSymbolTypeVTable.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\DebugInfo\PDB\PDBSymbolTypeVTableShape.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\DebugInfo\PDB\PDBSymbolUnknown.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\DebugInfo\PDB\PDBSymbolUsingNamespace.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\DebugInfo\PDB\PDBTypes.h" />
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\DebugInfo\PDB\UDTLayout.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\ZERO_CHECK.vcxproj">
+      <Project>{E892C37D-02CF-31E9-ADFA-230AE8523DFD}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\BinaryFormat\LLVMBinaryFormat.vcxproj">
+      <Project>{B85FF5B2-F0D4-37F0-975E-83180EDD017F}</Project>
+      <Name>LLVMBinaryFormat</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Bitcode\Reader\LLVMBitReader.vcxproj">
+      <Project>{B4F75D0B-621C-369D-B174-BFA4ED1C8996}</Project>
+      <Name>LLVMBitReader</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Bitstream\Reader\LLVMBitstreamReader.vcxproj">
+      <Project>{B247824D-F3D0-37A3-875D-60E7F7D9A432}</Project>
+      <Name>LLVMBitstreamReader</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\IR\LLVMCore.vcxproj">
+      <Project>{E96227D6-E691-3FCA-A8B3-DC21D56D95E4}</Project>
+      <Name>LLVMCore</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\DebugInfo\CodeView\LLVMDebugInfoCodeView.vcxproj">
+      <Project>{B867A154-A005-3D85-94DC-D12ADF03EE67}</Project>
+      <Name>LLVMDebugInfoCodeView</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\DebugInfo\MSF\LLVMDebugInfoMSF.vcxproj">
+      <Project>{673C9F99-9ACA-3636-8435-8944F1915B4B}</Project>
+      <Name>LLVMDebugInfoMSF</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Demangle\LLVMDemangle.vcxproj">
+      <Project>{DEC59672-01BA-3E08-AABD-2E41417F2FD3}</Project>
+      <Name>LLVMDemangle</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\MC\LLVMMC.vcxproj">
+      <Project>{D7769DE5-3EDB-3672-8C44-312B8A048605}</Project>
+      <Name>LLVMMC</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\MC\MCParser\LLVMMCParser.vcxproj">
+      <Project>{56F142F9-743C-3204-A86B-5F5A5A5D1A43}</Project>
+      <Name>LLVMMCParser</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Object\LLVMObject.vcxproj">
+      <Project>{FB44E263-3AD7-38C3-8AA1-5F0806E2A5C0}</Project>
+      <Name>LLVMObject</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Remarks\LLVMRemarks.vcxproj">
+      <Project>{C817A625-19F6-31F1-836B-C7D8CCF382C9}</Project>
+      <Name>LLVMRemarks</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Support\LLVMSupport.vcxproj">
+      <Project>{20FE2DC6-22A4-32EB-9AA7-8680AEAD4AB1}</Project>
+      <Name>LLVMSupport</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\TextAPI\LLVMTextAPI.vcxproj">
+      <Project>{CDA7FC00-45ED-3B34-90B6-091FFC486122}</Project>
+      <Name>LLVMTextAPI</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+</Project>

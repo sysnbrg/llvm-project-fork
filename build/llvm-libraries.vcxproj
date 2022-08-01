@@ -1,0 +1,883 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1FE8BBB8-660B-3F08-ACEC-99101402E4D6}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.20348.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>llvm-libraries</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\a\llvm-project-fork\llvm-project-fork\build;D:\a\llvm-project-fork\llvm-project-fork\llvm;D:\a\llvm-project-fork\llvm-project-fork\build\include;D:\a\llvm-project-fork\llvm-project-fork\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\a\llvm-project-fork\llvm-project-fork\build;D:\a\llvm-project-fork\llvm-project-fork\llvm;D:\a\llvm-project-fork\llvm-project-fork\build\include;D:\a\llvm-project-fork\llvm-project-fork\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\a\llvm-project-fork\llvm-project-fork\build;D:\a\llvm-project-fork\llvm-project-fork\llvm;D:\a\llvm-project-fork\llvm-project-fork\build\include;D:\a\llvm-project-fork\llvm-project-fork\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\a\llvm-project-fork\llvm-project-fork\build;D:\a\llvm-project-fork\llvm-project-fork\llvm;D:\a\llvm-project-fork\llvm-project-fork\build\include;D:\a\llvm-project-fork\llvm-project-fork\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/a/llvm-project-fork/llvm-project-fork/llvm/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/a/llvm-project-fork/llvm-project-fork/llvm -BD:/a/llvm-project-fork/llvm-project-fork/build --check-stamp-file D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.23\Modules\AddFileDependencies.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeASMCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeASMInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeConfigurableFile.in;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineASMCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakePushCheckState.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeTestASMCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckCXXSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckFunctionExists.c;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckIncludeFile.c.in;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckLinkerFlag.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckStructHasMember.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\MSVC-ASM.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.23\Modules\FindBacktrace.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindLibXml2.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindPkgConfig.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindPython\Support.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindPython3.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindZLIB.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Internal\CheckFlagCommonConfig.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Internal\CheckLinkerFlag.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\SelectLibraryConfigurations.cmake;C:\Program Files\CMake\share\cmake-3.23\Templates\CPackConfig.cmake.in;D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\3.23.2\CMakeASMCompiler.cmake;D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\3.23.2\CMakeCCompiler.cmake;D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\3.23.2\CMakeCXXCompiler.cmake;D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\3.23.2\CMakeRCCompiler.cmake;D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\3.23.2\CMakeSystem.cmake;D:\a\llvm-project-fork\llvm-project-fork\llvm\cmake\config-ix.cmake;D:\a\llvm-project-fork\llvm-project-fork\llvm\cmake\modules\AddLLVM.cmake;D:\a\llvm-project-fork\llvm-project-fork\llvm\cmake\modules\AddOCaml.cmake;D:\a\llvm-project-fork\llvm-project-fork\llvm\cmake\modules\CheckAtomic.cmake;D:\a\llvm-project-fork\llvm-project-fork\llvm\cmake\modules\CheckCompilerVersion.cmake;D:\a\llvm-project-fork\llvm-project-fork\llvm\cmake\modules\CheckProblematicConfigurations.cmake;D:\a\llvm-project-fork\llvm-project-fork\llvm\cmake\modules\ChooseMSVCCRT.cmake;D:\a\llvm-project-fork\llvm-project-fork\llvm\cmake\modules\CoverageReport.cmake;D:\a\llvm-project-fork\llvm-project-fork\llvm\cmake\modules\DetermineGCCCompatible.cmake;D:\a\llvm-project-fork\llvm-project-fork\llvm\cmake\modules\FindLibpfm.cmake;D:\a\llvm-project-fork\llvm-project-fork\llvm\cmake\modules\FindOCaml.cmake;D:\a\llvm-project-fork\llvm-project-fork\llvm\cmake\modules\GetErrcMessages.cmake;D:\a\llvm-project-fork\llvm-project-fork\llvm\cmake\modules\GetHostTriple.cmake;D:\a\llvm-project-fork\llvm-project-fork\llvm\cmake\modules\HandleLLVMOptions.cmake;D:\a\llvm-project-fork\llvm-project-fork\llvm\cmake\modules\HandleLLVMStdlib.cmake;D:\a\llvm-project-fork\llvm-project-fork\llvm\cmake\modules\LLVM-Config.cmake;D:\a\llvm-project-fork\llvm-project-fork\llvm\cmake\modules\LLVMCheckLinkerFlag.cmake;D:\a\llvm-project-fork\llvm-project-fork\llvm\cmake\modules\LLVMDistributionSupport.cmake;D:\a\llvm-project-fork\llvm-project-fork\llvm\cmake\modules\LLVMProcessSources.cmake;D:\a\llvm-project-fork\llvm-project-fork\llvm\cmake\modules\TableGen.cmake;D:\a\llvm-project-fork\llvm-project-fork\llvm\cmake\modules\VersionFromVCS.cmake;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\Config\AsmParsers.def.in;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\Config\AsmPrinters.def.in;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\Config\Disassemblers.def.in;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\Config\TargetMCAs.def.in;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\Config\Targets.def.in;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\Config\abi-breaking.h.cmake;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\Config\config.h.cmake;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\Config\llvm-config.h.cmake;D:\a\llvm-project-fork\llvm-project-fork\llvm\llvm.spec.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/a/llvm-project-fork/llvm-project-fork/llvm/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/a/llvm-project-fork/llvm-project-fork/llvm -BD:/a/llvm-project-fork/llvm-project-fork/build --check-stamp-file D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.23\Modules\AddFileDependencies.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeASMCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeASMInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeConfigurableFile.in;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineASMCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakePushCheckState.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeTestASMCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckCXXSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckFunctionExists.c;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckIncludeFile.c.in;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckLinkerFlag.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckStructHasMember.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\MSVC-ASM.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.23\Modules\FindBacktrace.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindLibXml2.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindPkgConfig.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindPython\Support.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindPython3.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindZLIB.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Internal\CheckFlagCommonConfig.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Internal\CheckLinkerFlag.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\SelectLibraryConfigurations.cmake;C:\Program Files\CMake\share\cmake-3.23\Templates\CPackConfig.cmake.in;D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\3.23.2\CMakeASMCompiler.cmake;D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\3.23.2\CMakeCCompiler.cmake;D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\3.23.2\CMakeCXXCompiler.cmake;D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\3.23.2\CMakeRCCompiler.cmake;D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\3.23.2\CMakeSystem.cmake;D:\a\llvm-project-fork\llvm-project-fork\llvm\cmake\config-ix.cmake;D:\a\llvm-project-fork\llvm-project-fork\llvm\cmake\modules\AddLLVM.cmake;D:\a\llvm-project-fork\llvm-project-fork\llvm\cmake\modules\AddOCaml.cmake;D:\a\llvm-project-fork\llvm-project-fork\llvm\cmake\modules\CheckAtomic.cmake;D:\a\llvm-project-fork\llvm-project-fork\llvm\cmake\modules\CheckCompilerVersion.cmake;D:\a\llvm-project-fork\llvm-project-fork\llvm\cmake\modules\CheckProblematicConfigurations.cmake;D:\a\llvm-project-fork\llvm-project-fork\llvm\cmake\modules\ChooseMSVCCRT.cmake;D:\a\llvm-project-fork\llvm-project-fork\llvm\cmake\modules\CoverageReport.cmake;D:\a\llvm-project-fork\llvm-project-fork\llvm\cmake\modules\DetermineGCCCompatible.cmake;D:\a\llvm-project-fork\llvm-project-fork\llvm\cmake\modules\FindLibpfm.cmake;D:\a\llvm-project-fork\llvm-project-fork\llvm\cmake\modules\FindOCaml.cmake;D:\a\llvm-project-fork\llvm-project-fork\llvm\cmake\modules\GetErrcMessages.cmake;D:\a\llvm-project-fork\llvm-project-fork\llvm\cmake\modules\GetHostTriple.cmake;D:\a\llvm-project-fork\llvm-project-fork\llvm\cmake\modules\HandleLLVMOptions.cmake;D:\a\llvm-project-fork\llvm-project-fork\llvm\cmake\modules\HandleLLVMStdlib.cmake;D:\a\llvm-project-fork\llvm-project-fork\llvm\cmake\modules\LLVM-Config.cmake;D:\a\llvm-project-fork\llvm-project-fork\llvm\cmake\modules\LLVMCheckLinkerFlag.cmake;D:\a\llvm-project-fork\llvm-project-fork\llvm\cmake\modules\LLVMDistributionSupport.cmake;D:\a\llvm-project-fork\llvm-project-fork\llvm\cmake\modules\LLVMProcessSources.cmake;D:\a\llvm-project-fork\llvm-project-fork\llvm\cmake\modules\TableGen.cmake;D:\a\llvm-project-fork\llvm-project-fork\llvm\cmake\modules\VersionFromVCS.cmake;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\Config\AsmParsers.def.in;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\Config\AsmPrinters.def.in;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\Config\Disassemblers.def.in;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\Config\TargetMCAs.def.in;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\Config\Targets.def.in;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\Config\abi-breaking.h.cmake;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\Config\config.h.cmake;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\Config\llvm-config.h.cmake;D:\a\llvm-project-fork\llvm-project-fork\llvm\llvm.spec.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/a/llvm-project-fork/llvm-project-fork/llvm/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/a/llvm-project-fork/llvm-project-fork/llvm -BD:/a/llvm-project-fork/llvm-project-fork/build --check-stamp-file D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.23\Modules\AddFileDependencies.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeASMCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeASMInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeConfigurableFile.in;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineASMCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakePushCheckState.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeTestASMCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckCXXSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckFunctionExists.c;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckIncludeFile.c.in;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckLinkerFlag.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckStructHasMember.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\MSVC-ASM.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.23\Modules\FindBacktrace.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindLibXml2.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindPkgConfig.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindPython\Support.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindPython3.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindZLIB.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Internal\CheckFlagCommonConfig.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Internal\CheckLinkerFlag.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\SelectLibraryConfigurations.cmake;C:\Program Files\CMake\share\cmake-3.23\Templates\CPackConfig.cmake.in;D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\3.23.2\CMakeASMCompiler.cmake;D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\3.23.2\CMakeCCompiler.cmake;D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\3.23.2\CMakeCXXCompiler.cmake;D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\3.23.2\CMakeRCCompiler.cmake;D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\3.23.2\CMakeSystem.cmake;D:\a\llvm-project-fork\llvm-project-fork\llvm\cmake\config-ix.cmake;D:\a\llvm-project-fork\llvm-project-fork\llvm\cmake\modules\AddLLVM.cmake;D:\a\llvm-project-fork\llvm-project-fork\llvm\cmake\modules\AddOCaml.cmake;D:\a\llvm-project-fork\llvm-project-fork\llvm\cmake\modules\CheckAtomic.cmake;D:\a\llvm-project-fork\llvm-project-fork\llvm\cmake\modules\CheckCompilerVersion.cmake;D:\a\llvm-project-fork\llvm-project-fork\llvm\cmake\modules\CheckProblematicConfigurations.cmake;D:\a\llvm-project-fork\llvm-project-fork\llvm\cmake\modules\ChooseMSVCCRT.cmake;D:\a\llvm-project-fork\llvm-project-fork\llvm\cmake\modules\CoverageReport.cmake;D:\a\llvm-project-fork\llvm-project-fork\llvm\cmake\modules\DetermineGCCCompatible.cmake;D:\a\llvm-project-fork\llvm-project-fork\llvm\cmake\modules\FindLibpfm.cmake;D:\a\llvm-project-fork\llvm-project-fork\llvm\cmake\modules\FindOCaml.cmake;D:\a\llvm-project-fork\llvm-project-fork\llvm\cmake\modules\GetErrcMessages.cmake;D:\a\llvm-project-fork\llvm-project-fork\llvm\cmake\modules\GetHostTriple.cmake;D:\a\llvm-project-fork\llvm-project-fork\llvm\cmake\modules\HandleLLVMOptions.cmake;D:\a\llvm-project-fork\llvm-project-fork\llvm\cmake\modules\HandleLLVMStdlib.cmake;D:\a\llvm-project-fork\llvm-project-fork\llvm\cmake\modules\LLVM-Config.cmake;D:\a\llvm-project-fork\llvm-project-fork\llvm\cmake\modules\LLVMCheckLinkerFlag.cmake;D:\a\llvm-project-fork\llvm-project-fork\llvm\cmake\modules\LLVMDistributionSupport.cmake;D:\a\llvm-project-fork\llvm-project-fork\llvm\cmake\modules\LLVMProcessSources.cmake;D:\a\llvm-project-fork\llvm-project-fork\llvm\cmake\modules\TableGen.cmake;D:\a\llvm-project-fork\llvm-project-fork\llvm\cmake\modules\VersionFromVCS.cmake;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\Config\AsmParsers.def.in;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\Config\AsmPrinters.def.in;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\Config\Disassemblers.def.in;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\Config\TargetMCAs.def.in;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\Config\Targets.def.in;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\Config\abi-breaking.h.cmake;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\Config\config.h.cmake;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\Config\llvm-config.h.cmake;D:\a\llvm-project-fork\llvm-project-fork\llvm\llvm.spec.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/a/llvm-project-fork/llvm-project-fork/llvm/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/a/llvm-project-fork/llvm-project-fork/llvm -BD:/a/llvm-project-fork/llvm-project-fork/build --check-stamp-file D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.23\Modules\AddFileDependencies.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeASMCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeASMInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeConfigurableFile.in;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineASMCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakePushCheckState.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeTestASMCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckCXXSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckFunctionExists.c;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckIncludeFile.c.in;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckLinkerFlag.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckStructHasMember.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\MSVC-ASM.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.23\Modules\FindBacktrace.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindLibXml2.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindPkgConfig.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindPython\Support.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindPython3.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindZLIB.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Internal\CheckFlagCommonConfig.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Internal\CheckLinkerFlag.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\SelectLibraryConfigurations.cmake;C:\Program Files\CMake\share\cmake-3.23\Templates\CPackConfig.cmake.in;D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\3.23.2\CMakeASMCompiler.cmake;D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\3.23.2\CMakeCCompiler.cmake;D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\3.23.2\CMakeCXXCompiler.cmake;D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\3.23.2\CMakeRCCompiler.cmake;D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\3.23.2\CMakeSystem.cmake;D:\a\llvm-project-fork\llvm-project-fork\llvm\cmake\config-ix.cmake;D:\a\llvm-project-fork\llvm-project-fork\llvm\cmake\modules\AddLLVM.cmake;D:\a\llvm-project-fork\llvm-project-fork\llvm\cmake\modules\AddOCaml.cmake;D:\a\llvm-project-fork\llvm-project-fork\llvm\cmake\modules\CheckAtomic.cmake;D:\a\llvm-project-fork\llvm-project-fork\llvm\cmake\modules\CheckCompilerVersion.cmake;D:\a\llvm-project-fork\llvm-project-fork\llvm\cmake\modules\CheckProblematicConfigurations.cmake;D:\a\llvm-project-fork\llvm-project-fork\llvm\cmake\modules\ChooseMSVCCRT.cmake;D:\a\llvm-project-fork\llvm-project-fork\llvm\cmake\modules\CoverageReport.cmake;D:\a\llvm-project-fork\llvm-project-fork\llvm\cmake\modules\DetermineGCCCompatible.cmake;D:\a\llvm-project-fork\llvm-project-fork\llvm\cmake\modules\FindLibpfm.cmake;D:\a\llvm-project-fork\llvm-project-fork\llvm\cmake\modules\FindOCaml.cmake;D:\a\llvm-project-fork\llvm-project-fork\llvm\cmake\modules\GetErrcMessages.cmake;D:\a\llvm-project-fork\llvm-project-fork\llvm\cmake\modules\GetHostTriple.cmake;D:\a\llvm-project-fork\llvm-project-fork\llvm\cmake\modules\HandleLLVMOptions.cmake;D:\a\llvm-project-fork\llvm-project-fork\llvm\cmake\modules\HandleLLVMStdlib.cmake;D:\a\llvm-project-fork\llvm-project-fork\llvm\cmake\modules\LLVM-Config.cmake;D:\a\llvm-project-fork\llvm-project-fork\llvm\cmake\modules\LLVMCheckLinkerFlag.cmake;D:\a\llvm-project-fork\llvm-project-fork\llvm\cmake\modules\LLVMDistributionSupport.cmake;D:\a\llvm-project-fork\llvm-project-fork\llvm\cmake\modules\LLVMProcessSources.cmake;D:\a\llvm-project-fork\llvm-project-fork\llvm\cmake\modules\TableGen.cmake;D:\a\llvm-project-fork\llvm-project-fork\llvm\cmake\modules\VersionFromVCS.cmake;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\Config\AsmParsers.def.in;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\Config\AsmPrinters.def.in;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\Config\Disassemblers.def.in;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\Config\TargetMCAs.def.in;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\Config\Targets.def.in;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\Config\abi-breaking.h.cmake;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\Config\config.h.cmake;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\Config\llvm-config.h.cmake;D:\a\llvm-project-fork\llvm-project-fork\llvm\llvm.spec.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\ZERO_CHECK.vcxproj">
+      <Project>{E892C37D-02CF-31E9-ADFA-230AE8523DFD}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\tools\llvm-shlib\LLVM-C.vcxproj">
+      <Project>{5C90BAE1-04D9-31D1-8AB9-A9BD77A2DAEB}</Project>
+      <Name>LLVM-C</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AArch64\AsmParser\LLVMAArch64AsmParser.vcxproj">
+      <Project>{3FD2A714-0ACB-3DA6-A1B2-69F016CBF9ED}</Project>
+      <Name>LLVMAArch64AsmParser</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AArch64\LLVMAArch64CodeGen.vcxproj">
+      <Project>{A4EDD69E-D9BE-3248-BB93-847AB55BF8DA}</Project>
+      <Name>LLVMAArch64CodeGen</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AArch64\MCTargetDesc\LLVMAArch64Desc.vcxproj">
+      <Project>{254E4232-A9A2-3BBB-ADE6-1F9A617B0410}</Project>
+      <Name>LLVMAArch64Desc</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AArch64\Disassembler\LLVMAArch64Disassembler.vcxproj">
+      <Project>{32C8E1BA-D00D-3F9C-8D80-B7EEB70DFD30}</Project>
+      <Name>LLVMAArch64Disassembler</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AArch64\TargetInfo\LLVMAArch64Info.vcxproj">
+      <Project>{80DA37B5-4095-3A14-A5B8-24541BA78069}</Project>
+      <Name>LLVMAArch64Info</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AArch64\Utils\LLVMAArch64Utils.vcxproj">
+      <Project>{0C316C09-F4AC-33D1-9B55-EB70755B475A}</Project>
+      <Name>LLVMAArch64Utils</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\AsmParser\LLVMAMDGPUAsmParser.vcxproj">
+      <Project>{3ED0B2AD-0E77-320B-8E43-3AD16E682D8B}</Project>
+      <Name>LLVMAMDGPUAsmParser</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\LLVMAMDGPUCodeGen.vcxproj">
+      <Project>{EA70BB9D-2554-33CE-B62F-E16872E1B262}</Project>
+      <Name>LLVMAMDGPUCodeGen</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\MCTargetDesc\LLVMAMDGPUDesc.vcxproj">
+      <Project>{0CC6269F-1169-3120-9594-E81E47CC0A43}</Project>
+      <Name>LLVMAMDGPUDesc</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\Disassembler\LLVMAMDGPUDisassembler.vcxproj">
+      <Project>{13198A16-9C70-362A-8F17-B06B3F67CABB}</Project>
+      <Name>LLVMAMDGPUDisassembler</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\TargetInfo\LLVMAMDGPUInfo.vcxproj">
+      <Project>{3D4BE452-A98C-3117-A9AC-F2D8B47E743F}</Project>
+      <Name>LLVMAMDGPUInfo</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\MCA\LLVMAMDGPUTargetMCA.vcxproj">
+      <Project>{9F7F6F32-7FCB-3EE7-AE35-95DB6EE820CE}</Project>
+      <Name>LLVMAMDGPUTargetMCA</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\Utils\LLVMAMDGPUUtils.vcxproj">
+      <Project>{0F7BA35A-8960-3EE2-8F7D-0656D0DE86CB}</Project>
+      <Name>LLVMAMDGPUUtils</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\ARM\AsmParser\LLVMARMAsmParser.vcxproj">
+      <Project>{DA948987-1E30-30DF-8FAF-F81FCB1193C3}</Project>
+      <Name>LLVMARMAsmParser</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\ARM\LLVMARMCodeGen.vcxproj">
+      <Project>{F79D0FB1-64FE-3844-BB4B-AFAA0D797BE9}</Project>
+      <Name>LLVMARMCodeGen</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\ARM\MCTargetDesc\LLVMARMDesc.vcxproj">
+      <Project>{E9C4EE46-81A4-36C8-8D93-C950F08EAAF8}</Project>
+      <Name>LLVMARMDesc</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\ARM\Disassembler\LLVMARMDisassembler.vcxproj">
+      <Project>{2597F22B-EB50-3E27-86C8-F1C3A3515331}</Project>
+      <Name>LLVMARMDisassembler</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\ARM\TargetInfo\LLVMARMInfo.vcxproj">
+      <Project>{B0262DE3-6056-30D3-8834-19DD05F38415}</Project>
+      <Name>LLVMARMInfo</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\ARM\Utils\LLVMARMUtils.vcxproj">
+      <Project>{D893B89C-A37A-32FB-A06F-DB01ABF94ED0}</Project>
+      <Name>LLVMARMUtils</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AVR\AsmParser\LLVMAVRAsmParser.vcxproj">
+      <Project>{0459F5B7-34A2-3D56-B56D-4AD9FD3205AE}</Project>
+      <Name>LLVMAVRAsmParser</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AVR\LLVMAVRCodeGen.vcxproj">
+      <Project>{74DF5F5C-30FC-38D2-A222-3BB5F8840D1E}</Project>
+      <Name>LLVMAVRCodeGen</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AVR\MCTargetDesc\LLVMAVRDesc.vcxproj">
+      <Project>{2C005203-CEE1-33C9-B09E-82D3853796FD}</Project>
+      <Name>LLVMAVRDesc</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AVR\Disassembler\LLVMAVRDisassembler.vcxproj">
+      <Project>{8EEDAE03-E616-36DC-A9C7-507B2F483FB5}</Project>
+      <Name>LLVMAVRDisassembler</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AVR\TargetInfo\LLVMAVRInfo.vcxproj">
+      <Project>{63B53615-5C94-301F-9DDD-B404C89F4356}</Project>
+      <Name>LLVMAVRInfo</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Transforms\AggressiveInstCombine\LLVMAggressiveInstCombine.vcxproj">
+      <Project>{DFBB19BB-9D2D-39CA-A40C-DAF395377542}</Project>
+      <Name>LLVMAggressiveInstCombine</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Analysis\LLVMAnalysis.vcxproj">
+      <Project>{494029AE-5CE8-3736-A49F-0DE0740B8A48}</Project>
+      <Name>LLVMAnalysis</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\AsmParser\LLVMAsmParser.vcxproj">
+      <Project>{7B97D756-6CEB-3D20-8FF7-05A1CC105A74}</Project>
+      <Name>LLVMAsmParser</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\CodeGen\AsmPrinter\LLVMAsmPrinter.vcxproj">
+      <Project>{F4D90223-71FB-3E61-A923-AD166E9EBB14}</Project>
+      <Name>LLVMAsmPrinter</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\BPF\AsmParser\LLVMBPFAsmParser.vcxproj">
+      <Project>{F425ACBF-D5D1-3CD4-B83A-7718705567BD}</Project>
+      <Name>LLVMBPFAsmParser</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\BPF\LLVMBPFCodeGen.vcxproj">
+      <Project>{28E7111E-6FC2-3F20-8CB1-1AC2683DF819}</Project>
+      <Name>LLVMBPFCodeGen</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\BPF\MCTargetDesc\LLVMBPFDesc.vcxproj">
+      <Project>{D82E12F3-DDE5-39DF-9E84-3ED38880D12A}</Project>
+      <Name>LLVMBPFDesc</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\BPF\Disassembler\LLVMBPFDisassembler.vcxproj">
+      <Project>{2584A2BC-5DAF-3F3F-963E-51641F00A88F}</Project>
+      <Name>LLVMBPFDisassembler</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\BPF\TargetInfo\LLVMBPFInfo.vcxproj">
+      <Project>{FD9A4EC2-E2FF-3021-83BE-66C1F52DC4D7}</Project>
+      <Name>LLVMBPFInfo</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\BinaryFormat\LLVMBinaryFormat.vcxproj">
+      <Project>{B85FF5B2-F0D4-37F0-975E-83180EDD017F}</Project>
+      <Name>LLVMBinaryFormat</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Bitcode\Reader\LLVMBitReader.vcxproj">
+      <Project>{B4F75D0B-621C-369D-B174-BFA4ED1C8996}</Project>
+      <Name>LLVMBitReader</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Bitcode\Writer\LLVMBitWriter.vcxproj">
+      <Project>{38952E82-CCF0-3D7F-9104-7E0FA26E4182}</Project>
+      <Name>LLVMBitWriter</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Bitstream\Reader\LLVMBitstreamReader.vcxproj">
+      <Project>{B247824D-F3D0-37A3-875D-60E7F7D9A432}</Project>
+      <Name>LLVMBitstreamReader</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Transforms\CFGuard\LLVMCFGuard.vcxproj">
+      <Project>{6F2B5A91-2105-3AEF-8894-854346B9FF9D}</Project>
+      <Name>LLVMCFGuard</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\tools\llvm-cfi-verify\lib\LLVMCFIVerify.vcxproj">
+      <Project>{B8E2EAD8-72FF-32FF-9D9C-3E38A8BBDFD5}</Project>
+      <Name>LLVMCFIVerify</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\CodeGen\LLVMCodeGen.vcxproj">
+      <Project>{CC203B2D-CB66-315F-AE59-9485ED113CF1}</Project>
+      <Name>LLVMCodeGen</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\IR\LLVMCore.vcxproj">
+      <Project>{E96227D6-E691-3FCA-A8B3-DC21D56D95E4}</Project>
+      <Name>LLVMCore</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Transforms\Coroutines\LLVMCoroutines.vcxproj">
+      <Project>{C928553A-8AFC-3DAA-AFAC-3FF8CC06BF02}</Project>
+      <Name>LLVMCoroutines</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\ProfileData\Coverage\LLVMCoverage.vcxproj">
+      <Project>{BFA64734-14C0-3519-9CFD-2A860A7D5FC4}</Project>
+      <Name>LLVMCoverage</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\DWARFLinker\LLVMDWARFLinker.vcxproj">
+      <Project>{3D99A13D-CD8A-387F-97B9-C4F8EC2049F8}</Project>
+      <Name>LLVMDWARFLinker</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\DWP\LLVMDWP.vcxproj">
+      <Project>{723D0089-F3F1-3581-80AA-818F17A399A6}</Project>
+      <Name>LLVMDWP</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\DebugInfo\CodeView\LLVMDebugInfoCodeView.vcxproj">
+      <Project>{B867A154-A005-3D85-94DC-D12ADF03EE67}</Project>
+      <Name>LLVMDebugInfoCodeView</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\DebugInfo\DWARF\LLVMDebugInfoDWARF.vcxproj">
+      <Project>{ACE09027-BFC2-39A9-B06D-B2F85210A6E2}</Project>
+      <Name>LLVMDebugInfoDWARF</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\DebugInfo\GSYM\LLVMDebugInfoGSYM.vcxproj">
+      <Project>{A37896D5-B511-36E9-967B-D520B2952AE3}</Project>
+      <Name>LLVMDebugInfoGSYM</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\DebugInfo\MSF\LLVMDebugInfoMSF.vcxproj">
+      <Project>{673C9F99-9ACA-3636-8435-8944F1915B4B}</Project>
+      <Name>LLVMDebugInfoMSF</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\DebugInfo\PDB\LLVMDebugInfoPDB.vcxproj">
+      <Project>{B6C2C02E-C153-3D3F-8D56-90D39A380F79}</Project>
+      <Name>LLVMDebugInfoPDB</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Debuginfod\LLVMDebuginfod.vcxproj">
+      <Project>{88B2BFDF-D7DC-3F59-9960-FECEC8A16ED1}</Project>
+      <Name>LLVMDebuginfod</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Demangle\LLVMDemangle.vcxproj">
+      <Project>{DEC59672-01BA-3E08-AABD-2E41417F2FD3}</Project>
+      <Name>LLVMDemangle</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\tools\llvm-diff\lib\LLVMDiff.vcxproj">
+      <Project>{4131C0BE-99FE-3FA0-B2C6-3EBB0590DBDA}</Project>
+      <Name>LLVMDiff</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\ToolDrivers\llvm-dlltool\LLVMDlltoolDriver.vcxproj">
+      <Project>{B3B5E9FE-8CA8-343E-A903-DA79B972CF36}</Project>
+      <Name>LLVMDlltoolDriver</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\ExecutionEngine\LLVMExecutionEngine.vcxproj">
+      <Project>{421CA767-8064-3822-883E-449441865DF8}</Project>
+      <Name>LLVMExecutionEngine</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\tools\llvm-exegesis\lib\LLVMExegesis.vcxproj">
+      <Project>{F14F3F60-51A1-30D1-8F82-20DAED3E62FF}</Project>
+      <Name>LLVMExegesis</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\tools\llvm-exegesis\lib\AArch64\LLVMExegesisAArch64.vcxproj">
+      <Project>{B724FF12-FD94-366D-A4F8-C50E8FD2CA5A}</Project>
+      <Name>LLVMExegesisAArch64</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\tools\llvm-exegesis\lib\Mips\LLVMExegesisMips.vcxproj">
+      <Project>{C0776448-7FFF-3D8A-81AC-D992CBE3C594}</Project>
+      <Name>LLVMExegesisMips</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\tools\llvm-exegesis\lib\PowerPC\LLVMExegesisPowerPC.vcxproj">
+      <Project>{EFF04D6B-3EF1-3636-9625-F757207D1A2B}</Project>
+      <Name>LLVMExegesisPowerPC</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\tools\llvm-exegesis\lib\X86\LLVMExegesisX86.vcxproj">
+      <Project>{BD25A3C4-9BC9-3EDD-A4FC-959C92CB684E}</Project>
+      <Name>LLVMExegesisX86</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Extensions\LLVMExtensions.vcxproj">
+      <Project>{00160B4C-35A7-34BC-89D1-263ECE89B94F}</Project>
+      <Name>LLVMExtensions</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\FileCheck\LLVMFileCheck.vcxproj">
+      <Project>{7D7DBF82-3010-3467-8727-D0912807A79F}</Project>
+      <Name>LLVMFileCheck</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Frontend\OpenACC\LLVMFrontendOpenACC.vcxproj">
+      <Project>{35663240-1FD3-319C-AADE-E89F98C9F5E4}</Project>
+      <Name>LLVMFrontendOpenACC</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Frontend\OpenMP\LLVMFrontendOpenMP.vcxproj">
+      <Project>{58EA1B0B-0034-3A63-B72C-648B1C4D837A}</Project>
+      <Name>LLVMFrontendOpenMP</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\FuzzMutate\LLVMFuzzMutate.vcxproj">
+      <Project>{EA201801-BB2B-38A7-BBC7-16AA1411C2C8}</Project>
+      <Name>LLVMFuzzMutate</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\FuzzMutate\LLVMFuzzerCLI.vcxproj">
+      <Project>{8477DA87-18A2-3F04-A595-FC6379CC5549}</Project>
+      <Name>LLVMFuzzerCLI</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\CodeGen\GlobalISel\LLVMGlobalISel.vcxproj">
+      <Project>{C5B8C0F9-1129-31D9-AF1D-AD12F5729428}</Project>
+      <Name>LLVMGlobalISel</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\Hexagon\AsmParser\LLVMHexagonAsmParser.vcxproj">
+      <Project>{6EB2CDC5-2D63-3372-8513-B0491E12775A}</Project>
+      <Name>LLVMHexagonAsmParser</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\Hexagon\LLVMHexagonCodeGen.vcxproj">
+      <Project>{5A89A02F-2914-3B2F-AE83-4C4390F6E176}</Project>
+      <Name>LLVMHexagonCodeGen</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\Hexagon\MCTargetDesc\LLVMHexagonDesc.vcxproj">
+      <Project>{3657504B-D907-30A0-8961-E500CC9074EC}</Project>
+      <Name>LLVMHexagonDesc</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\Hexagon\Disassembler\LLVMHexagonDisassembler.vcxproj">
+      <Project>{795A78EC-7C42-385B-A857-E20C9D656A52}</Project>
+      <Name>LLVMHexagonDisassembler</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\Hexagon\TargetInfo\LLVMHexagonInfo.vcxproj">
+      <Project>{B6E9E3C1-6591-314A-A1CF-85020DE9D694}</Project>
+      <Name>LLVMHexagonInfo</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\IRReader\LLVMIRReader.vcxproj">
+      <Project>{9BDE8EBD-E700-30B4-97B0-6BFDD65854B8}</Project>
+      <Name>LLVMIRReader</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Transforms\InstCombine\LLVMInstCombine.vcxproj">
+      <Project>{BF0B7357-D3C6-397E-B0A0-9C1288735348}</Project>
+      <Name>LLVMInstCombine</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Transforms\Instrumentation\LLVMInstrumentation.vcxproj">
+      <Project>{060F0621-80CD-3E7A-BE35-C374353A581A}</Project>
+      <Name>LLVMInstrumentation</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\InterfaceStub\LLVMInterfaceStub.vcxproj">
+      <Project>{7B587905-D2A8-3098-97E0-8BD955949A80}</Project>
+      <Name>LLVMInterfaceStub</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\ExecutionEngine\Interpreter\LLVMInterpreter.vcxproj">
+      <Project>{B345E7AD-CC37-33A5-A507-3374B559E4E6}</Project>
+      <Name>LLVMInterpreter</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\ExecutionEngine\JITLink\LLVMJITLink.vcxproj">
+      <Project>{2E861488-2602-3D29-812A-9FC618208C43}</Project>
+      <Name>LLVMJITLink</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\LTO\LLVMLTO.vcxproj">
+      <Project>{B9CD8634-50FD-3BC5-8A4E-A8C1D59ADD59}</Project>
+      <Name>LLVMLTO</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\Lanai\AsmParser\LLVMLanaiAsmParser.vcxproj">
+      <Project>{F67B8340-743D-31E2-8393-A75BD3BB1756}</Project>
+      <Name>LLVMLanaiAsmParser</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\Lanai\LLVMLanaiCodeGen.vcxproj">
+      <Project>{12251029-9D1C-31BF-A9FE-72A527D32A75}</Project>
+      <Name>LLVMLanaiCodeGen</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\Lanai\MCTargetDesc\LLVMLanaiDesc.vcxproj">
+      <Project>{215E596A-08A3-33DC-A96C-7D3E2E974CF6}</Project>
+      <Name>LLVMLanaiDesc</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\Lanai\Disassembler\LLVMLanaiDisassembler.vcxproj">
+      <Project>{0AAF55DD-9486-32D4-ACAA-FF2275EE96AE}</Project>
+      <Name>LLVMLanaiDisassembler</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\Lanai\TargetInfo\LLVMLanaiInfo.vcxproj">
+      <Project>{935F06DA-6C7A-349D-9F52-2C2ED8630542}</Project>
+      <Name>LLVMLanaiInfo</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\ToolDrivers\llvm-lib\LLVMLibDriver.vcxproj">
+      <Project>{FE6CC175-0892-3497-AE4B-054743A12E4A}</Project>
+      <Name>LLVMLibDriver</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\LineEditor\LLVMLineEditor.vcxproj">
+      <Project>{10E78C5E-4921-3FF8-B646-B34BBB5B7164}</Project>
+      <Name>LLVMLineEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Linker\LLVMLinker.vcxproj">
+      <Project>{DE4F5141-491E-36F6-8512-61350BFC11B4}</Project>
+      <Name>LLVMLinker</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\MC\LLVMMC.vcxproj">
+      <Project>{D7769DE5-3EDB-3672-8C44-312B8A048605}</Project>
+      <Name>LLVMMC</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\MCA\LLVMMCA.vcxproj">
+      <Project>{7DB7FE33-10FF-3D76-8B4C-5500D639F22F}</Project>
+      <Name>LLVMMCA</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\MC\MCDisassembler\LLVMMCDisassembler.vcxproj">
+      <Project>{CDC6A0F3-AA9F-34B9-8CD0-73557A106917}</Project>
+      <Name>LLVMMCDisassembler</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\ExecutionEngine\MCJIT\LLVMMCJIT.vcxproj">
+      <Project>{0C2C8938-6F49-3D79-8254-893CC6CAC1DC}</Project>
+      <Name>LLVMMCJIT</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\MC\MCParser\LLVMMCParser.vcxproj">
+      <Project>{56F142F9-743C-3204-A86B-5F5A5A5D1A43}</Project>
+      <Name>LLVMMCParser</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\CodeGen\MIRParser\LLVMMIRParser.vcxproj">
+      <Project>{2109E768-03D9-3506-9AA9-029668DB6CFE}</Project>
+      <Name>LLVMMIRParser</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\MSP430\AsmParser\LLVMMSP430AsmParser.vcxproj">
+      <Project>{DCC0C09B-F405-389C-AECF-8F23B1E896B4}</Project>
+      <Name>LLVMMSP430AsmParser</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\MSP430\LLVMMSP430CodeGen.vcxproj">
+      <Project>{72503071-C365-3E12-A225-AADE90F7B1C3}</Project>
+      <Name>LLVMMSP430CodeGen</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\MSP430\MCTargetDesc\LLVMMSP430Desc.vcxproj">
+      <Project>{AA984D86-8263-3CEE-B615-94269F4DE65D}</Project>
+      <Name>LLVMMSP430Desc</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\MSP430\Disassembler\LLVMMSP430Disassembler.vcxproj">
+      <Project>{B773C036-BE2A-30D6-9C9F-41C6D67B8028}</Project>
+      <Name>LLVMMSP430Disassembler</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\MSP430\TargetInfo\LLVMMSP430Info.vcxproj">
+      <Project>{3D60542F-1AF3-3D14-BA06-8C7D5EACBCFA}</Project>
+      <Name>LLVMMSP430Info</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\Mips\AsmParser\LLVMMipsAsmParser.vcxproj">
+      <Project>{14F84C9D-F15F-36AC-800A-EAA6735995A1}</Project>
+      <Name>LLVMMipsAsmParser</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\Mips\LLVMMipsCodeGen.vcxproj">
+      <Project>{25E68022-B6A9-394E-86D0-7F63467BEDBF}</Project>
+      <Name>LLVMMipsCodeGen</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\Mips\MCTargetDesc\LLVMMipsDesc.vcxproj">
+      <Project>{728D7E84-27A6-30AA-A5B9-2E07110C0557}</Project>
+      <Name>LLVMMipsDesc</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\Mips\Disassembler\LLVMMipsDisassembler.vcxproj">
+      <Project>{FEF8D05E-56EC-3045-A042-2AFB4D090E9F}</Project>
+      <Name>LLVMMipsDisassembler</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\Mips\TargetInfo\LLVMMipsInfo.vcxproj">
+      <Project>{1058D77D-DD89-3A5D-A401-352F8A08F02C}</Project>
+      <Name>LLVMMipsInfo</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\NVPTX\LLVMNVPTXCodeGen.vcxproj">
+      <Project>{28A58E7F-F36A-3179-8800-E737720A4CD3}</Project>
+      <Name>LLVMNVPTXCodeGen</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\NVPTX\MCTargetDesc\LLVMNVPTXDesc.vcxproj">
+      <Project>{D6DCDE99-4251-3695-A33A-E96D7FAF24CE}</Project>
+      <Name>LLVMNVPTXDesc</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\NVPTX\TargetInfo\LLVMNVPTXInfo.vcxproj">
+      <Project>{96B2DC42-F655-3FF7-ADE1-52A0038C7697}</Project>
+      <Name>LLVMNVPTXInfo</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Transforms\ObjCARC\LLVMObjCARCOpts.vcxproj">
+      <Project>{4A5CB732-38AC-3BDD-B578-C64E4E65DB83}</Project>
+      <Name>LLVMObjCARCOpts</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\ObjCopy\LLVMObjCopy.vcxproj">
+      <Project>{5C2828DC-22BB-3586-AA71-80DED7CA1098}</Project>
+      <Name>LLVMObjCopy</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Object\LLVMObject.vcxproj">
+      <Project>{FB44E263-3AD7-38C3-8AA1-5F0806E2A5C0}</Project>
+      <Name>LLVMObject</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\ObjectYAML\LLVMObjectYAML.vcxproj">
+      <Project>{998BA501-F921-383F-BDC1-568E7E33DA59}</Project>
+      <Name>LLVMObjectYAML</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Option\LLVMOption.vcxproj">
+      <Project>{ED31F17A-7748-31AE-9A07-A0A2C8DC5E9B}</Project>
+      <Name>LLVMOption</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\ExecutionEngine\Orc\LLVMOrcJIT.vcxproj">
+      <Project>{7517422F-9AB4-3C41-82BF-7DFDC3B92C73}</Project>
+      <Name>LLVMOrcJIT</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\ExecutionEngine\Orc\Shared\LLVMOrcShared.vcxproj">
+      <Project>{D18F6585-929E-3517-A47A-A1D2E08077D0}</Project>
+      <Name>LLVMOrcShared</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\ExecutionEngine\Orc\TargetProcess\LLVMOrcTargetProcess.vcxproj">
+      <Project>{DFF8AB70-A1E1-3994-8994-183929D90031}</Project>
+      <Name>LLVMOrcTargetProcess</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Passes\LLVMPasses.vcxproj">
+      <Project>{CBDCCEB4-625D-388B-AFF8-087719CED2D0}</Project>
+      <Name>LLVMPasses</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\PowerPC\AsmParser\LLVMPowerPCAsmParser.vcxproj">
+      <Project>{D13D6466-C3AA-3DC4-BEC4-674CA2CFB118}</Project>
+      <Name>LLVMPowerPCAsmParser</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\PowerPC\LLVMPowerPCCodeGen.vcxproj">
+      <Project>{5BD9E8D2-B8B7-341E-963C-62FCFDDA6860}</Project>
+      <Name>LLVMPowerPCCodeGen</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\PowerPC\MCTargetDesc\LLVMPowerPCDesc.vcxproj">
+      <Project>{30B07CA6-67DE-3421-A365-B8698338D645}</Project>
+      <Name>LLVMPowerPCDesc</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\PowerPC\Disassembler\LLVMPowerPCDisassembler.vcxproj">
+      <Project>{817931D2-B089-3E78-AE86-524EFC3DDA2E}</Project>
+      <Name>LLVMPowerPCDisassembler</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\PowerPC\TargetInfo\LLVMPowerPCInfo.vcxproj">
+      <Project>{DE87D0A2-53D7-3D3A-8D38-A23E917D476D}</Project>
+      <Name>LLVMPowerPCInfo</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\ProfileData\LLVMProfileData.vcxproj">
+      <Project>{842CCC2D-D880-3D87-942D-69E8BAA420B4}</Project>
+      <Name>LLVMProfileData</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\RISCV\AsmParser\LLVMRISCVAsmParser.vcxproj">
+      <Project>{8B944174-2A86-38CA-B1EA-7D6DA1545ABF}</Project>
+      <Name>LLVMRISCVAsmParser</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\RISCV\LLVMRISCVCodeGen.vcxproj">
+      <Project>{EEE19ADA-9A11-3F2D-AB75-AF1E73BE9808}</Project>
+      <Name>LLVMRISCVCodeGen</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\RISCV\MCTargetDesc\LLVMRISCVDesc.vcxproj">
+      <Project>{12AAC7AB-7186-3C2B-98D6-D8EB1472F1FF}</Project>
+      <Name>LLVMRISCVDesc</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\RISCV\Disassembler\LLVMRISCVDisassembler.vcxproj">
+      <Project>{6A68FF7A-35D1-3C97-87D3-746B3B18C3C1}</Project>
+      <Name>LLVMRISCVDisassembler</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\RISCV\TargetInfo\LLVMRISCVInfo.vcxproj">
+      <Project>{107DECD1-7468-3320-B56D-CE66CD2E1957}</Project>
+      <Name>LLVMRISCVInfo</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Remarks\LLVMRemarks.vcxproj">
+      <Project>{C817A625-19F6-31F1-836B-C7D8CCF382C9}</Project>
+      <Name>LLVMRemarks</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\ExecutionEngine\RuntimeDyld\LLVMRuntimeDyld.vcxproj">
+      <Project>{15D9D38D-DA50-3732-855E-354B9BF9421B}</Project>
+      <Name>LLVMRuntimeDyld</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Transforms\Scalar\LLVMScalarOpts.vcxproj">
+      <Project>{70E229C4-BF89-3302-A8D2-195B466B7117}</Project>
+      <Name>LLVMScalarOpts</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\CodeGen\SelectionDAG\LLVMSelectionDAG.vcxproj">
+      <Project>{73A166B4-2F96-3AD8-A32F-8EA667F3B09C}</Project>
+      <Name>LLVMSelectionDAG</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\Sparc\AsmParser\LLVMSparcAsmParser.vcxproj">
+      <Project>{22D90894-FB1D-3254-A373-E00EB8FE9C28}</Project>
+      <Name>LLVMSparcAsmParser</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\Sparc\LLVMSparcCodeGen.vcxproj">
+      <Project>{7F89E027-A593-325A-82EC-7CAA5CB0C6A9}</Project>
+      <Name>LLVMSparcCodeGen</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\Sparc\MCTargetDesc\LLVMSparcDesc.vcxproj">
+      <Project>{33C10996-FC9B-34DD-9CE0-7ECAFFDA961D}</Project>
+      <Name>LLVMSparcDesc</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\Sparc\Disassembler\LLVMSparcDisassembler.vcxproj">
+      <Project>{2C4E0450-4C13-34E8-9368-169378EACCDE}</Project>
+      <Name>LLVMSparcDisassembler</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\Sparc\TargetInfo\LLVMSparcInfo.vcxproj">
+      <Project>{C10FA662-3637-3637-AE59-CEAFBDBCD90F}</Project>
+      <Name>LLVMSparcInfo</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Support\LLVMSupport.vcxproj">
+      <Project>{20FE2DC6-22A4-32EB-9AA7-8680AEAD4AB1}</Project>
+      <Name>LLVMSupport</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\DebugInfo\Symbolize\LLVMSymbolize.vcxproj">
+      <Project>{B494575C-D71A-3712-9480-BD7458F38BB3}</Project>
+      <Name>LLVMSymbolize</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\SystemZ\AsmParser\LLVMSystemZAsmParser.vcxproj">
+      <Project>{7D0CF6EF-C1E6-33A6-A735-F9E08F9CDF5F}</Project>
+      <Name>LLVMSystemZAsmParser</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\SystemZ\LLVMSystemZCodeGen.vcxproj">
+      <Project>{57368243-A0FE-32ED-8C13-35D154494A12}</Project>
+      <Name>LLVMSystemZCodeGen</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\SystemZ\MCTargetDesc\LLVMSystemZDesc.vcxproj">
+      <Project>{C15EFD0E-A826-3323-9861-B9DE76FE6D7C}</Project>
+      <Name>LLVMSystemZDesc</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\SystemZ\Disassembler\LLVMSystemZDisassembler.vcxproj">
+      <Project>{E6148D59-CB41-3421-A4A9-23D5C6FB6789}</Project>
+      <Name>LLVMSystemZDisassembler</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\SystemZ\TargetInfo\LLVMSystemZInfo.vcxproj">
+      <Project>{6EB93762-AF6B-348E-95F8-AC14CB3FBE26}</Project>
+      <Name>LLVMSystemZInfo</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\TableGen\LLVMTableGen.vcxproj">
+      <Project>{1C59B917-DE3A-335B-892D-3804FBE80610}</Project>
+      <Name>LLVMTableGen</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\utils\TableGen\GlobalISel\LLVMTableGenGlobalISel.vcxproj">
+      <Project>{E3914C11-7A26-3B47-A9AC-933BC3549542}</Project>
+      <Name>LLVMTableGenGlobalISel</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\LLVMTarget.vcxproj">
+      <Project>{9C839CCC-F15F-32A8-95B3-A1939DCEFDC1}</Project>
+      <Name>LLVMTarget</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\TextAPI\LLVMTextAPI.vcxproj">
+      <Project>{CDA7FC00-45ED-3B34-90B6-091FFC486122}</Project>
+      <Name>LLVMTextAPI</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Transforms\Utils\LLVMTransformUtils.vcxproj">
+      <Project>{2B6737FB-C5D7-338E-A53D-52D24465A814}</Project>
+      <Name>LLVMTransformUtils</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\VE\AsmParser\LLVMVEAsmParser.vcxproj">
+      <Project>{F1C61778-FBEF-3545-A7F3-E0D25EC628F7}</Project>
+      <Name>LLVMVEAsmParser</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\VE\LLVMVECodeGen.vcxproj">
+      <Project>{DE95B4F9-983B-3C64-80D9-9BF098E0E088}</Project>
+      <Name>LLVMVECodeGen</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\VE\MCTargetDesc\LLVMVEDesc.vcxproj">
+      <Project>{37C2C644-7E82-3055-98E9-D8182B5D70D3}</Project>
+      <Name>LLVMVEDesc</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\VE\Disassembler\LLVMVEDisassembler.vcxproj">
+      <Project>{65AB04F9-7A11-3A37-BDF2-718378432EE5}</Project>
+      <Name>LLVMVEDisassembler</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\VE\TargetInfo\LLVMVEInfo.vcxproj">
+      <Project>{C288C14C-85B9-30EF-ACEC-2F74D81DEBBF}</Project>
+      <Name>LLVMVEInfo</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Transforms\Vectorize\LLVMVectorize.vcxproj">
+      <Project>{E9C7DB34-DD2B-306B-A448-BFBA4C09DB9F}</Project>
+      <Name>LLVMVectorize</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\WebAssembly\AsmParser\LLVMWebAssemblyAsmParser.vcxproj">
+      <Project>{75FDF7BA-9660-377F-9790-8E3D930983E8}</Project>
+      <Name>LLVMWebAssemblyAsmParser</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\WebAssembly\LLVMWebAssemblyCodeGen.vcxproj">
+      <Project>{EA516AFC-15C9-324E-AF68-278D1C4AB1BC}</Project>
+      <Name>LLVMWebAssemblyCodeGen</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\WebAssembly\MCTargetDesc\LLVMWebAssemblyDesc.vcxproj">
+      <Project>{AEB942BD-CDC1-3E20-92BF-34E5C9EF3D75}</Project>
+      <Name>LLVMWebAssemblyDesc</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\WebAssembly\Disassembler\LLVMWebAssemblyDisassembler.vcxproj">
+      <Project>{F79B9288-1875-3329-9C66-4EB45C93F054}</Project>
+      <Name>LLVMWebAssemblyDisassembler</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\WebAssembly\TargetInfo\LLVMWebAssemblyInfo.vcxproj">
+      <Project>{181CDB8A-9811-3198-BF48-7F63609B4B56}</Project>
+      <Name>LLVMWebAssemblyInfo</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\WebAssembly\Utils\LLVMWebAssemblyUtils.vcxproj">
+      <Project>{C5B1F507-699D-365B-945C-18F697A4950C}</Project>
+      <Name>LLVMWebAssemblyUtils</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\WindowsDriver\LLVMWindowsDriver.vcxproj">
+      <Project>{B9643E38-05A9-34B7-99C8-DB2C14636872}</Project>
+      <Name>LLVMWindowsDriver</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\WindowsManifest\LLVMWindowsManifest.vcxproj">
+      <Project>{F14685AE-67DD-394C-B762-161799066A3E}</Project>
+      <Name>LLVMWindowsManifest</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\X86\AsmParser\LLVMX86AsmParser.vcxproj">
+      <Project>{68BA76F3-12C1-38B9-A708-ACD718A63A82}</Project>
+      <Name>LLVMX86AsmParser</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\X86\LLVMX86CodeGen.vcxproj">
+      <Project>{B76C2EF3-9011-389F-9661-73386BA1FC3E}</Project>
+      <Name>LLVMX86CodeGen</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\X86\MCTargetDesc\LLVMX86Desc.vcxproj">
+      <Project>{96AC0809-6BEC-3ED9-8515-CF6249A521EE}</Project>
+      <Name>LLVMX86Desc</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\X86\Disassembler\LLVMX86Disassembler.vcxproj">
+      <Project>{C6077223-98A6-3AE9-887F-83F14C3478DE}</Project>
+      <Name>LLVMX86Disassembler</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\X86\TargetInfo\LLVMX86Info.vcxproj">
+      <Project>{06F4E389-4FD8-366D-92BE-6F7C98DF218B}</Project>
+      <Name>LLVMX86Info</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\X86\MCA\LLVMX86TargetMCA.vcxproj">
+      <Project>{D7021EDE-A26C-3E5B-9D4B-B2D6F3983602}</Project>
+      <Name>LLVMX86TargetMCA</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\XCore\LLVMXCoreCodeGen.vcxproj">
+      <Project>{3CF8D8AC-609C-364C-917C-DFA4262C7F6B}</Project>
+      <Name>LLVMXCoreCodeGen</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\XCore\MCTargetDesc\LLVMXCoreDesc.vcxproj">
+      <Project>{93C426E5-1710-3EC7-A8E7-3C3108710D8A}</Project>
+      <Name>LLVMXCoreDesc</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\XCore\Disassembler\LLVMXCoreDisassembler.vcxproj">
+      <Project>{EA3CC81A-AB66-3F0E-953C-5D35B416A8EF}</Project>
+      <Name>LLVMXCoreDisassembler</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\XCore\TargetInfo\LLVMXCoreInfo.vcxproj">
+      <Project>{FD08290F-A656-39D7-B7B4-3192CB50ECD6}</Project>
+      <Name>LLVMXCoreInfo</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\XRay\LLVMXRay.vcxproj">
+      <Project>{70C4AAFB-3CD9-3BCD-B3B9-D26C7DB8C78C}</Project>
+      <Name>LLVMXRay</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Transforms\IPO\LLVMipo.vcxproj">
+      <Project>{3303D845-5796-3CA3-BB79-289C29E18D19}</Project>
+      <Name>LLVMipo</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\tools\lto\LTO.vcxproj">
+      <Project>{520277FE-1FAA-38C4-876A-A5A068FE1502}</Project>
+      <Name>LTO</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\tools\remarks-shlib\Remarks.vcxproj">
+      <Project>{725B7D0E-901F-3B9C-B462-92A51DE6F893}</Project>
+      <Name>Remarks</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+</Project>

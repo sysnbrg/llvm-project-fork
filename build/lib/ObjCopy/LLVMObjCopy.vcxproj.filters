@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\ObjCopy\Archive.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\ObjCopy\CommonConfig.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\ObjCopy\ObjCopy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\ObjCopy\ConfigManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\ObjCopy\COFF\COFFObjcopy.cpp">
+      <Filter>Source Files\COFF</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\ObjCopy\COFF\COFFObject.cpp">
+      <Filter>Source Files\COFF</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\ObjCopy\COFF\COFFReader.cpp">
+      <Filter>Source Files\COFF</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\ObjCopy\COFF\COFFWriter.cpp">
+      <Filter>Source Files\COFF</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\ObjCopy\ELF\ELFObjcopy.cpp">
+      <Filter>Source Files\ELF</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\ObjCopy\ELF\ELFObject.cpp">
+      <Filter>Source Files\ELF</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\ObjCopy\MachO\MachOObjcopy.cpp">
+      <Filter>Source Files\MachO</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\ObjCopy\MachO\MachOReader.cpp">
+      <Filter>Source Files\MachO</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\ObjCopy\MachO\MachOWriter.cpp">
+      <Filter>Source Files\MachO</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\ObjCopy\MachO\MachOLayoutBuilder.cpp">
+      <Filter>Source Files\MachO</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\ObjCopy\MachO\MachOObject.cpp">
+      <Filter>Source Files\MachO</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\ObjCopy\wasm\WasmObject.cpp">
+      <Filter>Source Files\wasm</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\ObjCopy\wasm\WasmReader.cpp">
+      <Filter>Source Files\wasm</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\ObjCopy\wasm\WasmWriter.cpp">
+      <Filter>Source Files\wasm</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\ObjCopy\wasm\WasmObjcopy.cpp">
+      <Filter>Source Files\wasm</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\ObjCopy\XCOFF\XCOFFObjcopy.cpp">
+      <Filter>Source Files\COFF</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\ObjCopy\XCOFF\XCOFFReader.cpp">
+      <Filter>Source Files\COFF</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\ObjCopy\XCOFF\XCOFFWriter.cpp">
+      <Filter>Source Files\COFF</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\ObjCopy\Archive.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\ObjCopy\CommonConfig.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\ObjCopy\ConfigManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\ObjCopy\MultiFormatConfig.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\ObjCopy\ObjCopy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\ObjCopy\COFF\COFFConfig.h">
+      <Filter>Header Files\COFF</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\ObjCopy\COFF\COFFObjcopy.h">
+      <Filter>Header Files\COFF</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\ObjCopy\ELF\ELFConfig.h">
+      <Filter>Header Files\ELF</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\ObjCopy\ELF\ELFObjcopy.h">
+      <Filter>Header Files\ELF</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\ObjCopy\MachO\MachOConfig.h">
+      <Filter>Header Files\MachO</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\ObjCopy\MachO\MachOObjcopy.h">
+      <Filter>Header Files\MachO</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\ObjCopy\wasm\WasmConfig.h">
+      <Filter>Header Files\wasm</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\ObjCopy\wasm\WasmObjcopy.h">
+      <Filter>Header Files\wasm</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\ObjCopy\XCOFF\XCOFFConfig.h">
+      <Filter>Header Files\COFF</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\ObjCopy\XCOFF\XCOFFObjcopy.h">
+      <Filter>Header Files\COFF</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\ObjCopy\COFF\COFFObject.h">
+      <Filter>Header Files\COFF</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\ObjCopy\COFF\COFFReader.h">
+      <Filter>Header Files\COFF</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\ObjCopy\COFF\COFFWriter.h">
+      <Filter>Header Files\COFF</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\ObjCopy\ELF\ELFObject.h">
+      <Filter>Header Files\ELF</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\ObjCopy\MachO\MachOLayoutBuilder.h">
+      <Filter>Header Files\MachO</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\ObjCopy\MachO\MachOObject.h">
+      <Filter>Header Files\MachO</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\ObjCopy\MachO\MachOReader.h">
+      <Filter>Header Files\MachO</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\ObjCopy\MachO\MachOWriter.h">
+      <Filter>Header Files\MachO</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\ObjCopy\wasm\WasmObject.h">
+      <Filter>Header Files\wasm</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\ObjCopy\wasm\WasmReader.h">
+      <Filter>Header Files\wasm</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\ObjCopy\wasm\WasmWriter.h">
+      <Filter>Header Files\wasm</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\ObjCopy\XCOFF\XCOFFObject.h">
+      <Filter>Header Files\COFF</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\ObjCopy\XCOFF\XCOFFReader.h">
+      <Filter>Header Files\COFF</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\ObjCopy\XCOFF\XCOFFWriter.h">
+      <Filter>Header Files\COFF</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\ObjCopy\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{F052BC44-0769-31DE-9010-45D66E87392B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\COFF">
+      <UniqueIdentifier>{0722F273-DD57-3086-93CD-B6BD071BF4E4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ELF">
+      <UniqueIdentifier>{6E5F1502-74C1-32FA-B9EB-B9C11A1E75E6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\MachO">
+      <UniqueIdentifier>{553B1332-AB76-38C6-9ED3-3E96C4F2849E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\wasm">
+      <UniqueIdentifier>{81899F30-AFF1-3133-A54D-7E73E08F53B5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{BD5927A9-B2B2-3B26-9449-BD7422886414}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\COFF">
+      <UniqueIdentifier>{154581C2-DC1C-3A17-AEAF-44DEB2D28EBB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ELF">
+      <UniqueIdentifier>{8113BA3C-2BBD-3B2A-95D1-4A9AD7AD9FD3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\MachO">
+      <UniqueIdentifier>{42AF89B1-B107-3A0C-B004-54356AAEF5B8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\wasm">
+      <UniqueIdentifier>{5C4D295F-B94C-3FF2-8934-81B7F861AF53}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

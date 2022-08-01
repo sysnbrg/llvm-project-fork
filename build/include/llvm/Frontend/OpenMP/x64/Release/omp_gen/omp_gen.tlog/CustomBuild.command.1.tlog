@@ -1,0 +1,38 @@
+^D:\A\LLVM-PROJECT-FORK\LLVM-PROJECT-FORK\BUILD\CMAKEFILES\B64647B109AADD033AA672634E530261\OMP.H.INC.RULE
+setlocal
+..\..\..\..\Release\bin\llvm-tblgen.exe --gen-directive-decl -I D:/a/llvm-project-fork/llvm-project-fork/llvm/include/llvm/Frontend/OpenMP -ID:/a/llvm-project-fork/llvm-project-fork/build/include -ID:/a/llvm-project-fork/llvm-project-fork/llvm/include --long-string-literals=0 D:/a/llvm-project-fork/llvm-project-fork/llvm/include/llvm/Frontend/OpenMP/OMP.td -o D:/a/llvm-project-fork/llvm-project-fork/build/include/llvm/Frontend/OpenMP/OMP.h.inc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\A\LLVM-PROJECT-FORK\LLVM-PROJECT-FORK\BUILD\CMAKEFILES\B64647B109AADD033AA672634E530261\OMP.INC.RULE
+setlocal
+..\..\..\..\Release\bin\llvm-tblgen.exe --gen-directive-impl -I D:/a/llvm-project-fork/llvm-project-fork/llvm/include/llvm/Frontend/OpenMP -ID:/a/llvm-project-fork/llvm-project-fork/build/include -ID:/a/llvm-project-fork/llvm-project-fork/llvm/include --long-string-literals=0 D:/a/llvm-project-fork/llvm-project-fork/llvm/include/llvm/Frontend/OpenMP/OMP.td -o D:/a/llvm-project-fork/llvm-project-fork/build/include/llvm/Frontend/OpenMP/OMP.inc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\A\LLVM-PROJECT-FORK\LLVM-PROJECT-FORK\BUILD\CMAKEFILES\5C0C0DCAE9357AFBA47227421EB1AE00\OMP_GEN.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\A\LLVM-PROJECT-FORK\LLVM-PROJECT-FORK\LLVM\INCLUDE\LLVM\FRONTEND\OPENMP\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/a/llvm-project-fork/llvm-project-fork/llvm -BD:/a/llvm-project-fork/llvm-project-fork/build --check-stamp-file D:/a/llvm-project-fork/llvm-project-fork/build/include/llvm/Frontend/OpenMP/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

@@ -1,0 +1,18 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.23/Modules/CheckCSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-3.23/Modules/CheckCXXCompilerFlag.cmake
+C:/Program Files/CMake/share/cmake-3.23/Modules/CheckFunctionExists.c
+C:/Program Files/CMake/share/cmake-3.23/Modules/CheckIncludeFile.c.in
+C:/Program Files/CMake/share/cmake-3.23/Modules/CheckIncludeFile.cmake
+C:/Program Files/CMake/share/cmake-3.23/Modules/CheckLibraryExists.cmake
+C:/Program Files/CMake/share/cmake-3.23/Modules/FindGit.cmake
+C:/Program Files/CMake/share/cmake-3.23/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-3.23/Modules/FindPackageMessage.cmake
+C:/Program Files/CMake/share/cmake-3.23/Modules/FindThreads.cmake
+D:/a/llvm-project-fork/llvm-project-fork/third-party/benchmark/CMakeLists.txt
+D:/a/llvm-project-fork/llvm-project-fork/third-party/benchmark/cmake/AddCXXCompilerFlag.cmake
+D:/a/llvm-project-fork/llvm-project-fork/third-party/benchmark/cmake/CXXFeatureCheck.cmake
+D:/a/llvm-project-fork/llvm-project-fork/third-party/benchmark/cmake/GetGitVersion.cmake
+D:/a/llvm-project-fork/llvm-project-fork/third-party/benchmark/cmake/gnu_posix_regex.cpp
+D:/a/llvm-project-fork/llvm-project-fork/third-party/benchmark/cmake/posix_regex.cpp
+D:/a/llvm-project-fork/llvm-project-fork/third-party/benchmark/cmake/steady_clock.cpp

@@ -1,0 +1,7 @@
+# CMake generation dependency list for this directory.
+D:/a/llvm-project-fork/llvm-project-fork/llvm/unittests/tools/llvm-exegesis/AArch64/CMakeLists.txt
+D:/a/llvm-project-fork/llvm-project-fork/llvm/unittests/tools/llvm-exegesis/ARM/CMakeLists.txt
+D:/a/llvm-project-fork/llvm-project-fork/llvm/unittests/tools/llvm-exegesis/CMakeLists.txt
+D:/a/llvm-project-fork/llvm-project-fork/llvm/unittests/tools/llvm-exegesis/Mips/CMakeLists.txt
+D:/a/llvm-project-fork/llvm-project-fork/llvm/unittests/tools/llvm-exegesis/PowerPC/CMakeLists.txt
+D:/a/llvm-project-fork/llvm-project-fork/llvm/unittests/tools/llvm-exegesis/X86/CMakeLists.txt

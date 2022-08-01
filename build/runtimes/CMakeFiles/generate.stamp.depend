@@ -1,0 +1,4 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.23/Modules/ExternalProject.cmake
+D:/a/llvm-project-fork/llvm-project-fork/llvm/cmake/modules/LLVMExternalProjectUtils.cmake
+D:/a/llvm-project-fork/llvm-project-fork/llvm/runtimes/CMakeLists.txt

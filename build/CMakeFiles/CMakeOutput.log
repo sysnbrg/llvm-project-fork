@@ -1,0 +1,718 @@
+The system is: Windows - 10.0.20348 - AMD64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler:  
+Build flags: 
+Id flags:  
+
+The output was:
+0
+Microsoft (R) Build Engine version 17.2.1+52cd2da31 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 8/1/2022 3:26:53 PM.
+Project "D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\3.23.2\CompilerIdC\CompilerIdC.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "Debug\".
+  Creating directory "Debug\CompilerIdC.tlog\".
+InitializeBuildStatus:
+  Creating "Debug\CompilerIdC.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.32.31326\bin\HostX64\x64\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc143.pdb" /external:W0 /Gd /TC /FC /errorReport:queue CMakeCCompilerId.c
+  CMakeCCompilerId.c
+Link:
+  C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.32.31326\bin\HostX64\x64\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdC.lib" /MACHINE:X64 Debug\CMakeCCompilerId.obj
+  CompilerIdC.vcxproj -> D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\3.23.2\CompilerIdC\CompilerIdC.exe
+PostBuildEvent:
+  for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
+  :VCEnd
+  CMAKE_C_COMPILER=C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.32.31326\bin\Hostx64\x64\cl.exe
+FinalizeBuildStatus:
+  Deleting file "Debug\CompilerIdC.tlog\unsuccessfulbuild".
+  Touching "Debug\CompilerIdC.tlog\CompilerIdC.lastbuildstate".
+Done Building Project "D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\3.23.2\CompilerIdC\CompilerIdC.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:06.02
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
+
+The C compiler identification is MSVC, found in "D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/3.23.2/CompilerIdC/CompilerIdC.exe"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler:  
+Build flags: 
+Id flags:  
+
+The output was:
+0
+Microsoft (R) Build Engine version 17.2.1+52cd2da31 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 8/1/2022 3:26:59 PM.
+Project "D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\3.23.2\CompilerIdCXX\CompilerIdCXX.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "Debug\".
+  Creating directory "Debug\CompilerIdCXX.tlog\".
+InitializeBuildStatus:
+  Creating "Debug\CompilerIdCXX.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.32.31326\bin\HostX64\x64\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc143.pdb" /external:W0 /Gd /TP /FC /errorReport:queue CMakeCXXCompilerId.cpp
+  CMakeCXXCompilerId.cpp
+Link:
+  C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.32.31326\bin\HostX64\x64\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdCXX.lib" /MACHINE:X64 Debug\CMakeCXXCompilerId.obj
+  CompilerIdCXX.vcxproj -> D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\3.23.2\CompilerIdCXX\CompilerIdCXX.exe
+PostBuildEvent:
+  for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
+  :VCEnd
+  CMAKE_CXX_COMPILER=C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.32.31326\bin\Hostx64\x64\cl.exe
+FinalizeBuildStatus:
+  Deleting file "Debug\CompilerIdCXX.tlog\unsuccessfulbuild".
+  Touching "Debug\CompilerIdCXX.tlog\CompilerIdCXX.lastbuildstate".
+Done Building Project "D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\3.23.2\CompilerIdCXX\CompilerIdCXX.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:01.93
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
+
+The CXX compiler identification is MSVC, found in "D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/3.23.2/CompilerIdCXX/CompilerIdCXX.exe"
+
+Checking whether the ASM compiler is MSVC using "-?" matched "Microsoft":
+Microsoft (R) C/C++ Optimizing Compiler Version 19.32.31332 for x64
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+                         C/C++ COMPILER OPTIONS
+
+
+                              -OPTIMIZATION-
+
+/O1 maximum optimizations (favor space) /O2 maximum optimizations (favor speed)
+/Ob<n> inline expansion (default n=0)   /Od disable optimizations (default)
+/Og enable global optimization          /Oi[-] enable intrinsic functions
+/Os favor code space                    /Ot favor code speed
+/Ox optimizations (favor speed)         
+/favor:<blend|AMD64|INTEL64|ATOM> select processor to optimize for, one of:
+    blend - a combination of optimizations for several different x64 processors
+    AMD64 - 64-bit AMD processors                                 
+    INTEL64 - Intel(R)64 architecture processors                  
+    ATOM - Intel(R) Atom(TM) processors                           
+
+                             -CODE GENERATION-
+
+/Gu[-] ensure distinct functions have distinct addresses
+/Gw[-] separate global variables for linker
+/GF enable read-only string pooling     /Gm[-] enable minimal rebuild
+/Gy[-] separate functions for linker    /GS[-] enable security checks
+/GR[-] enable C++ RTTI                  /GX[-] enable C++ EH (same as /EHsc)
+/guard:cf[-] enable CFG (control flow guard)
+/guard:ehcont[-] enable EH continuation metadata (CET)
+/EHs enable C++ EH (no SEH exceptions)  /EHa enable C++ EH (w/ SEH exceptions)
+/EHc extern "C" defaults to nothrow     
+/EHr always generate noexcept runtime termination checks
+/fp:<contract|except[-]|fast|precise|strict> choose floating-point model:
+    contract - consider floating-point contractions when generating code
+    except[-] - consider floating-point exceptions when generating code
+    fast - "fast" floating-point model; results are less predictable
+    precise - "precise" floating-point model; results are predictable
+    strict - "strict" floating-point model (implies /fp:except)
+/Qfast_transcendentals generate inline FP intrinsics even with /fp:except
+/Qspectre[-] enable mitigations for CVE 2017-5753
+/Qpar[-] enable parallel code generation
+/Qpar-report:1 auto-parallelizer diagnostic; indicate parallelized loops
+/Qpar-report:2 auto-parallelizer diagnostic; indicate loops not parallelized
+/Qvec-report:1 auto-vectorizer diagnostic; indicate vectorized loops
+/Qvec-report:2 auto-vectorizer diagnostic; indicate loops not vectorized
+/GL[-] enable link-time code generation 
+/volatile:<iso|ms> choose volatile model:
+    iso - Acquire/release semantics not guaranteed on volatile accesses
+    ms  - Acquire/release semantics guaranteed on volatile accesses
+/GA optimize for Windows Application    /Ge force stack checking for all funcs
+/Gs[num] control stack checking calls   /Gh enable _penter function call
+/GH enable _pexit function call         /GT generate fiber-safe TLS accesses
+/RTC1 Enable fast checks (/RTCsu)       /RTCc Convert to smaller type checks
+/RTCs Stack Frame runtime checking      /RTCu Uninitialized local usage checks
+/clr[:option] compile for common language runtime, where option is:
+    pure : produce IL-only output file (no native executable code)
+    safe : produce IL-only verifiable output file
+    netcore : produce assemblies targeting .NET Core runtime
+    noAssembly : do not produce an assembly
+    nostdlib : ignore the system .NET framework directory when searching for assemblies
+    nostdimport : do not import any required assemblies implicitly
+    initialAppDomain : enable initial AppDomain behavior of Visual C++ 2002
+    implicitKeepAlive- : turn off implicit emission of System::GC::KeepAlive(this)
+/fsanitize=address Enable address sanitizer codegen
+/homeparams Force parameters passed in registers to be written to the stack
+/GZ Enable stack checks (/RTCs)         /Gv __vectorcall calling convention
+/arch:<AVX|AVX2|AVX512> minimum CPU architecture requirements, one of:
+   AVX - enable use of instructions available with AVX-enabled CPUs
+   AVX2 - enable use of instructions available with AVX2-enabled CPUs
+   AVX512 - enable use of instructions available with AVX-512-enabled CPUs
+/QIntel-jcc-erratum enable mitigations for Intel JCC erratum
+/Qspectre-load Enable spectre mitigations for all instructions which load memory
+/Qspectre-load-cf Enable spectre mitigations for all control-flow instructions which load memory
+/fpcvt:<IA|BC> FP to unsigned integer conversion compatibility
+   IA - results compatible with VCVTTSD2USI instruction
+   BC - results compatible with VS2017 and earlier compiler
+
+                              -OUTPUT FILES-
+
+/Fa[file] name assembly listing file    /FA[scu] configure assembly listing
+/Fd[file] name .PDB file                /Fe<file> name executable file
+/Fm[file] name map file                 /Fo<file> name object file
+/Fp<file> name precompiled header file  /Fr[file] name source browser file
+/FR[file] name extended .SBR file       /Fi[file] name preprocessed file
+/Fd: <file> name .PDB file              /Fe: <file> name executable file
+/Fm: <file> name map file               /Fo: <file> name object file
+/Fp: <file> name .PCH file              /FR: <file> name extended .SBR file
+/Fi: <file> name preprocessed file      
+/Ft<dir> location of the header files generated for #import
+/doc[file] process XML documentation comments and optionally name the .xdc file
+
+                              -PREPROCESSOR-
+
+/AI<dir> add to assembly search path    /FU<file> forced using assembly/module 
+/C don't strip comments                 /D<name>{=|#}<text> define macro
+/E preprocess to stdout                 /EP preprocess to stdout, no #line
+/P preprocess to file                   /Fx merge injected code to file
+/FI<file> name forced include file      /U<name> remove predefined macro
+/u remove all predefined macros         /I<dir> add to include search path
+/X ignore "standard places"             
+/PH generate #pragma file_hash when preprocessing
+/PD print all macro definitions         
+
+                                -LANGUAGE-
+
+/std:<c++14|c++17|c++20|c++latest> C++ standard version
+    c++14 - ISO/IEC 14882:2014 (default)
+    c++17 - ISO/IEC 14882:2017
+    c++20 - ISO/IEC 14882:2020
+    c++latest - latest draft standard (feature set subject to change)
+/permissive[-] enable some nonconforming code to compile (feature set subject to change) (on by default)
+/Ze enable extensions (default)         /Za disable extensions
+/ZW enable WinRT language extensions    /Zs syntax check only
+/Zc:arg1[,arg2] C++ language conformance, where arguments can be:
+  forScope[-]           enforce Standard C++ for scoping rules
+  wchar_t[-]            wchar_t is the native type, not a typedef
+  auto[-]               enforce the new Standard C++ meaning for auto
+  trigraphs[-]          enable trigraphs (off by default)
+  rvalueCast[-]         enforce Standard C++ explicit type conversion rules
+  strictStrings[-]      disable string-literal to [char|wchar_t]*
+                        conversion (off by default)
+  implicitNoexcept[-]   enable implicit noexcept on required functions
+  threadSafeInit[-]     enable thread-safe local static initialization
+  inline[-]             remove unreferenced function or data if it is
+                        COMDAT or has internal linkage only (off by default)
+  sizedDealloc[-]       enable C++14 global sized deallocation
+                        functions (on by default)
+  throwingNew[-]        assume operator new throws on failure (off by default)
+  referenceBinding[-]   a temporary will not bind to an non-const
+                        lvalue reference (off by default)
+  twoPhase-             disable two-phase name lookup
+  ternary[-]            enforce C++11 rules for conditional operator (off by default)
+  noexceptTypes[-]      enforce C++17 noexcept rules (on by default in C++17 or later)
+  alignedNew[-]         enable C++17 alignment of dynamically allocated objects (on by default)
+  hiddenFriend[-]       enforce Standard C++ hidden friend rules (implied by /permissive-)
+  externC[-]            enforce Standard C++ rules for 'extern "C"' functions (implied by /permissive-)
+  lambda[-]             better lambda support by using the newer lambda processor (off by default)
+  tlsGuards[-]          generate runtime checks for TLS variable initialization (on by default)
+  zeroSizeArrayNew[-]   call member new/delete for 0-size arrays of objects (on by default)
+  static_assert[-]      strict handling of 'static_assert' (implied by /permissive-)
+  __STDC__              define __STDC__ to 1 in C
+/await enable resumable functions extension
+/await:strict enable standard C++20 coroutine support with earlier language versions
+/constexpr:depth<N>     recursion depth limit for constexpr evaluation (default: 512)
+/constexpr:backtrace<N> show N constexpr evaluations in diagnostics (default: 10)
+/constexpr:steps<N>     terminate constexpr evaluation after N steps (default: 100000)
+/Zi enable debugging information        /Z7 enable old-style debug info
+/Zo[-] generate richer debugging information for optimized code (on by default)
+/ZH:[MD5|SHA1|SHA_256] hash algorithm for calculation of file checksum in debug info (default: SHA_256)
+/Zp[n] pack structs on n-byte boundary  /Zl omit default library name in .OBJ
+/vd{0|1|2} disable/enable vtordisp      /vm<x> type of pointers to members
+/std:<c11|c17> C standard version
+    c11 - ISO/IEC 9899:2011
+    c17 - ISO/IEC 9899:2018
+/ZI enable Edit and Continue debug info 
+/openmp enable OpenMP 2.0 language extensions
+/openmp:experimental enable OpenMP 2.0 language extensions plus select OpenMP 3.0+ language extensions
+/openmp:llvm OpenMP language extensions using LLVM runtime
+
+                              -MISCELLANEOUS-
+
+@<file> options response file           /?, /help print this help message
+/bigobj generate extended object format /c compile only, no link
+/errorReport:option deprecated. Report internal compiler errors to Microsoft
+    none - do not send report                
+    prompt - prompt to immediately send report
+    queue - at next admin logon, prompt to send report (default)
+    send - send report automatically         
+/FC use full pathnames in diagnostics   /H<num> max external name length
+/J default char type is unsigned        
+/MP[n] use up to 'n' processes for compilation
+/nologo suppress copyright message      /showIncludes show include file names
+/Tc<source file> compile file as .c     /Tp<source file> compile file as .cpp
+/TC compile all files as .c             /TP compile all files as .cpp
+/V<string> set version string           /Yc[file] create .PCH file
+/Yd put debug info in every .OBJ        /Yl[sym] inject .PCH ref for debug lib
+/Yu[file] use .PCH file                 /Y- disable all PCH options
+/Zm<n> max memory alloc (% of default)  /FS force to use MSPDBSRV.EXE
+/source-charset:<iana-name>|.nnnn set source character set
+/execution-charset:<iana-name>|.nnnn set execution character set
+/utf-8 set source and execution character set to UTF-8
+/validate-charset[-] validate UTF-8 files for only legal characters
+/fastfail[-] enable fast-fail mode      /JMC[-] enable native just my code
+/presetPadding[-] zero initialize padding for stack based class types
+/volatileMetadata[-] generate metadata on volatile memory accesses
+/sourcelink [file] file containing source link information
+
+                                -LINKING-
+
+/LD Create .DLL                         /LDd Create .DLL debug library
+/LN Create a .netmodule                 /F<num> set stack size
+/link [linker options and libraries]    /MD link with MSVCRT.LIB
+/MT link with LIBCMT.LIB                /MDd link with MSVCRTD.LIB debug lib
+/MTd link with LIBCMTD.LIB debug lib    
+
+                              -CODE ANALYSIS-
+
+/analyze[-] Enable native analysis      /analyze:quiet[-] No warning to console
+/analyze:log<name> Warnings to file     /analyze:autolog Log to *.pftlog
+/analyze:autolog:ext<ext> Log to *.<ext>/analyze:autolog- No log file
+/analyze:WX- Warnings not fatal         /analyze:stacksize<num> Max stack frame
+/analyze:max_paths<num> Max paths       /analyze:only Analyze, no code gen
+
+                              -DIAGNOSTICS-
+
+/diagnostics:<args,...> controls the format of diagnostic messages:
+             classic   - retains prior format
+             column[-] - prints column information
+             caret[-]  - prints column and the indicated line of source
+/Wall enable all warnings               /w   disable all warnings
+/W<n> set warning level (default n=1)   
+/Wv:xx[.yy[.zzzzz]] disable warnings introduced after version xx.yy.zzzzz
+/WX treat warnings as errors            /WL enable one line diagnostics
+/wd<n> disable warning n                /we<n> treat warning n as an error
+/wo<n> issue warning n once             /w<l><n> set warning level 1-4 for n
+/external:I <path>      - location of external headers
+/external:env:<var>     - environment variable with locations of external headers
+/external:anglebrackets - treat all headers included via <> as external
+/external:W<n>          - warning level for external headers
+/external:templates[-]  - evaluate warning level across template instantiation chain
+/sdl enable additional security features and warnings
+/options:strict unrecognized compiler options are an error
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_20472.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.2.1+52cd2da31 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.32.31332 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CMakeCCompilerABI.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_20472.dir\Debug\\" /Fd"cmTC_20472.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCCompilerABI.c"
+  cmTC_20472.vcxproj -> D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\Debug\cmTC_20472.exe
+
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_7ad24.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.2.1+52cd2da31 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.32.31332 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CMakeCXXCompilerABI.cpp
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_7ad24.dir\Debug\\" /Fd"cmTC_7ad24.dir\Debug\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCXXCompilerABI.cpp"
+  cmTC_7ad24.vcxproj -> D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\Debug\cmTC_7ad24.exe
+
+
+
+Determining if the include file errno.h exists passed with the following output:
+Change Dir: D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_e4225.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.2.1+52cd2da31 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.32.31332 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckIncludeFile.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_e4225.dir\Debug\\" /Fd"cmTC_e4225.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  cmTC_e4225.vcxproj -> D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\Debug\cmTC_e4225.exe
+
+
+
+Determining if the include file fcntl.h exists passed with the following output:
+Change Dir: D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_d9ec7.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.2.1+52cd2da31 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.32.31332 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckIncludeFile.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_d9ec7.dir\Debug\\" /Fd"cmTC_d9ec7.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  cmTC_d9ec7.vcxproj -> D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\Debug\cmTC_d9ec7.exe
+
+
+
+Determining if the include file signal.h exists passed with the following output:
+Change Dir: D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_1b318.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.2.1+52cd2da31 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.32.31332 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckIncludeFile.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_1b318.dir\Debug\\" /Fd"cmTC_1b318.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  cmTC_1b318.vcxproj -> D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\Debug\cmTC_1b318.exe
+
+
+
+Determining if the include file sys/stat.h exists passed with the following output:
+Change Dir: D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_d11fb.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.2.1+52cd2da31 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.32.31332 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckIncludeFile.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_d11fb.dir\Debug\\" /Fd"cmTC_d11fb.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  cmTC_d11fb.vcxproj -> D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\Debug\cmTC_d11fb.exe
+
+
+
+Determining if the include file sys/types.h exists passed with the following output:
+Change Dir: D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_d317f.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.2.1+52cd2da31 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.32.31332 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckIncludeFile.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_d317f.dir\Debug\\" /Fd"cmTC_d317f.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  cmTC_d317f.vcxproj -> D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\Debug\cmTC_d317f.exe
+
+
+
+Determining if the include file fenv.h exists passed with the following output:
+Change Dir: D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_adcc2.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.2.1+52cd2da31 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.32.31332 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckIncludeFile.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_adcc2.dir\Debug\\" /Fd"cmTC_adcc2.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  cmTC_adcc2.vcxproj -> D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\Debug\cmTC_adcc2.exe
+
+
+
+Determining if the FE_ALL_EXCEPT exist passed with the following output:
+Change Dir: D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_21010.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.2.1+52cd2da31 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.32.31332 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckSymbolExists.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_21010.dir\Debug\\" /Fd"cmTC_21010.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c"
+  cmTC_21010.vcxproj -> D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\Debug\cmTC_21010.exe
+
+
+File D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <fenv.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef FE_ALL_EXCEPT
+  return ((int*)(&FE_ALL_EXCEPT))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the FE_INEXACT exist passed with the following output:
+Change Dir: D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_e870e.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.2.1+52cd2da31 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.32.31332 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckSymbolExists.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_e870e.dir\Debug\\" /Fd"cmTC_e870e.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c"
+  cmTC_e870e.vcxproj -> D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\Debug\cmTC_e870e.exe
+
+
+File D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <fenv.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef FE_INEXACT
+  return ((int*)(&FE_INEXACT))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the strerror exist passed with the following output:
+Change Dir: D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_f3068.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.2.1+52cd2da31 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.32.31332 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckSymbolExists.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_f3068.dir\Debug\\" /Fd"cmTC_f3068.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c"
+D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c(8,19): warning C4996: 'strerror': This function or variable may be unsafe. Consider using strerror_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\cmTC_f3068.vcxproj]
+  cmTC_f3068.vcxproj -> D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\Debug\cmTC_f3068.exe
+
+
+File D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <string.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strerror
+  return ((int*)(&strerror))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the strerror_s exist passed with the following output:
+Change Dir: D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_6bdd5.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.2.1+52cd2da31 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.32.31332 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckSymbolExists.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_6bdd5.dir\Debug\\" /Fd"cmTC_6bdd5.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c"
+  cmTC_6bdd5.vcxproj -> D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\Debug\cmTC_6bdd5.exe
+
+
+File D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <string.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strerror_s
+  return ((int*)(&strerror_s))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the _chsize_s exist passed with the following output:
+Change Dir: D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_31dec.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.2.1+52cd2da31 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.32.31332 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckSymbolExists.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_31dec.dir\Debug\\" /Fd"cmTC_31dec.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c"
+  cmTC_31dec.vcxproj -> D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\Debug\cmTC_31dec.exe
+
+
+File D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <io.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _chsize_s
+  return ((int*)(&_chsize_s))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the function __chkstk exists passed with the following output:
+Change Dir: D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_6397c.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.2.1+52cd2da31 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.32.31332 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckFunctionExists.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=__chkstk /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_6397c.dir\Debug\\" /Fd"cmTC_6397c.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.23\Modules\CheckFunctionExists.c"
+  cmTC_6397c.vcxproj -> D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\Debug\cmTC_6397c.exe
+
+
+
+Performing C++ SOURCE FILE Test HAVE_STD_IS_TRIVIALLY_COPYABLE succeeded with the following output:
+Change Dir: D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_786d9.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.2.1+52cd2da31 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.32.31332 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  src.cxx
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_STD_IS_TRIVIALLY_COPYABLE /D "CMAKE_INTDIR=\"Debug\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /std:c++14 /Fo"cmTC_786d9.dir\Debug\\" /Fd"cmTC_786d9.dir\Debug\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\src.cxx"
+  cmTC_786d9.vcxproj -> D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\Debug\cmTC_786d9.exe
+
+
+Source file was:
+
+#include <type_traits>
+struct T { int val; };
+static_assert(std::is_trivially_copyable<T>::value, "ok");
+int main() { return 0;}
+
+Performing C++ SOURCE FILE Test LLVM_HAS_ATOMICS succeeded with the following output:
+Change Dir: D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_30e4f.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.2.1+52cd2da31 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.32.31332 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  src.cxx
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D LLVM_HAS_ATOMICS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /std:c++14 /Fo"cmTC_30e4f.dir\Debug\\" /Fd"cmTC_30e4f.dir\Debug\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\src.cxx"
+  cmTC_30e4f.vcxproj -> D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\Debug\cmTC_30e4f.exe
+
+
+Source file was:
+
+#ifdef _MSC_VER
+#include <windows.h>
+#endif
+int main() {
+#ifdef _MSC_VER
+        volatile LONG val = 1;
+        MemoryBarrier();
+        InterlockedCompareExchange(&val, 0, 1);
+        InterlockedIncrement(&val);
+        InterlockedDecrement(&val);
+#else
+        volatile unsigned long val = 1;
+        __sync_synchronize();
+        __sync_val_compare_and_swap(&val, 1, 0);
+        __sync_add_and_fetch(&val, 1);
+        __sync_sub_and_fetch(&val, 1);
+#endif
+        return 0;
+      }
+
+Determining if the _M_X64 exist passed with the following output:
+Change Dir: D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_15474.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.2.1+52cd2da31 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.32.31332 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckSymbolExists.c
+  cl /c /Zi /W4 /WX- /diagnostics:column /Od /Ob0 /Oi /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /permissive- /Fo"cmTC_15474.dir\Debug\\" /Fd"cmTC_15474.dir\Debug\vc143.pdb" /external:W4 /Gd /TC /wd4141 /wd4146 /wd4244 /wd4267 /wd4291 /wd4351 /wd4456 /wd4457 /wd4458 /wd4459 /wd4503 /wd4624 /wd4722 /wd4100 /wd4127 /wd4512 /wd4505 /wd4610 /wd4510 /wd4702 /wd4245 /wd4706 /wd4310 /wd4701 /wd4703 /wd4389 /wd4611 /wd4805 /wd4204 /wd4577 /wd4091 /wd4592 /wd4319 /wd4709 /wd4324 /errorReport:queue /we4238  -w14062 /Gw "D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c"
+  cmTC_15474.vcxproj -> D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\Debug\cmTC_15474.exe
+
+
+File D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _M_X64
+  return ((int*)(&_M_X64))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Checking whether the ASM_MASM compiler is MSVC using "-?" matched "Microsoft":
+Microsoft (R) Macro Assembler (x64) Version 14.32.31332.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+        ML64 [ /options ] filelist [ /link linkoptions ]
+
+/Bl<linker> Use alternate linker          /Sf Generate first pass listing
+/c Assemble without linking               /Sl<width> Set line width
+/Cp Preserve case of user identifiers     /Sn Suppress symbol-table listing
+/Cx Preserve case in publics, externs     /Sp<length> Set page length
+/D<name>[=text] Define text macro         /Ss<string> Set subtitle
+/EP Output preprocessed listing to stdout /St<string> Set title
+/F <hex> Set stack size (bytes)           /Sx List false conditionals
+/Fe<file> Name executable                 /Ta<file> Assemble non-.ASM file
+/Fl[file] Generate listing                /w Same as /W0 /WX
+/Fm[file] Generate map                    /WX Treat warnings as errors
+/Fo<file> Name object file                /W<number> Set warning level
+/Fr[file] Generate limited browser info   /X Ignore INCLUDE environment path
+/FR[file] Generate full browser info      /Zd Add line number debug info
+/I<name> Add include path                 /Zf Make all symbols public
+/link <linker options and libraries>      /Zi Add symbolic debug info
+/nologo Suppress copyright message        /Zp[n] Set structure alignment
+/Sa Maximize source listing               /Zs Perform syntax check only
+/ZH:MD5 Use MD5 for checksum in debug info
+/ZH:SHA_256 Use SHA256 for checksum in debug info (default)
+/Gy[-] separate functions for linker
+/errorReport:<option> Deprecated. Report internal assembler errors to Microsoft
+    none - do not send report
+    prompt - prompt to immediately send report
+    queue - at next admin logon, prompt to send report
+    send - send report automatically
+Performing C++ SOURCE FILE Test HAVE_CXX_FLAG_EHS_ succeeded with the following output:
+Change Dir: D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_cd636.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.2.1+52cd2da31 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.32.31332 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  src.cxx
+  cl /c /Zi /W4 /WX- /diagnostics:column /Od /Ob0 /Oi /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_CXX_FLAG_EHS_ /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c++14 /permissive- /Fo"cmTC_cd636.dir\Debug\\" /Fd"cmTC_cd636.dir\Debug\vc143.pdb" /external:W4 /Gd /TP /wd4141 /wd4146 /wd4244 /wd4267 /wd4291 /wd4351 /wd4456 /wd4457 /wd4458 /wd4459 /wd4503 /wd4624 /wd4722 /wd4100 /wd4127 /wd4512 /wd4505 /wd4610 /wd4510 /wd4702 /wd4245 /wd4706 /wd4310 /wd4701 /wd4703 /wd4389 /wd4611 /wd4805 /wd4204 /wd4577 /wd4091 /wd4592 /wd4319 /wd4709 /wd4324 /errorReport:queue /we4238  /Zc:__cplusplus /bigobj -w14062 /Gw -EHs- -EHs- "D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\src.cxx"
+  cmTC_cd636.vcxproj -> D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\Debug\cmTC_cd636.exe
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test HAVE_CXX_FLAG_EHA_ succeeded with the following output:
+Change Dir: D:/a/llvm-project-fork/llvm-project-fork/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_2507b.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.2.1+52cd2da31 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.32.31332 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  src.cxx
+  cl /c /Zi /W4 /WX- /diagnostics:column /Od /Ob0 /Oi /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_CXX_FLAG_EHA_ /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c++14 /permissive- /Fo"cmTC_2507b.dir\Debug\\" /Fd"cmTC_2507b.dir\Debug\vc143.pdb" /external:W4 /Gd /TP /wd4141 /wd4146 /wd4244 /wd4267 /wd4291 /wd4351 /wd4456 /wd4457 /wd4458 /wd4459 /wd4503 /wd4624 /wd4722 /wd4100 /wd4127 /wd4512 /wd4505 /wd4610 /wd4510 /wd4702 /wd4245 /wd4706 /wd4310 /wd4701 /wd4703 /wd4389 /wd4611 /wd4805 /wd4204 /wd4577 /wd4091 /wd4592 /wd4319 /wd4709 /wd4324 /errorReport:queue /we4238  /Zc:__cplusplus /bigobj -w14062 /Gw -EHs- -EHa- -EHa- "D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\src.cxx"
+  cmTC_2507b.vcxproj -> D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\CMakeTmp\Debug\cmTC_2507b.exe
+
+
+Source file was:
+int main() { return 0; }

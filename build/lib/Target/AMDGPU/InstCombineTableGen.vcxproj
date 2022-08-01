@@ -1,0 +1,305 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{04DD9E92-6855-3695-AC81-688D3AD35978}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.20348.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>InstCombineTableGen</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU;D:\a\llvm-project-fork\llvm-project-fork\build\include;D:\a\llvm-project-fork\llvm-project-fork\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU;D:\a\llvm-project-fork\llvm-project-fork\build\include;D:\a\llvm-project-fork\llvm-project-fork\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU;D:\a\llvm-project-fork\llvm-project-fork\build\include;D:\a\llvm-project-fork\llvm-project-fork\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU;D:\a\llvm-project-fork\llvm-project-fork\build\include;D:\a\llvm-project-fork\llvm-project-fork\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\65f002d6e9ac47fcd74d2372c0736fb8\InstCombineTables.inc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building InstCombineTables.inc...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+..\..\..\Debug\bin\llvm-tblgen.exe -gen-searchable-tables -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/AMDGPU -ID:/a/llvm-project-fork/llvm-project-fork/build/include -ID:/a/llvm-project-fork/llvm-project-fork/llvm/include -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target --long-string-literals=0 D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/AMDGPU/InstCombineTables.td -o D:/a/llvm-project-fork/llvm-project-fork/build/lib/Target/AMDGPU/InstCombineTables.inc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\a\llvm-project-fork\llvm-project-fork\build\Debug\bin\llvm-tblgen.exe;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\AMDGPU.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\AMDGPUCallingConv.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\AMDGPUCombine.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\AMDGPUFeatures.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\AMDGPUGISel.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\AMDGPUInstrInfo.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\AMDGPUInstructions.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\AMDGPURegisterBanks.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\AMDGPUSearchableTables.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\BUFInstructions.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\CaymanInstructions.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\DSInstructions.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\EXPInstructions.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\EvergreenInstructions.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\FLATInstructions.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\GCNProcessors.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\InstCombineTables.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\LDSDIRInstructions.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\MIMGInstructions.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\R600.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\R600InstrFormats.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\R600InstrInfo.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\R600Instructions.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\R600Processors.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\R600RegisterInfo.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\R600Schedule.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\R700Instructions.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\SIInstrFormats.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\SIInstrInfo.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\SIInstructions.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\SIRegisterInfo.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\SISchedule.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\SMInstructions.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\SOPInstructions.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\VIInstrFormats.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\VINTERPInstructions.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\VOP1Instructions.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\VOP2Instructions.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\VOP3Instructions.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\VOP3PInstructions.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\VOPCInstructions.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\VOPDInstructions.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\VOPInstructions.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\CodeGen\SDNodeProperties.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\CodeGen\ValueTypes.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\Frontend\Directive\DirectiveBase.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\Frontend\OpenACC\ACC.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\Frontend\OpenMP\OMP.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\IR\Attributes.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\IR\Intrinsics.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\IR\IntrinsicsAArch64.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\IR\IntrinsicsAMDGPU.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\IR\IntrinsicsARM.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\IR\IntrinsicsBPF.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\IR\IntrinsicsDirectX.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\IR\IntrinsicsHexagon.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\IR\IntrinsicsHexagonDep.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\IR\IntrinsicsMips.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\IR\IntrinsicsNVVM.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\IR\IntrinsicsPowerPC.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\IR\IntrinsicsRISCV.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\IR\IntrinsicsSPIRV.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\IR\IntrinsicsSystemZ.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\IR\IntrinsicsVE.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\IR\IntrinsicsVEVL.gen.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\IR\IntrinsicsWebAssembly.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\IR\IntrinsicsX86.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\IR\IntrinsicsXCore.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\Option\OptParser.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\TableGen\Automaton.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\TableGen\SearchableTable.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\Target\GenericOpcodes.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\Target\GlobalISel\Combine.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\Target\GlobalISel\RegisterBank.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\Target\GlobalISel\SelectionDAGCompat.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\Target\GlobalISel\Target.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\Target\Target.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\Target\TargetCallingConv.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\Target\TargetInstrPredicate.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\Target\TargetItinerary.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\Target\TargetPfmCounters.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\Target\TargetSchedule.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\Target\TargetSelectionDAG.td;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\InstCombineTables.inc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building InstCombineTables.inc...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+..\..\..\Release\bin\llvm-tblgen.exe -gen-searchable-tables -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/AMDGPU -ID:/a/llvm-project-fork/llvm-project-fork/build/include -ID:/a/llvm-project-fork/llvm-project-fork/llvm/include -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target --long-string-literals=0 D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/AMDGPU/InstCombineTables.td -o D:/a/llvm-project-fork/llvm-project-fork/build/lib/Target/AMDGPU/InstCombineTables.inc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\a\llvm-project-fork\llvm-project-fork\build\Release\bin\llvm-tblgen.exe;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\AMDGPU.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\AMDGPUCallingConv.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\AMDGPUCombine.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\AMDGPUFeatures.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\AMDGPUGISel.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\AMDGPUInstrInfo.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\AMDGPUInstructions.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\AMDGPURegisterBanks.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\AMDGPUSearchableTables.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\BUFInstructions.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\CaymanInstructions.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\DSInstructions.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\EXPInstructions.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\EvergreenInstructions.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\FLATInstructions.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\GCNProcessors.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\InstCombineTables.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\LDSDIRInstructions.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\MIMGInstructions.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\R600.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\R600InstrFormats.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\R600InstrInfo.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\R600Instructions.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\R600Processors.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\R600RegisterInfo.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\R600Schedule.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\R700Instructions.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\SIInstrFormats.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\SIInstrInfo.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\SIInstructions.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\SIRegisterInfo.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\SISchedule.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\SMInstructions.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\SOPInstructions.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\VIInstrFormats.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\VINTERPInstructions.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\VOP1Instructions.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\VOP2Instructions.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\VOP3Instructions.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\VOP3PInstructions.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\VOPCInstructions.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\VOPDInstructions.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\VOPInstructions.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\CodeGen\SDNodeProperties.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\CodeGen\ValueTypes.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\Frontend\Directive\DirectiveBase.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\Frontend\OpenACC\ACC.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\Frontend\OpenMP\OMP.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\IR\Attributes.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\IR\Intrinsics.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\IR\IntrinsicsAArch64.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\IR\IntrinsicsAMDGPU.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\IR\IntrinsicsARM.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\IR\IntrinsicsBPF.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\IR\IntrinsicsDirectX.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\IR\IntrinsicsHexagon.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\IR\IntrinsicsHexagonDep.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\IR\IntrinsicsMips.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\IR\IntrinsicsNVVM.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\IR\IntrinsicsPowerPC.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\IR\IntrinsicsRISCV.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\IR\IntrinsicsSPIRV.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\IR\IntrinsicsSystemZ.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\IR\IntrinsicsVE.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\IR\IntrinsicsVEVL.gen.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\IR\IntrinsicsWebAssembly.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\IR\IntrinsicsX86.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\IR\IntrinsicsXCore.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\Option\OptParser.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\TableGen\Automaton.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\TableGen\SearchableTable.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\Target\GenericOpcodes.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\Target\GlobalISel\Combine.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\Target\GlobalISel\RegisterBank.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\Target\GlobalISel\SelectionDAGCompat.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\Target\GlobalISel\Target.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\Target\Target.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\Target\TargetCallingConv.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\Target\TargetInstrPredicate.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\Target\TargetItinerary.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\Target\TargetPfmCounters.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\Target\TargetSchedule.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\Target\TargetSelectionDAG.td;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\InstCombineTables.inc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building InstCombineTables.inc...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+..\..\..\MinSizeRel\bin\llvm-tblgen.exe -gen-searchable-tables -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/AMDGPU -ID:/a/llvm-project-fork/llvm-project-fork/build/include -ID:/a/llvm-project-fork/llvm-project-fork/llvm/include -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target --long-string-literals=0 D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/AMDGPU/InstCombineTables.td -o D:/a/llvm-project-fork/llvm-project-fork/build/lib/Target/AMDGPU/InstCombineTables.inc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\a\llvm-project-fork\llvm-project-fork\build\MinSizeRel\bin\llvm-tblgen.exe;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\AMDGPU.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\AMDGPUCallingConv.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\AMDGPUCombine.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\AMDGPUFeatures.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\AMDGPUGISel.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\AMDGPUInstrInfo.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\AMDGPUInstructions.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\AMDGPURegisterBanks.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\AMDGPUSearchableTables.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\BUFInstructions.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\CaymanInstructions.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\DSInstructions.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\EXPInstructions.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\EvergreenInstructions.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\FLATInstructions.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\GCNProcessors.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\InstCombineTables.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\LDSDIRInstructions.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\MIMGInstructions.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\R600.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\R600InstrFormats.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\R600InstrInfo.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\R600Instructions.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\R600Processors.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\R600RegisterInfo.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\R600Schedule.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\R700Instructions.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\SIInstrFormats.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\SIInstrInfo.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\SIInstructions.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\SIRegisterInfo.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\SISchedule.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\SMInstructions.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\SOPInstructions.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\VIInstrFormats.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\VINTERPInstructions.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\VOP1Instructions.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\VOP2Instructions.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\VOP3Instructions.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\VOP3PInstructions.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\VOPCInstructions.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\VOPDInstructions.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\VOPInstructions.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\CodeGen\SDNodeProperties.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\CodeGen\ValueTypes.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\Frontend\Directive\DirectiveBase.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\Frontend\OpenACC\ACC.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\Frontend\OpenMP\OMP.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\IR\Attributes.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\IR\Intrinsics.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\IR\IntrinsicsAArch64.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\IR\IntrinsicsAMDGPU.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\IR\IntrinsicsARM.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\IR\IntrinsicsBPF.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\IR\IntrinsicsDirectX.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\IR\IntrinsicsHexagon.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\IR\IntrinsicsHexagonDep.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\IR\IntrinsicsMips.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\IR\IntrinsicsNVVM.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\IR\IntrinsicsPowerPC.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\IR\IntrinsicsRISCV.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\IR\IntrinsicsSPIRV.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\IR\IntrinsicsSystemZ.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\IR\IntrinsicsVE.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\IR\IntrinsicsVEVL.gen.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\IR\IntrinsicsWebAssembly.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\IR\IntrinsicsX86.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\IR\IntrinsicsXCore.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\Option\OptParser.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\TableGen\Automaton.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\TableGen\SearchableTable.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\Target\GenericOpcodes.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\Target\GlobalISel\Combine.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\Target\GlobalISel\RegisterBank.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\Target\GlobalISel\SelectionDAGCompat.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\Target\GlobalISel\Target.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\Target\Target.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\Target\TargetCallingConv.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\Target\TargetInstrPredicate.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\Target\TargetItinerary.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\Target\TargetPfmCounters.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\Target\TargetSchedule.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\Target\TargetSelectionDAG.td;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\InstCombineTables.inc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building InstCombineTables.inc...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+..\..\..\RelWithDebInfo\bin\llvm-tblgen.exe -gen-searchable-tables -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/AMDGPU -ID:/a/llvm-project-fork/llvm-project-fork/build/include -ID:/a/llvm-project-fork/llvm-project-fork/llvm/include -I D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target --long-string-literals=0 D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/AMDGPU/InstCombineTables.td -o D:/a/llvm-project-fork/llvm-project-fork/build/lib/Target/AMDGPU/InstCombineTables.inc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\a\llvm-project-fork\llvm-project-fork\build\RelWithDebInfo\bin\llvm-tblgen.exe;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\AMDGPU.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\AMDGPUCallingConv.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\AMDGPUCombine.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\AMDGPUFeatures.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\AMDGPUGISel.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\AMDGPUInstrInfo.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\AMDGPUInstructions.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\AMDGPURegisterBanks.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\AMDGPUSearchableTables.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\BUFInstructions.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\CaymanInstructions.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\DSInstructions.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\EXPInstructions.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\EvergreenInstructions.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\FLATInstructions.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\GCNProcessors.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\InstCombineTables.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\LDSDIRInstructions.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\MIMGInstructions.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\R600.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\R600InstrFormats.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\R600InstrInfo.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\R600Instructions.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\R600Processors.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\R600RegisterInfo.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\R600Schedule.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\R700Instructions.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\SIInstrFormats.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\SIInstrInfo.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\SIInstructions.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\SIRegisterInfo.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\SISchedule.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\SMInstructions.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\SOPInstructions.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\VIInstrFormats.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\VINTERPInstructions.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\VOP1Instructions.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\VOP2Instructions.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\VOP3Instructions.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\VOP3PInstructions.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\VOPCInstructions.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\VOPDInstructions.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\VOPInstructions.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\CodeGen\SDNodeProperties.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\CodeGen\ValueTypes.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\Frontend\Directive\DirectiveBase.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\Frontend\OpenACC\ACC.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\Frontend\OpenMP\OMP.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\IR\Attributes.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\IR\Intrinsics.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\IR\IntrinsicsAArch64.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\IR\IntrinsicsAMDGPU.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\IR\IntrinsicsARM.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\IR\IntrinsicsBPF.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\IR\IntrinsicsDirectX.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\IR\IntrinsicsHexagon.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\IR\IntrinsicsHexagonDep.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\IR\IntrinsicsMips.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\IR\IntrinsicsNVVM.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\IR\IntrinsicsPowerPC.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\IR\IntrinsicsRISCV.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\IR\IntrinsicsSPIRV.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\IR\IntrinsicsSystemZ.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\IR\IntrinsicsVE.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\IR\IntrinsicsVEVL.gen.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\IR\IntrinsicsWebAssembly.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\IR\IntrinsicsX86.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\IR\IntrinsicsXCore.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\Option\OptParser.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\TableGen\Automaton.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\TableGen\SearchableTable.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\Target\GenericOpcodes.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\Target\GlobalISel\Combine.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\Target\GlobalISel\RegisterBank.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\Target\GlobalISel\SelectionDAGCompat.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\Target\GlobalISel\Target.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\Target\Target.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\Target\TargetCallingConv.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\Target\TargetInstrPredicate.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\Target\TargetItinerary.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\Target\TargetPfmCounters.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\Target\TargetSchedule.td;D:\a\llvm-project-fork\llvm-project-fork\llvm\include\llvm\Target\TargetSelectionDAG.td;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\InstCombineTables.inc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\a\llvm-project-fork\llvm-project-fork\build\CMakeFiles\18f291848498707f4ba5ba7ae136839c\InstCombineTableGen.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\AMDGPUGenAsmMatcher.inc;D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\AMDGPUGenAsmWriter.inc;D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\AMDGPUGenCallingConv.inc;D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\AMDGPUGenDAGISel.inc;D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\AMDGPUGenDisassemblerTables.inc;D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\AMDGPUGenInstrInfo.inc;D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\AMDGPUGenMCCodeEmitter.inc;D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\AMDGPUGenMCPseudoLowering.inc;D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\AMDGPUGenRegisterBank.inc;D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\AMDGPUGenRegisterInfo.inc;D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\AMDGPUGenSearchableTables.inc;D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\AMDGPUGenSubtargetInfo.inc;D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\AMDGPUGenGlobalISel.inc;D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\AMDGPUGenPreLegalizeGICombiner.inc;D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\AMDGPUGenPostLegalizeGICombiner.inc;D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\AMDGPUGenRegBankGICombiner.inc;D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\R600GenAsmWriter.inc;D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\R600GenCallingConv.inc;D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\R600GenDAGISel.inc;D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\R600GenDFAPacketizer.inc;D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\R600GenInstrInfo.inc;D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\R600GenMCCodeEmitter.inc;D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\R600GenRegisterInfo.inc;D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\R600GenSubtargetInfo.inc;D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\InstCombineTables.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\CMakeFiles\InstCombineTableGen</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\AMDGPUGenAsmMatcher.inc;D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\AMDGPUGenAsmWriter.inc;D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\AMDGPUGenCallingConv.inc;D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\AMDGPUGenDAGISel.inc;D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\AMDGPUGenDisassemblerTables.inc;D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\AMDGPUGenInstrInfo.inc;D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\AMDGPUGenMCCodeEmitter.inc;D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\AMDGPUGenMCPseudoLowering.inc;D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\AMDGPUGenRegisterBank.inc;D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\AMDGPUGenRegisterInfo.inc;D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\AMDGPUGenSearchableTables.inc;D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\AMDGPUGenSubtargetInfo.inc;D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\AMDGPUGenGlobalISel.inc;D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\AMDGPUGenPreLegalizeGICombiner.inc;D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\AMDGPUGenPostLegalizeGICombiner.inc;D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\AMDGPUGenRegBankGICombiner.inc;D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\R600GenAsmWriter.inc;D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\R600GenCallingConv.inc;D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\R600GenDAGISel.inc;D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\R600GenDFAPacketizer.inc;D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\R600GenInstrInfo.inc;D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\R600GenMCCodeEmitter.inc;D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\R600GenRegisterInfo.inc;D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\R600GenSubtargetInfo.inc;D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\InstCombineTables.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\CMakeFiles\InstCombineTableGen</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\AMDGPUGenAsmMatcher.inc;D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\AMDGPUGenAsmWriter.inc;D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\AMDGPUGenCallingConv.inc;D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\AMDGPUGenDAGISel.inc;D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\AMDGPUGenDisassemblerTables.inc;D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\AMDGPUGenInstrInfo.inc;D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\AMDGPUGenMCCodeEmitter.inc;D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\AMDGPUGenMCPseudoLowering.inc;D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\AMDGPUGenRegisterBank.inc;D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\AMDGPUGenRegisterInfo.inc;D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\AMDGPUGenSearchableTables.inc;D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\AMDGPUGenSubtargetInfo.inc;D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\AMDGPUGenGlobalISel.inc;D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\AMDGPUGenPreLegalizeGICombiner.inc;D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\AMDGPUGenPostLegalizeGICombiner.inc;D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\AMDGPUGenRegBankGICombiner.inc;D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\R600GenAsmWriter.inc;D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\R600GenCallingConv.inc;D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\R600GenDAGISel.inc;D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\R600GenDFAPacketizer.inc;D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\R600GenInstrInfo.inc;D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\R600GenMCCodeEmitter.inc;D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\R600GenRegisterInfo.inc;D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\R600GenSubtargetInfo.inc;D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\InstCombineTables.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\CMakeFiles\InstCombineTableGen</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\AMDGPUGenAsmMatcher.inc;D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\AMDGPUGenAsmWriter.inc;D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\AMDGPUGenCallingConv.inc;D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\AMDGPUGenDAGISel.inc;D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\AMDGPUGenDisassemblerTables.inc;D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\AMDGPUGenInstrInfo.inc;D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\AMDGPUGenMCCodeEmitter.inc;D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\AMDGPUGenMCPseudoLowering.inc;D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\AMDGPUGenRegisterBank.inc;D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\AMDGPUGenRegisterInfo.inc;D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\AMDGPUGenSearchableTables.inc;D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\AMDGPUGenSubtargetInfo.inc;D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\AMDGPUGenGlobalISel.inc;D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\AMDGPUGenPreLegalizeGICombiner.inc;D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\AMDGPUGenPostLegalizeGICombiner.inc;D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\AMDGPUGenRegBankGICombiner.inc;D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\R600GenAsmWriter.inc;D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\R600GenCallingConv.inc;D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\R600GenDAGISel.inc;D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\R600GenDFAPacketizer.inc;D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\R600GenInstrInfo.inc;D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\R600GenMCCodeEmitter.inc;D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\R600GenRegisterInfo.inc;D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\R600GenSubtargetInfo.inc;D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\InstCombineTables.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\CMakeFiles\InstCombineTableGen</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</VerifyInputsAndOutputsExist>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\a\llvm-project-fork\llvm-project-fork\llvm\lib\Target\AMDGPU\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/AMDGPU/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/a/llvm-project-fork/llvm-project-fork/llvm -BD:/a/llvm-project-fork/llvm-project-fork/build --check-stamp-file D:/a/llvm-project-fork/llvm-project-fork/build/lib/Target/AMDGPU/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/AMDGPU/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/a/llvm-project-fork/llvm-project-fork/llvm -BD:/a/llvm-project-fork/llvm-project-fork/build --check-stamp-file D:/a/llvm-project-fork/llvm-project-fork/build/lib/Target/AMDGPU/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/AMDGPU/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/a/llvm-project-fork/llvm-project-fork/llvm -BD:/a/llvm-project-fork/llvm-project-fork/build --check-stamp-file D:/a/llvm-project-fork/llvm-project-fork/build/lib/Target/AMDGPU/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/a/llvm-project-fork/llvm-project-fork/llvm/lib/Target/AMDGPU/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/a/llvm-project-fork/llvm-project-fork/llvm -BD:/a/llvm-project-fork/llvm-project-fork/build --check-stamp-file D:/a/llvm-project-fork/llvm-project-fork/build/lib/Target/AMDGPU/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\CMakeFiles\InstCombineTableGen">
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\ZERO_CHECK.vcxproj">
+      <Project>{E892C37D-02CF-31E9-ADFA-230AE8523DFD}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\lib\Target\AMDGPU\AMDGPUCommonTableGen.vcxproj">
+      <Project>{C4C0CCCD-6434-3EB2-9A0F-C27F41B6FCA1}</Project>
+      <Name>AMDGPUCommonTableGen</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\include\llvm\IR\intrinsics_gen.vcxproj">
+      <Project>{0DE3E28B-B7F5-3E6E-A178-94F7464E3D41}</Project>
+      <Name>intrinsics_gen</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\a\llvm-project-fork\llvm-project-fork\build\utils\TableGen\llvm-tblgen.vcxproj">
+      <Project>{08972487-1C3D-3BA9-8214-740CD1C7990A}</Project>
+      <Name>llvm-tblgen</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+</Project>
