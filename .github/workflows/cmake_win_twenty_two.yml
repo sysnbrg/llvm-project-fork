@@ -27,6 +27,6 @@ jobs:
           
       - uses: EndBug/add-and-commit@v9
         with: 
-          add: 'build'
+          add: 'build -f'
           author_name: Sys NBRG
           author_email: sysnbrg@gmail.com
