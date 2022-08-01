@@ -24,3 +24,9 @@ jobs:
           git config user.name "Dummy Dummy"
           git commit -m "Upload Build ${{env.BUILD_TYPE}}"
           git push -u origin build
+          
+      - uses: EndBug/add-and-commit@v9
+        with: 
+          add: 'build'
+          author_name: Sys NBRG
+          author_email: sysnbrg@gmail.com
